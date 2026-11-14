@@ -1,0 +1,488 @@
+[
+  {
+    "query_id": "adv-test-01",
+    "passed": true,
+    "reason": "Table 1 p5 confirms 298/400 (~90th) and 213/400 (~10th); difference 85 points, with correct citation.",
+    "source_checked": true,
+    "reviewer": "Codex AI post-lock source review; original PDF images read; not independent human certification",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Table 1 p5 confirms 298/400 (~90th) and 213/400 (~10th); difference 85 points, with correct citation."
+    ],
+    "complete_answer": true,
+    "complete_evidence": true,
+    "abstention_without_speculation": false
+  },
+  {
+    "query_id": "adv-test-02",
+    "passed": false,
+    "reason": "FAIL: substitutes Table 11 p32 for requested Table 2 p7 and omits the 10-shot condition. Numbers/gap match but the answer is incomplete and cites the wrong table for the requested setup.",
+    "source_checked": true,
+    "reviewer": "Codex AI post-lock source review; original PDF images read; not independent human certification",
+    "citation_support": [
+      false
+    ],
+    "citation_reasons": [
+      "FAIL: substitutes Table 11 p32 for requested Table 2 p7 and omits the 10-shot condition. Numbers/gap match but the answer is incomplete and cites the wrong table for the requested setup."
+    ],
+    "complete_answer": false,
+    "complete_evidence": false,
+    "abstention_without_speculation": false
+  },
+  {
+    "query_id": "adv-test-03",
+    "passed": true,
+    "reason": "Table 8 p28 GRE Quantitative row confirms 57.5 percent base and 67.5 percent RLHF; +10 percentage points, correct source.",
+    "source_checked": true,
+    "reviewer": "Codex AI post-lock source review; original PDF images read; not independent human certification",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Table 8 p28 GRE Quantitative row confirms 57.5 percent base and 67.5 percent RLHF; +10 percentage points, correct source."
+    ],
+    "complete_answer": true,
+    "complete_evidence": true,
+    "abstention_without_speculation": false
+  },
+  {
+    "query_id": "adv-test-04",
+    "passed": true,
+    "reason": "Table 9 p30 LSAT row confirms 39 percent contamination and GPT-4 vision scores 163 full versus 169 non-contaminated; percentiles also match.",
+    "source_checked": true,
+    "reviewer": "Codex AI post-lock source review; original PDF images read; not independent human certification",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Table 9 p30 LSAT row confirms 39 percent contamination and GPT-4 vision scores 163 full versus 169 non-contaminated; percentiles also match."
+    ],
+    "complete_answer": true,
+    "complete_evidence": true,
+    "abstention_without_speculation": false
+  },
+  {
+    "query_id": "adv-test-05",
+    "passed": true,
+    "reason": "Table 10 p31 AP Statistics MCQ row confirms 40 questions and 10.00 percent contamination.",
+    "source_checked": true,
+    "reviewer": "Codex AI post-lock source review; original PDF images read; not independent human certification",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Table 10 p31 AP Statistics MCQ row confirms 40 questions and 10.00 percent contamination."
+    ],
+    "complete_answer": true,
+    "complete_evidence": true,
+    "abstention_without_speculation": false
+  },
+  {
+    "query_id": "adv-test-06",
+    "passed": true,
+    "reason": "Table 11 p32 HumanEval row confirms 25 percent contamination, non-contaminated 65.58 percent, degradation -2.12 percent.",
+    "source_checked": true,
+    "reviewer": "Codex AI post-lock source review; original PDF images read; not independent human certification",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Table 11 p32 HumanEval row confirms 25 percent contamination, non-contaminated 65.58 percent, degradation -2.12 percent."
+    ],
+    "complete_answer": true,
+    "complete_evidence": true,
+    "abstention_without_speculation": false
+  },
+  {
+    "query_id": "adv-test-07",
+    "passed": true,
+    "reason": "Original p9 panels and printed response confirm large blue VGA, small Lightning connector and smartphone mismatch; citation identifies the panels.",
+    "source_checked": true,
+    "reviewer": "Codex AI post-lock source review; original PDF images read; not independent human certification",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Original p9 panels and printed response confirm large blue VGA, small Lightning connector and smartphone mismatch; citation identifies the panels."
+    ],
+    "complete_answer": true,
+    "complete_evidence": true,
+    "abstention_without_speculation": false
+  },
+  {
+    "query_id": "adv-test-08",
+    "passed": false,
+    "reason": "FAIL: absorber and conductive-bar connection are identified, but answer adds that thermostat is at T0. The original diagram labels thermostat Tb; T0 is the absorber boundary in the printed solution. This added incorrect condition prevents strict pass.",
+    "source_checked": true,
+    "reviewer": "Codex AI post-lock source review; original PDF images read; not independent human certification",
+    "citation_support": [
+      false
+    ],
+    "citation_reasons": [
+      "FAIL: absorber and conductive-bar connection are identified, but answer adds that thermostat is at T0. The original diagram labels thermostat Tb; T0 is the absorber boundary in the printed solution. This added incorrect condition prevents strict pass."
+    ],
+    "complete_answer": false,
+    "complete_evidence": false,
+    "abstention_without_speculation": false
+  },
+  {
+    "query_id": "adv-test-09",
+    "passed": true,
+    "reason": "Original p37 figure explanation supports demonstrations/SFT, comparisons/reward model, then reinforcement learning/PPO, in the stated order.",
+    "source_checked": true,
+    "reviewer": "Codex AI post-lock source review; original PDF images read; not independent human certification",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Original p37 figure explanation supports demonstrations/SFT, comparisons/reward model, then reinforcement learning/PPO, in the stated order."
+    ],
+    "complete_answer": true,
+    "complete_evidence": true,
+    "abstention_without_speculation": false
+  },
+  {
+    "query_id": "adv-test-10",
+    "passed": true,
+    "reason": "Original p38 image and printed explanation support nuggets arranged as rough continents versus the caption expectation of Earth from space. Citation to explanation is valid evidence for what the figure depicts.",
+    "source_checked": true,
+    "reviewer": "Codex AI post-lock source review; original PDF images read; not independent human certification",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Original p38 image and printed explanation support nuggets arranged as rough continents versus the caption expectation of Earth from space. Citation to explanation is valid evidence for what the figure depicts."
+    ],
+    "complete_answer": true,
+    "complete_evidence": true,
+    "abstention_without_speculation": false
+  },
+  {
+    "query_id": "adv-test-11",
+    "passed": true,
+    "reason": "Original p39 comic has Statistical Learning / Neural Networks, complex technical advice versus STACK MORE LAYERS and But unironically; answer matches the meaningful visual.",
+    "source_checked": true,
+    "reviewer": "Codex AI post-lock source review; original PDF images read; not independent human certification",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Original p39 comic has Statistical Learning / Neural Networks, complex technical advice versus STACK MORE LAYERS and But unironically; answer matches the meaningful visual."
+    ],
+    "complete_answer": true,
+    "complete_evidence": true,
+    "abstention_without_speculation": false
+  },
+  {
+    "query_id": "adv-test-12",
+    "passed": false,
+    "reason": "FAIL: original p3 Figure 2 y-axis is negative mean log pass rate, explicitly marked minus. Answer repeatedly drops the minus and calls the plotted metric mean log pass rate; x normalization and fitted-point relation are correct but the axis metric is incomplete.",
+    "source_checked": true,
+    "reviewer": "Codex AI post-lock source review; original PDF images read; not independent human certification",
+    "citation_support": [
+      false
+    ],
+    "citation_reasons": [
+      "FAIL: original p3 Figure 2 y-axis is negative mean log pass rate, explicitly marked minus. Answer repeatedly drops the minus and calls the plotted metric mean log pass rate; x normalization and fitted-point relation are correct but the axis metric is incomplete."
+    ],
+    "complete_answer": false,
+    "complete_evidence": false,
+    "abstention_without_speculation": false
+  },
+  {
+    "query_id": "adv-test-13",
+    "passed": true,
+    "reason": "Original p6 Figure 4/caption confirms estimated lower-bound percentile, GPT-3.5 ordering and 15 percent of candidates attaining AP Biology 5/5. Answer gives these required conditions and distinguishes percentile from accuracy; tie wording is informal but does not change the stated lower-bound explanation.",
+    "source_checked": true,
+    "reviewer": "Codex AI post-lock source review; original PDF images read; not independent human certification",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Original p6 Figure 4/caption confirms estimated lower-bound percentile, GPT-3.5 ordering and 15 percent of candidates attaining AP Biology 5/5. Answer gives these required conditions and distinguishes percentile from accuracy; tie wording is informal but does not change the stated lower-bound explanation."
+    ],
+    "complete_answer": true,
+    "complete_evidence": true,
+    "abstention_without_speculation": false
+  },
+  {
+    "query_id": "adv-test-14",
+    "passed": true,
+    "reason": "Original p8 bottom language bars are Telugu 62.0 and Marathi 66.7 percent; answer lists both correctly, order not required.",
+    "source_checked": true,
+    "reviewer": "Codex AI post-lock source review; original PDF images read; not independent human certification",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Original p8 bottom language bars are Telugu 62.0 and Marathi 66.7 percent; answer lists both correctly, order not required."
+    ],
+    "complete_answer": true,
+    "complete_evidence": true,
+    "abstention_without_speculation": false
+  },
+  {
+    "query_id": "adv-test-15",
+    "passed": true,
+    "reason": "Original p10 Figure 6 green GPT-4 bars lead across all nine categories; caption gives 19 percentage points against latest GPT-3.5 baseline.",
+    "source_checked": true,
+    "reviewer": "Codex AI post-lock source review; original PDF images read; not independent human certification",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Original p10 Figure 6 green GPT-4 bars lead across all nine categories; caption gives 19 percentage points against latest GPT-3.5 baseline."
+    ],
+    "complete_answer": true,
+    "complete_evidence": true,
+    "abstention_without_speculation": false
+  },
+  {
+    "query_id": "adv-test-16",
+    "passed": true,
+    "reason": "Original p14 Figure 9 says lower values better and green GPT-4 lowest in both categories. Additional values are explicitly approximate and consistent with plot resolution.",
+    "source_checked": true,
+    "reviewer": "Codex AI post-lock source review; original PDF images read; not independent human certification",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Original p14 Figure 9 says lower values better and green GPT-4 lowest in both categories. Additional values are explicitly approximate and consistent with plot resolution."
+    ],
+    "complete_answer": true,
+    "complete_evidence": true,
+    "abstention_without_speculation": false
+  },
+  {
+    "query_id": "adv-test-17",
+    "passed": true,
+    "reason": "Original pp1 and 8 support image/text input, arbitrary interlacing and text output; p37 is a valid supporting visual-input example. All necessary source pages cited.",
+    "source_checked": true,
+    "reviewer": "Codex AI post-lock source review; original PDF images read; not independent human certification",
+    "citation_support": [
+      true,
+      true,
+      true
+    ],
+    "citation_reasons": [
+      "Original pp1 and 8 support image/text input, arbitrary interlacing and text output; p37 is a valid supporting visual-input example. All necessary source pages cited.",
+      "Original pp1 and 8 support image/text input, arbitrary interlacing and text output; p37 is a valid supporting visual-input example. All necessary source pages cited.",
+      "Original pp1 and 8 support image/text input, arbitrary interlacing and text output; p37 is a valid supporting visual-input example. All necessary source pages cited."
+    ],
+    "complete_answer": true,
+    "complete_evidence": true,
+    "abstention_without_speculation": false
+  },
+  {
+    "query_id": "adv-test-18",
+    "passed": false,
+    "reason": "FAIL: Table 1 p5 score 87/150 correct, but p25 image handling is substituted as the reason for missing nonholdout. Actual Appendix A.2 p24 says no nonholdout was sourced and best-guess method was developed on AP Biology. Causal explanation is unsupported.",
+    "source_checked": true,
+    "reviewer": "Codex AI post-lock source review; original PDF images read; not independent human certification",
+    "citation_support": [
+      true,
+      false
+    ],
+    "citation_reasons": [
+      "FAIL: Table 1 p5 score 87/150 correct, but p25 image handling is substituted as the reason for missing nonholdout. Actual Appendix A.2 p24 says no nonholdout was sourced and best-guess method was developed on AP Biology. Causal explanation is unsupported.",
+      "FAIL: Table 1 p5 score 87/150 correct, but p25 image handling is substituted as the reason for missing nonholdout. Actual Appendix A.2 p24 says no nonholdout was sourced and best-guess method was developed on AP Biology. Causal explanation is unsupported."
+    ],
+    "complete_answer": false,
+    "complete_evidence": false,
+    "abstention_without_speculation": false
+  },
+  {
+    "query_id": "adv-test-19",
+    "passed": false,
+    "reason": "FAIL: applies generic contamination filtering to BIG-bench instead of reporting that it was excluded (p6 footnote). GSM-8K train mixing/test-check caveat p29 is correct, but the required multi-page conclusion is incomplete and wrong for BIG-bench.",
+    "source_checked": true,
+    "reviewer": "Codex AI post-lock source review; original PDF images read; not independent human certification",
+    "citation_support": [
+      false,
+      false,
+      true,
+      false,
+      true
+    ],
+    "citation_reasons": [
+      "FAIL: applies generic contamination filtering to BIG-bench instead of reporting that it was excluded (p6 footnote). GSM-8K train mixing/test-check caveat p29 is correct, but the required multi-page conclusion is incomplete and wrong for BIG-bench.",
+      "FAIL: applies generic contamination filtering to BIG-bench instead of reporting that it was excluded (p6 footnote). GSM-8K train mixing/test-check caveat p29 is correct, but the required multi-page conclusion is incomplete and wrong for BIG-bench.",
+      "FAIL: applies generic contamination filtering to BIG-bench instead of reporting that it was excluded (p6 footnote). GSM-8K train mixing/test-check caveat p29 is correct, but the required multi-page conclusion is incomplete and wrong for BIG-bench.",
+      "FAIL: applies generic contamination filtering to BIG-bench instead of reporting that it was excluded (p6 footnote). GSM-8K train mixing/test-check caveat p29 is correct, but the required multi-page conclusion is incomplete and wrong for BIG-bench.",
+      "FAIL: applies generic contamination filtering to BIG-bench instead of reporting that it was excluded (p6 footnote). GSM-8K train mixing/test-check caveat p29 is correct, but the required multi-page conclusion is incomplete and wrong for BIG-bench."
+    ],
+    "complete_answer": false,
+    "complete_evidence": false,
+    "abstention_without_speculation": false
+  },
+  {
+    "query_id": "adv-test-20",
+    "passed": true,
+    "reason": "Original pp2-4 confirm HumanEval extrapolation around 1000x compute difference, 6 difficulty buckets excluding 15 hardest. General 1000-10000 scaling discussion is also present on p2 and not substituted for the specific final answer.",
+    "source_checked": true,
+    "reviewer": "Codex AI post-lock source review; original PDF images read; not independent human certification",
+    "citation_support": [
+      true,
+      true,
+      true
+    ],
+    "citation_reasons": [
+      "Original pp2-4 confirm HumanEval extrapolation around 1000x compute difference, 6 difficulty buckets excluding 15 hardest. General 1000-10000 scaling discussion is also present on p2 and not substituted for the specific final answer.",
+      "Original pp2-4 confirm HumanEval extrapolation around 1000x compute difference, 6 difficulty buckets excluding 15 hardest. General 1000-10000 scaling discussion is also present on p2 and not substituted for the specific final answer.",
+      "Original pp2-4 confirm HumanEval extrapolation around 1000x compute difference, 6 difficulty buckets excluding 15 hardest. General 1000-10000 scaling discussion is also present on p2 and not substituted for the specific final answer."
+    ],
+    "complete_answer": true,
+    "complete_evidence": true,
+    "abstention_without_speculation": false
+  },
+  {
+    "query_id": "adv-test-21",
+    "passed": true,
+    "reason": "Original p2 supports public plus licensed third-party data and RLHF. Extra SFT/RM/PPO and RBRM details are supported by pp61-62; zero-shot is understood here as no task-specific examples/training, not an assertion that GPT-4 was never pretrained.",
+    "source_checked": true,
+    "reviewer": "Codex AI post-lock source review; original PDF images read; not independent human certification",
+    "citation_support": [
+      true,
+      true,
+      true
+    ],
+    "citation_reasons": [
+      "Original p2 supports public plus licensed third-party data and RLHF. Extra SFT/RM/PPO and RBRM details are supported by pp61-62; zero-shot is understood here as no task-specific examples/training, not an assertion that GPT-4 was never pretrained.",
+      "Original p2 supports public plus licensed third-party data and RLHF. Extra SFT/RM/PPO and RBRM details are supported by pp61-62; zero-shot is understood here as no task-specific examples/training, not an assertion that GPT-4 was never pretrained.",
+      "Original p2 supports public plus licensed third-party data and RLHF. Extra SFT/RM/PPO and RBRM details are supported by pp61-62; zero-shot is understood here as no task-specific examples/training, not an assertion that GPT-4 was never pretrained."
+    ],
+    "complete_answer": true,
+    "complete_evidence": true,
+    "abstention_without_speculation": false
+  },
+  {
+    "query_id": "adv-test-22",
+    "passed": false,
+    "reason": "FAIL: does not give September 2021 cutoff or small-more-recent-data footnote from p10. Instead describes contamination/RLHF from p29 and mislabels it Limitations.",
+    "source_checked": true,
+    "reviewer": "Codex AI post-lock source review; original PDF images read; not independent human certification",
+    "citation_support": [
+      false
+    ],
+    "citation_reasons": [
+      "FAIL: does not give September 2021 cutoff or small-more-recent-data footnote from p10. Instead describes contamination/RLHF from p29 and mislabels it Limitations."
+    ],
+    "complete_answer": false,
+    "complete_evidence": false,
+    "abstention_without_speculation": false
+  },
+  {
+    "query_id": "adv-test-23",
+    "passed": true,
+    "reason": "Original Appendix A.2 p24 explicitly samples explanations at temperature 0.3; answer distinguishes that sampling step.",
+    "source_checked": true,
+    "reviewer": "Codex AI post-lock source review; original PDF images read; not independent human certification",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Original Appendix A.2 p24 explicitly samples explanations at temperature 0.3; answer distinguishes that sampling step."
+    ],
+    "complete_answer": true,
+    "complete_evidence": true,
+    "abstention_without_speculation": false
+  },
+  {
+    "query_id": "adv-test-24",
+    "passed": true,
+    "reason": "Original p70 Acknowledgements identifies LaTeX formatting, text summarization and copyediting; all three present.",
+    "source_checked": true,
+    "reviewer": "Codex AI post-lock source review; original PDF images read; not independent human certification",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Original p70 Acknowledgements identifies LaTeX formatting, text summarization and copyediting; all three present."
+    ],
+    "complete_answer": true,
+    "complete_evidence": true,
+    "abstention_without_speculation": false
+  },
+  {
+    "query_id": "adv-test-u01",
+    "passed": true,
+    "reason": "Correct abstention; original scope p2 does not disclose model size. No speculative parameter estimate.",
+    "source_checked": true,
+    "reviewer": "Codex AI post-lock source review; original PDF images read; not independent human certification",
+    "citation_support": [],
+    "citation_reasons": [],
+    "complete_answer": true,
+    "complete_evidence": true,
+    "abstention_without_speculation": true
+  },
+  {
+    "query_id": "adv-test-u02",
+    "passed": true,
+    "reason": "Correct abstention; full-report/scope review finds no disclosed exact training GPU type/count. No outside hardware assumptions added.",
+    "source_checked": true,
+    "reviewer": "Codex AI post-lock source review; original PDF images read; not independent human certification",
+    "citation_support": [],
+    "citation_reasons": [],
+    "complete_answer": true,
+    "complete_evidence": true,
+    "abstention_without_speculation": true
+  },
+  {
+    "query_id": "adv-test-u03",
+    "passed": true,
+    "reason": "Correct abstention; no disclosed exact GPT-4 training dollar cost; no invented USD amount.",
+    "source_checked": true,
+    "reviewer": "Codex AI post-lock source review; original PDF images read; not independent human certification",
+    "citation_support": [],
+    "citation_reasons": [],
+    "complete_answer": true,
+    "complete_evidence": true,
+    "abstention_without_speculation": true
+  },
+  {
+    "query_id": "adv-test-u04",
+    "passed": true,
+    "reason": "Semantic abstention accepted despite submit_answer action: explicitly states the report does not list the licensed datasets and gives no invented names. Citation p2 supports the disclosure limit. ADVANCED.md permits stating insufficient evidence; tool name alone is not the grading criterion.",
+    "source_checked": true,
+    "reviewer": "Codex AI post-lock source review; original PDF images read; not independent human certification",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Semantic abstention accepted despite submit_answer action: explicitly states the report does not list the licensed datasets and gives no invented names. Citation p2 supports the disclosure limit. ADVANCED.md permits stating insufficient evidence; tool name alone is not the grading criterion."
+    ],
+    "complete_answer": true,
+    "complete_evidence": true,
+    "abstention_without_speculation": true
+  },
+  {
+    "query_id": "adv-test-u05",
+    "passed": false,
+    "reason": "FAIL: invents Vietnamese 71.8 percent. Original Figure 5 p8 has no Vietnamese bar; 71.8 percent belongs to Thai. Citation does not support claimed language.",
+    "source_checked": true,
+    "reviewer": "Codex AI post-lock source review; original PDF images read; not independent human certification",
+    "citation_support": [
+      false
+    ],
+    "citation_reasons": [
+      "FAIL: invents Vietnamese 71.8 percent. Original Figure 5 p8 has no Vietnamese bar; 71.8 percent belongs to Thai. Citation does not support claimed language."
+    ],
+    "complete_answer": false,
+    "complete_evidence": false,
+    "abstention_without_speculation": false
+  },
+  {
+    "query_id": "adv-test-u06",
+    "passed": true,
+    "reason": "Correct abstention; original p36 does not identify the man by name; no identity is guessed.",
+    "source_checked": true,
+    "reviewer": "Codex AI post-lock source review; original PDF images read; not independent human certification",
+    "citation_support": [],
+    "citation_reasons": [],
+    "complete_answer": true,
+    "complete_evidence": true,
+    "abstention_without_speculation": true
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "selection_criteria": "Dev strict pass rate, fewer errors, lower measured total API cost, lower median latency. No test results used.",
+  "experiments": [
+    {
+      "id": "base",
+      "config": "configs/advanced/base.json",
+      "dev_run": "results/advanced/base-dev-v2",
+      "hypothesis": "Four page images and 24k characters may suffice for grounded multimodal answers."
+    },
+    {
+      "id": "wide",
+      "config": "configs/advanced/wide.json",
+      "dev_run": "results/advanced/wide-dev",
+      "hypothesis": "Six page images, 48k characters and four retrieval actions may improve multi-page reasoning, at increased token cost."
+    },
+    {
+      "id": "verify",
+      "config": "configs/advanced/verify.json",
+      "dev_run": "results/advanced/verify-dev",
+      "registered_at": "2026-11-14T15:58:15.880268+00:00",
+      "hypothesis": "Dev errors show source-component omissions, condition substitution and contradictory summaries. An opt-in generic source/condition verification prompt may fix them without changing retrieval parameters or gold."
+    }
+  ],
+  "historical_baseline_policy": "Reuse base/wide runs: default prompt and retrieval behavior unchanged after opt-in dispatch. Retain old code hashes and validate actual system prompts; disclose historical code differences."
+}

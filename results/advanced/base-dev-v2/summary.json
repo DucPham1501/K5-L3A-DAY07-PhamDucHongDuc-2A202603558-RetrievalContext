@@ -1,0 +1,49 @@
+{
+  "split": "dev",
+  "cases": 18,
+  "statuses": {
+    "answered": 15,
+    "abstain": 3
+  },
+  "median_ms": 4198.841050000283,
+  "model_calls": 37,
+  "model_estimated_usd": 0.099666,
+  "embedding_usage": {
+    "tokens": 91,
+    "requests": [
+      {
+        "request_id": "req_d085a120e8fe4396990fee0d33fa42b4",
+        "model": "text-embedding-3-small",
+        "tokens": 10
+      },
+      {
+        "request_id": "req_6452b3ce5a9d44ff9921f03ca8ebbd2a",
+        "model": "text-embedding-3-small",
+        "tokens": 7
+      },
+      {
+        "request_id": "req_d1332495c5f4454382dded1dd1e64ed3",
+        "model": "text-embedding-3-small",
+        "tokens": 28
+      },
+      {
+        "request_id": "req_e0fdda8623d245aa85b838be8ea392a0",
+        "model": "text-embedding-3-small",
+        "tokens": 10
+      },
+      {
+        "request_id": "req_a8a76df678e044afbe90e660b752767b",
+        "model": "text-embedding-3-small",
+        "tokens": 7
+      },
+      {
+        "request_id": "req_9ea88c1cf36e45bb8b8002c9b76ba6ad",
+        "model": "text-embedding-3-small",
+        "tokens": 29
+      }
+    ],
+    "cache_hits": 12,
+    "estimated_usd": 1.8200000000000002e-06
+  },
+  "content_review_file": "reviews.json (separate explicit source review)"
+}

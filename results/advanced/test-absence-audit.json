@@ -1,0 +1,128 @@
+[
+  {
+    "query_id": "adv-test-u01",
+    "pages_scanned": 100,
+    "term_page_matches": {
+      "parameters": [
+        2
+      ],
+      "model size": [
+        2
+      ]
+    },
+    "scope_pages": [
+      2
+    ],
+    "absence_reason": "Không công bố kích thước mô hình/số tham số.",
+    "note": "Term matches are related context, not proof that the requested fact is present or absent; original scope/visual review governs."
+  },
+  {
+    "query_id": "adv-test-u02",
+    "pages_scanned": 100,
+    "term_page_matches": {
+      "GPU": [
+        15,
+        20
+      ],
+      "hardware": [
+        2,
+        15
+      ]
+    },
+    "scope_pages": [
+      2
+    ],
+    "absence_reason": "Không công bố chi tiết hardware/số GPU cho lần huấn luyện.",
+    "note": "Term matches are related context, not proof that the requested fact is present or absent; original scope/visual review governs."
+  },
+  {
+    "query_id": "adv-test-u03",
+    "pages_scanned": 100,
+    "term_page_matches": {
+      "training cost": [],
+      "dollars": [],
+      "USD": []
+    },
+    "scope_pages": [
+      2
+    ],
+    "absence_reason": "Không công bố tổng chi phí USD của lần huấn luyện.",
+    "note": "Term matches are related context, not proof that the requested fact is present or absent; original scope/visual review governs."
+  },
+  {
+    "query_id": "adv-test-u04",
+    "pages_scanned": 100,
+    "term_page_matches": {
+      "licensed": [
+        2,
+        48,
+        53,
+        87
+      ],
+      "dataset construction": [
+        2
+      ]
+    },
+    "scope_pages": [
+      2
+    ],
+    "absence_reason": "Chỉ nêu loại dữ liệu được cấp phép, không công bố danh mục đầy đủ.",
+    "note": "Term matches are related context, not proof that the requested fact is present or absent; original scope/visual review governs."
+  },
+  {
+    "query_id": "adv-test-u05",
+    "pages_scanned": 100,
+    "term_page_matches": {
+      "Vietnamese": [],
+      "Vietnam": []
+    },
+    "scope_pages": [
+      8,
+      29
+    ],
+    "absence_reason": "Figure 5 không có thanh Vietnamese/tiếng Việt; không thể suy từ các ngôn ngữ khác.",
+    "note": "Term matches are related context, not proof that the requested fact is present or absent; original scope/visual review governs."
+  },
+  {
+    "query_id": "adv-test-u06",
+    "pages_scanned": 100,
+    "term_page_matches": {
+      "Extreme Ironing": [
+        36
+      ],
+      "name": [
+        4,
+        5,
+        7,
+        11,
+        15,
+        16,
+        18,
+        19,
+        20,
+        21,
+        22,
+        25,
+        31,
+        41,
+        48,
+        70,
+        72,
+        73,
+        76,
+        77,
+        78,
+        85,
+        87,
+        91,
+        95,
+        96
+      ]
+    },
+    "scope_pages": [
+      36
+    ],
+    "absence_reason": "Ảnh/ví dụ không cho biết danh tính người này; không đoán tên từ ảnh.",
+    "note": "Term matches are related context, not proof that the requested fact is present or absent; original scope/visual review governs."
+  }
+]

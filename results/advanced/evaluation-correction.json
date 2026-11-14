@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-11-14T16:19:36.043188+00:00",
+  "type": "evaluation_only_semantic_abstention_fix",
+  "file": "src/advanced/review.py",
+  "before_sha256": "d37153cf4c6e1694e2e23598fc5a1f550304645d0f8cfa95ffbbb7a85f646345",
+  "after_sha256": "ea1e3663734c26bb725e2fb5960a8b689dc410dc06c9021fb99a63d0a97e9be2",
+  "reason": "ADVANCED.md accepts explicit statements of insufficient evidence. A submit_answer action that clearly declines to supply the unavailable list without speculation is a semantic abstention. Do not force its raw action/status to abstain. Applied consistently to all splits; no model, retrieval, raw trace, gold or config changed.",
+  "case": "adv-test-u04",
+  "raw_action": "submit_answer",
+  "effect": "One explicit no-information response is accepted as semantic abstention after source review; label remains answered in raw trace."
+}

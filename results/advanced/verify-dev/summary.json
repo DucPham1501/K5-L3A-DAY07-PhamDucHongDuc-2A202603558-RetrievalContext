@@ -1,0 +1,64 @@
+{
+  "split": "dev",
+  "cases": 18,
+  "statuses": {
+    "answered": 15,
+    "abstain": 3
+  },
+  "median_ms": 4431.863549999434,
+  "model_calls": 40,
+  "model_estimated_usd": 0.1197832,
+  "embedding_usage": {
+    "tokens": 140,
+    "requests": [
+      {
+        "request_id": "req_b5b56618432740868ea94ef03e8ba23c",
+        "model": "text-embedding-3-small",
+        "tokens": 18
+      },
+      {
+        "request_id": "req_0d2b041c4dd64b84ab8e870077340aae",
+        "model": "text-embedding-3-small",
+        "tokens": 22
+      },
+      {
+        "request_id": "req_d074d7203729465ebbb2c14cf3017b21",
+        "model": "text-embedding-3-small",
+        "tokens": 4
+      },
+      {
+        "request_id": "req_6d2511ef21c34b4f954c68c274e7baba",
+        "model": "text-embedding-3-small",
+        "tokens": 8
+      },
+      {
+        "request_id": "req_cc74f9c1ef6d47aa834fb21d63bc5240",
+        "model": "text-embedding-3-small",
+        "tokens": 18
+      },
+      {
+        "request_id": "req_b40aa2f8d17c48bd84eb060d8c528ed6",
+        "model": "text-embedding-3-small",
+        "tokens": 19
+      },
+      {
+        "request_id": "req_9bdb03cea71547dfa0cfdaa027bcbf11",
+        "model": "text-embedding-3-small",
+        "tokens": 6
+      },
+      {
+        "request_id": "req_16eca023ce83447ba9068dd801fe3fa4",
+        "model": "text-embedding-3-small",
+        "tokens": 25
+      },
+      {
+        "request_id": "req_156a744e1f894e5f8c1377d72c5f182b",
+        "model": "text-embedding-3-small",
+        "tokens": 20
+      }
+    ],
+    "cache_hits": 10,
+    "estimated_usd": 2.8000000000000003e-06
+  },
+  "content_review_file": "reviews.json (separate explicit source review)"
+}

@@ -1,0 +1,49 @@
+[
+  {
+    "query_id": "adv-dev-u01",
+    "pages_scanned": 100,
+    "term_page_matches": {
+      "water": [],
+      "litres": [],
+      "liters": []
+    },
+    "scope_pages": [
+      2,
+      14
+    ],
+    "absence_reason": "Không có số lít nước huấn luyện GPT-4 trong báo cáo.",
+    "note": "Term matches are related context, not proof that the requested fact is present or absent; original scope/visual review governs."
+  },
+  {
+    "query_id": "adv-dev-u02",
+    "pages_scanned": 100,
+    "term_page_matches": {
+      "checkpoint": [
+        46
+      ],
+      "sha-256": [],
+      "sha256": []
+    },
+    "scope_pages": [
+      2
+    ],
+    "absence_reason": "Không công bố hash checkpoint trọng số; không nhầm hash file PDF do hệ thống tự tính.",
+    "note": "Term matches are related context, not proof that the requested fact is present or absent; original scope/visual review governs."
+  },
+  {
+    "query_id": "adv-dev-u03",
+    "pages_scanned": 100,
+    "term_page_matches": {
+      "2025": [],
+      "revenue": [
+        17
+      ]
+    },
+    "scope_pages": [
+      1,
+      14
+    ],
+    "absence_reason": "Tài liệu bản tháng 3/2024 không cung cấp doanh thu GPT-4 năm 2025.",
+    "note": "Term matches are related context, not proof that the requested fact is present or absent; original scope/visual review governs."
+  }
+]

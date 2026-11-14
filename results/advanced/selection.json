@@ -1,0 +1,80 @@
+{
+  "status": "locked",
+  "locked_at": "2026-11-14T16:06:06.900347+00:00",
+  "selected": "base",
+  "selected_config": "configs/advanced/base.json",
+  "selected_config_sha256": "7bf7825666e3beb0d210d3cebd4b0a42a5f9a532e095534519f7b6410c81deb3",
+  "code_sha256": {
+    "src/advanced/__init__.py": "05345e6e3880e9fd84609997da158a3c2f888301c2d5921adeed4e9e97061f59",
+    "src/advanced/agent.py": "8bdef6332cc0f3a8e16e333630ab481799ea47142e9bfff4d6cc728debffab69",
+    "src/advanced/benchmark.py": "ca08dc156fd618675fdb739ed0344b2faae9ab2d5d7f0940fff12e7edf5432d6",
+    "src/advanced/common.py": "89151491348756a2c5a4b750c68c2dc21654dfc00069178faf72513849fa1405",
+    "src/advanced/prepare.py": "b6a82a80571309677be378f8f7b652edbc926e7e12bf57bc891708a5127f87bf",
+    "src/advanced/retrieval.py": "bd0fc6ce3d8917e66b49587a09bbdd41efe6bc1b4be930c48982ef6307484c7d",
+    "src/advanced/review.py": "d37153cf4c6e1694e2e23598fc5a1f550304645d0f8cfa95ffbbb7a85f646345",
+    "src/advanced/runner.py": "35288a8821cd0ec3363866f33715f1fc1d6d8ee2326e5732d6f40c15e95b0b87",
+    "src/advanced/select.py": "7948745fe463501f74f308cb67d9e4457038e1cb5e48cabcce2a1229c37bd30c",
+    "src/day6/embeddings.py": "5888eb8ca673ace120558f163ae00ee69f094e36d6dd53e7fe3ac11851e05b4a",
+    "src/retrieval.py": "d804ca18093ab6be0253d2de8296d52d802301577d3d99766dc049a0656f2217"
+  },
+  "benchmark_manifest_sha256": "ad7a6fb7a51f7a15c602d913eb64434d13644d5479b9c1d26ca8be4cdc387258",
+  "criteria": "Dev strict pass rate, fewer errors, lower measured total API cost, lower median latency. No test results used.",
+  "dev_comparisons": [
+    {
+      "id": "base",
+      "config": "configs/advanced/base.json",
+      "dev_run": "results/advanced/base-dev-v2",
+      "hypothesis": "Four page images and 24k characters may suffice for grounded multimodal answers.",
+      "key": [
+        0.8333333333333334,
+        0,
+        -0.09966782,
+        -4198.841050000283
+      ],
+      "historical_code_changes": [
+        "src/advanced/agent.py",
+        "src/advanced/select.py"
+      ],
+      "run_sha256": "298ae378d38a8be096f8c2e98d51448a744e10401c04fe4080fce4ecd072a6f1",
+      "review_sha256": "c36af3041e2a7586c09c6ce3db5496a8e2f546e5a1ea88f34baf9e3378d2d22e",
+      "evaluation_sha256": "56a587f50f1407a94dd448249713f36a2ff2dfa9c017dfb31951abe6442e28ef"
+    },
+    {
+      "id": "wide",
+      "config": "configs/advanced/wide.json",
+      "dev_run": "results/advanced/wide-dev",
+      "hypothesis": "Six page images, 48k characters and four retrieval actions may improve multi-page reasoning, at increased token cost.",
+      "key": [
+        0.8333333333333334,
+        0,
+        -0.15631726,
+        -4700.688750000154
+      ],
+      "historical_code_changes": [
+        "src/advanced/agent.py",
+        "src/advanced/select.py"
+      ],
+      "run_sha256": "b65fe18c130474bcdf5c036b6e4f15485060e645ec4a3f20f91d2eec4a71e46c",
+      "review_sha256": "e3587fa7753affa319ae1ed19b0c09077a70af4164a4c2db4a8dcd1c6ba3babe",
+      "evaluation_sha256": "56a587f50f1407a94dd448249713f36a2ff2dfa9c017dfb31951abe6442e28ef"
+    },
+    {
+      "id": "verify",
+      "config": "configs/advanced/verify.json",
+      "dev_run": "results/advanced/verify-dev",
+      "registered_at": "2026-11-14T15:58:15.880268+00:00",
+      "hypothesis": "Dev errors show source-component omissions, condition substitution and contradictory summaries. An opt-in generic source/condition verification prompt may fix them without changing retrieval parameters or gold.",
+      "key": [
+        0.7777777777777778,
+        0,
+        -0.119786,
+        -4431.863549999434
+      ],
+      "historical_code_changes": [],
+      "run_sha256": "bda86357566b6f777df1461dd935e7d2d203e7bdfd8ff8fa7897dff2ee03a57b",
+      "review_sha256": "ddb7758dc7a8709a856b91080f8551e1820824c9a79140235e20bac985d707df",
+      "evaluation_sha256": "2cc230185ad76a3b61c6e7f8c2305976faf5a90e54d06c83170ac6104258413c"
+    }
+  ],
+  "test_results_used": false
+}

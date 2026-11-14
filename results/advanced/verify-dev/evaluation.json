@@ -1,0 +1,136 @@
+{
+  "split": "dev",
+  "n": 14,
+  "N": 18,
+  "rate": 0.7777777777777778,
+  "bonus_threshold_met": false,
+  "groups": {
+    "table": {
+      "n": 4,
+      "N": 4,
+      "rate": 1.0
+    },
+    "image": {
+      "n": 1,
+      "N": 1,
+      "rate": 1.0
+    },
+    "chart": {
+      "n": 3,
+      "N": 3,
+      "rate": 1.0
+    },
+    "text": {
+      "n": 1,
+      "N": 3,
+      "rate": 0.3333333333333333
+    },
+    "multi_hop": {
+      "n": 2,
+      "N": 4,
+      "rate": 0.5
+    },
+    "unanswerable": {
+      "n": 3,
+      "N": 3,
+      "rate": 1.0
+    }
+  },
+  "errors": 0,
+  "reviewers": [
+    "Codex AI source review; original page images read; not independent human confirmation"
+  ],
+  "note": "AI source review is disclosed; not independent human certification or an instructor grade.",
+  "cases": [
+    {
+      "query_id": "adv-dev-01",
+      "passed": true,
+      "reason": "Original Table 1 p5 medium row gives GPT-4 21/80 and GPT-3.5 8/80; answer and cited page match."
+    },
+    {
+      "query_id": "adv-dev-02",
+      "passed": true,
+      "reason": "Original Table 8 p28 Average row gives 73.7 and 74.0 percent; +0.3 percentage points is correct; modest-effect interpretation is in the caption."
+    },
+    {
+      "query_id": "adv-dev-03",
+      "passed": true,
+      "reason": "Original Table 9 p30 Medical Knowledge Self-Assessment row has 19 percent contamination."
+    },
+    {
+      "query_id": "adv-dev-04",
+      "passed": true,
+      "reason": "Original Table 10 p31 GRE Writing row has 2 questions and 100.00 percent contamination."
+    },
+    {
+      "query_id": "adv-dev-05",
+      "passed": true,
+      "reason": "Original photograph p36 and printed response show ironing attached to a yellow taxi; the report explicitly describes the taxi as moving. Answer reports the example, not an independently verified event."
+    },
+    {
+      "query_id": "adv-dev-06",
+      "passed": true,
+      "reason": "Original embedded chart p34 gives Georgia 79.84 and Western Asia 69.62 g/person/day, sum 149.46; both chart and printed response support cited quantities."
+    },
+    {
+      "query_id": "adv-dev-07",
+      "passed": true,
+      "reason": "Original heatmap p98 row GPT-4 RLHF / column GPT-3.5 Turbo RLHF reads 61.1 percent."
+    },
+    {
+      "query_id": "adv-dev-08",
+      "passed": true,
+      "reason": "Original calibration panels p12 show ECE .007 pre-train and .074 PPO; lower ECE supports better calibration."
+    },
+    {
+      "query_id": "adv-dev-09",
+      "passed": false,
+      "reason": "Fails exact source scope: refers to p43 as System Card Abstract, but abstract is p41. The answer substitutes mitigation/privacy details and omits the abstract statement about anticipatory planning and governance."
+    },
+    {
+      "query_id": "adv-dev-10",
+      "passed": true,
+      "reason": "Equivalent evidence accepted: original pp55-56 give the same preliminary ARC conclusion as gold p43 and explicitly retain no-task-specific-fine-tuning and non-final-model limitations. The extra task categories and further evaluation are supported there."
+    },
+    {
+      "query_id": "adv-dev-11",
+      "passed": false,
+      "reason": "Fails the specific recommendation: neither run locates p69 recommendation to target dangerous advanced capabilities while remaining open-ended to unforeseen risks. Related mitigations/examples on p43/84/85 do not establish the requested design principle."
+    },
+    {
+      "query_id": "adv-dev-12",
+      "passed": true,
+      "reason": "Original Table 2 p7 says GPT-4 MMLU 86.4 percent 5-shot; Figure 5 p8 says English 85.5 percent 3-shot. All necessary source pages and conditions are cited."
+    },
+    {
+      "query_id": "adv-dev-13",
+      "passed": false,
+      "reason": "Fails: takes 87.04 and 100.00 percent from contamination Table 10 p31 and calls them base/RLHF Table 8 values. Needed 91.4 and 86.2 percent at p28; p5 SAT score is correct."
+    },
+    {
+      "query_id": "adv-dev-14",
+      "passed": false,
+      "reason": "Fails requested multi-source scope: p53 is System Card privacy, not Technical Report Limitations p10, and p60 is overreliance, not Abstract p41. Broad claims are related but required combination is missing."
+    },
+    {
+      "query_id": "adv-dev-15",
+      "passed": true,
+      "reason": "Original Appendix F p29 identifies Azure Translate and preserved Answer/A-D; original Table 12 p32 shows English and Swahili. Answer and all citations support each component."
+    },
+    {
+      "query_id": "adv-dev-u01",
+      "passed": true,
+      "reason": "Clean abstention: full-report/scope review finds no GPT-4 training water-volume measurement; no invented litres."
+    },
+    {
+      "query_id": "adv-dev-u02",
+      "passed": true,
+      "reason": "Clean abstention: no weight-checkpoint SHA-256 is disclosed; the source PDF hash is a different object and is not offered as an answer."
+    },
+    {
+      "query_id": "adv-dev-u03",
+      "passed": true,
+      "reason": "Clean abstention: this historical report does not provide GPT-4 revenue for 2025; no invented dollar amount."
+    }
+  ]
+}
