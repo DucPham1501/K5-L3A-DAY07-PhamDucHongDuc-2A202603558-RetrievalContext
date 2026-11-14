@@ -1,5 +1,7 @@
 # Benchmark LAB07 - day7-v1
 
+Bộ nâng cao dùng tài liệu và nhãn riêng: [advanced-v1](advanced/README.md), 18 dev + 30 test. Các số liệu bên dưới chỉ nói về benchmark phần cơ bản.
+
 Bộ câu hỏi phần cơ bản, chốt trước khi chạy retrieval/agent LAB07 ngày 14/11/2026. Corpus là 60 trang từ hai văn bản gốc trong `data/manifest.json`, không phải bộ pháp luật cập nhật hiện hành. Không có đánh giá agent hoặc điểm retrieval nào được tạo trong bước chuẩn bị này.
 
 | Split | Có đáp án | Thiếu bằng chứng | Tổng |
@@ -35,11 +37,11 @@ for case in load_inputs("dev"):
 
 Loader chỉ đọc file input của split được chỉ định; không mở nhãn hoặc split còn lại. Nó từ chối trường ngoài whitelist và filter sai kiểu. Việc tách file hỗ trợ chống rò rỉ; runner vẫn phải tuân thủ không đọc/đưa nhãn evaluator vào model. Nội dung câu hỏi bản thân được viết như câu hỏi người dùng, không nối đáp án vào query.
 
-`starter/baseline.py` gốc chỉ nhận các câu có đáp án. Runner thực tế phần 2 ở `src/retrieval_benchmark.py` chạy Dense/BM25/Hybrid trên toàn bộ input dev; lệnh `score` riêng chỉ dùng câu có `answerable: true` cho Hit@1/Hit@3/Context Evidence Rate. Không truyền nguyên file nhãn cho agent. Xem [cách chạy và kết quả retrieval dev](../docs/RETRIEVAL.md); đánh giá câu trả lời agent vẫn thuộc phần tiếp theo.
+`starter/baseline.py` gốc chỉ nhận các câu có đáp án. Runner thực tế phần 2 ở `src/retrieval_benchmark.py` chạy Dense/BM25/Hybrid trên toàn bộ input dev; lệnh `score` riêng chỉ dùng câu có `answerable: true` cho Hit@1/Hit@3/Context Evidence Rate. Không truyền nguyên file nhãn cho agent. Xem [retrieval dev](../docs/RETRIEVAL.md), [đánh giá agent](../docs/AGENT.md) và [thử nghiệm/test đã hoàn thành](../docs/EXPERIMENTS.md).
 
 ## Nguồn câu hỏi và phân chia
 
-Dev giữ 15 câu có đáp án từ Day 6, đổi ID sang `d7-dev-01` đến `d7-dev-15`. Câu `d7-dev-04` được thu gọn trước mọi lượt retrieval LAB07: hỏi các hậu quả nêu tại điểm d khoản 1 Điều 8 thay cho câu hỏi có/không về hành vi nghiêm cấm. Evidence mới chỉ lấy đúng điểm d; gold cũ dài 717 ký tự vượt chunk 500 được giữ nguyên trong snapshot lịch sử, không sửa corpus/chunk. Mỗi evidence của bộ LAB07 nằm trọn trong ít nhất một chunk strategy C.
+Dev giữ 15 câu có đáp án từ Day 6, đổi ID sang `d7-dev-01` đến `d7-dev-15`. Câu `d7-dev-04` được thu gọn trước mọi lượt retrieval LAB07: hỏi các hậu quả nêu tại điểm d khoản 1 Điều 8 thay cho câu hỏi có/không về hành vi nghiêm cấm. Evidence mới chỉ lấy đúng điểm d; gold cũ dài 717 ký tự vượt chunk 500 được giữ nguyên trong snapshot lịch sử [data/questions.jsonl](../data/questions.jsonl), không sửa corpus/chunk. Validator cũng dùng file lịch sử này để kiểm tra test LAB07 không trùng các Điều của test Day 6. Mỗi evidence của bộ LAB07 nằm trọn trong ít nhất một chunk strategy C.
 
 Năm câu có đáp án test LAB07 được soạn mới, ở các Điều không xuất hiện trong gold dev và không trùng bất kỳ cặp nguồn/Điều của năm câu test LAB06. Không dùng lại test cũ đã được đánh giá để chọn pipeline LAB07. Split không được chia lại ngẫu nhiên trong mỗi lần chạy. Hai tài liệu vẫn xuất hiện ở cả dev/test nên còn chia sẻ thuật ngữ và chủ đề; test 7 câu có quy mô nhỏ. Người soạn AI đã xem test để tạo/kiểm chứng gold, không phải đánh giá độc lập của con người và không được dùng kết quả test sau này để tinh chỉnh.
 

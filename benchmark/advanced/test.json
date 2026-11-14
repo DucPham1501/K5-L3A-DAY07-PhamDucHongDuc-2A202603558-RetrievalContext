@@ -1,0 +1,788 @@
+[
+  {
+    "id": "adv-test-01",
+    "split": "test",
+    "group": "table",
+    "fact_key": "ube-comparison",
+    "question": "Theo Bảng 1, Uniform Bar Exam của GPT-4 và GPT-3.5 lần lượt đạt bao nhiêu trên 400, xấp xỉ percentile nào, và chênh lệch điểm là bao nhiêu?",
+    "answerable": true,
+    "expected_answer": "GPT-4 298/400 (~90th), GPT-3.5 213/400 (~10th); hơn 85 điểm.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 5,
+        "region": "Table 1, Uniform Bar Exam row",
+        "bbox": [
+          0.17,
+          0.16,
+          0.85,
+          0.19
+        ],
+        "description": "298/400 (~90th) versus 213/400 (~10th); difference 85.",
+        "page_image_sha256": "dd616bce24c62cf4d60b8cbae426ab3c8e1201e0badc260b6555a4f832ffc954"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-test-02",
+    "split": "test",
+    "group": "table",
+    "fact_key": "hellaswag-gap",
+    "question": "Theo Bảng 2, GPT-4 và GPT-3.5 có accuracy HellaSwag bao nhiêu, với mấy shot, và chênh lệch mấy điểm phần trăm?",
+    "answerable": true,
+    "expected_answer": "95.3% và 85.5%, đều 10-shot; chênh 9.8 điểm phần trăm.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 7,
+        "region": "Table 2, HellaSwag row",
+        "bbox": [
+          0.18,
+          0.18,
+          0.8,
+          0.23
+        ],
+        "description": "95.3% versus 85.5%, both 10-shot; 9.8 pp.",
+        "page_image_sha256": "095c5f50433f74be9e46eae5db78f3e76be13aad51e758f39b0a546ada644f27"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-test-03",
+    "split": "test",
+    "group": "table",
+    "fact_key": "gre-quant-rlhf",
+    "question": "Trong Bảng 8, GRE Quantitative của base và RLHF đạt bao nhiêu phần trăm? RLHF tăng hay giảm, bao nhiêu điểm phần trăm?",
+    "answerable": true,
+    "expected_answer": "Base 57.5%, RLHF 67.5%; tăng 10.0 điểm phần trăm.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 28,
+        "region": "Table 8, GRE Quantitative row",
+        "bbox": [
+          0.3,
+          0.38,
+          0.7,
+          0.41
+        ],
+        "description": "57.5% and 67.5%; +10.0 pp.",
+        "page_image_sha256": "afdd8b3bde72bc5dc09cb3eab44e638f609bccc52eac5691c75d6dce68ba63c7"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-test-04",
+    "split": "test",
+    "group": "table",
+    "fact_key": "lsat-contam-results",
+    "question": "Theo Bảng 9, LSAT có contamination bao nhiêu phần trăm và GPT-4 có vision đạt điểm bao nhiêu trên toàn bộ so với non-contaminated?",
+    "answerable": true,
+    "expected_answer": "Contamination 39%; GPT-4 163 toàn bộ và 169 non-contaminated.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 30,
+        "region": "Table 9, LSAT row and GPT-4 columns",
+        "bbox": [
+          0.15,
+          0.22,
+          0.85,
+          0.25
+        ],
+        "description": "Contam 39%, GPT-4 163, non-contaminated GPT-4 169.",
+        "page_image_sha256": "dda4b62abb22cf8810218154fb1aad856c325c71df913dd6897b4a6d54205663"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-test-05",
+    "split": "test",
+    "group": "table",
+    "fact_key": "ap-statistics-mcq-count",
+    "question": "Theo Bảng 10, hàng AP Statistics (MCQ) có bao nhiêu câu và tỷ lệ contamination là bao nhiêu?",
+    "answerable": true,
+    "expected_answer": "40 câu, 10.00%.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 31,
+        "region": "Table 10, AP Statistics MCQ row",
+        "bbox": [
+          0.14,
+          0.46,
+          0.87,
+          0.49
+        ],
+        "description": "#questions 40; contamination 10.00%.",
+        "page_image_sha256": "73939f8601c9ee78d376e10d47491ac3c629219b73b282dd3303b97c68e1b0ea"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-test-06",
+    "split": "test",
+    "group": "table",
+    "fact_key": "humaneval-contam",
+    "question": "Theo Bảng 11, HumanEval có contamination bao nhiêu, accuracy non-contaminated bao nhiêu và degradation ghi trong bảng là bao nhiêu?",
+    "answerable": true,
+    "expected_answer": "25%; 65.58%; degradation -2.12%.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 32,
+        "region": "Table 11, HumanEval row",
+        "bbox": [
+          0.17,
+          0.25,
+          0.85,
+          0.28
+        ],
+        "description": "Contamination 25%, non-contaminated 65.58%, degradation -2.12%.",
+        "page_image_sha256": "2d5ec5b85d3e02cd2c33eac94fe7bfb0503130ba0724271987ee6915ea918a1f"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-test-07",
+    "split": "test",
+    "group": "image",
+    "fact_key": "vga-lightning-joke",
+    "question": "Trong ảnh nhiều panel về Lightning Cable của báo cáo, hai đầu nối nào bị ghép với nhau và điều gì tạo nên sự vô lý?",
+    "answerable": true,
+    "expected_answer": "Đầu VGA lớn màu xanh được gắn vào điện thoại qua đầu Lightning nhỏ; sự tương phản đầu VGA lỗi thời/cồng kềnh với cổng điện thoại nhỏ tạo tiếng cười.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 9,
+        "region": "Table 3, three-panel connector photograph",
+        "bbox": [
+          0.26,
+          0.23,
+          0.7,
+          0.57
+        ],
+        "description": "Large blue VGA on smartphone; close-up shows small Lightning connector.",
+        "page_image_sha256": "145e098e266bb5c27b0634eeef3c7cd26d6546ffa9d52260abe3eeb9e0260350"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-test-08",
+    "split": "test",
+    "group": "image",
+    "fact_key": "bolometer-diagram",
+    "question": "Trong sơ đồ bolometer của ví dụ École Polytechnique, bức xạ chiếu vào bộ phận nào và bộ phận đó nối nhiệt với thermostat bằng gì?",
+    "answerable": true,
+    "expected_answer": "Bức xạ vào absorber; absorber nối thermostat ở Tb bằng thanh dẫn nhiệt (barreau conducteur).",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 35,
+        "region": "Table 15, bolometer diagram",
+        "bbox": [
+          0.37,
+          0.29,
+          0.58,
+          0.43
+        ],
+        "description": "Incident arrows point to absorber; conductive bar connects to thermostat Tb.",
+        "page_image_sha256": "d357c4e63f3c0bc64e661b682b18b001d80960c23285de6fcc0aa9dac8d63e53"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-test-09",
+    "split": "test",
+    "group": "image",
+    "fact_key": "instructgpt-process",
+    "question": "Trong sơ đồ Figure 2 của bài InstructGPT được chụp trong ví dụ Pixel to Paper Summaries, ba giai đoạn theo thứ tự là gì?",
+    "answerable": true,
+    "expected_answer": "Supervised fine-tuning từ demonstrations; huấn luyện reward model từ comparisons/rankings; tối ưu policy bằng reinforcement learning PPO.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 37,
+        "region": "Table 17, embedded InstructGPT Figure 2 and explanation",
+        "bbox": [
+          0.27,
+          0.19,
+          0.85,
+          0.82
+        ],
+        "description": "SFT demonstration stage, reward-model comparison stage, PPO policy stage.",
+        "page_image_sha256": "4e605b5b13eb2a5b98ca3ab567456d5224ee5acb420836b0ef30ee613288a99d"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-test-10",
+    "split": "test",
+    "group": "image",
+    "fact_key": "nugget-map-joke",
+    "question": "Ở hình Chicken Nugget Map, vật gì được sắp xếp thành hình gì, và nó đối lập thế nào với dòng chữ phía trên?",
+    "answerable": true,
+    "expected_answer": "Miếng chicken nuggets trên khay gợi hình bản đồ thế giới; chữ nói ảnh Trái Đất đẹp từ không gian nhưng ảnh thực là đồ ăn.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 38,
+        "region": "Table 18, meme text and photograph",
+        "bbox": [
+          0.27,
+          0.25,
+          0.7,
+          0.64
+        ],
+        "description": "Nuggets arranged as rough continents; top text describes beautiful Earth from space.",
+        "page_image_sha256": "f3a18f0be8a99629f51b9c97078d6eb8eef9cd97dc7561e09abeab78004d2b23"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-test-11",
+    "split": "test",
+    "group": "image",
+    "fact_key": "moar-layers-comic",
+    "question": "Trong comic Moar Layers, hai nhãn panel là gì và lời khuyên ngắn ở panel neural networks tương phản thế nào với panel còn lại?",
+    "answerable": true,
+    "expected_answer": "Statistical Learning và Neural Networks; panel neural networks nói STACK MORE LAYERS, đối lập các biện pháp kỹ thuật phức tạp về overgeneralization/kernel/structural risk ở panel statistical learning.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 39,
+        "region": "Table 19, two-panel comic",
+        "bbox": [
+          0.25,
+          0.21,
+          0.72,
+          0.58
+        ],
+        "description": "Top Statistical Learning has complex advice; bottom Neural Networks says STACK MORE LAYERS.",
+        "page_image_sha256": "e9da855260bddd838595332b29079382669330d6c340f2a6de3f65a9b7c17d2a"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-test-12",
+    "split": "test",
+    "group": "chart",
+    "fact_key": "humaneval-axes",
+    "question": "Trong Figure 2 về 23 bài coding, trục ngang được chuẩn hóa ra sao, trục dọc là metric nào và đường chấm có quan hệ gì với điểm GPT-4?",
+    "answerable": true,
+    "expected_answer": "Compute huấn luyện chuẩn hóa GPT-4=1; trục dọc -Mean Log Pass Rate; đường dự đoán từ mô hình nhỏ bám sát điểm GPT-4, không phải accuracy phần trăm.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 3,
+        "region": "Figure 2 lower plot and caption",
+        "bbox": [
+          0.25,
+          0.56,
+          0.76,
+          0.87
+        ],
+        "description": "x compute normalized GPT-4=1; y -Mean Log Pass Rate; dotted prediction near green GPT-4 point.",
+        "page_image_sha256": "2dbe6ba34599b47c07df65fd457a5a815cc5a297049ea43241c8426e82f0032f"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-test-13",
+    "split": "test",
+    "group": "chart",
+    "fact_key": "exam-chart-axis-artifact",
+    "question": "Trong Figure 4, trục dọc biểu diễn gì, các exam được sắp theo mô hình nào, và vì sao GPT-4 đạt 5/5 AP Biology mà cột chỉ khoảng percentile 85?",
+    "answerable": true,
+    "expected_answer": "Trục dọc là lower bound percentile ước tính giữa người thi; sắp tăng theo GPT-3.5; dùng mép dưới bin percentile và 15% người thi đạt 5, không phải accuracy 85%.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 6,
+        "region": "Figure 4 chart and caption",
+        "bbox": [
+          0.17,
+          0.09,
+          0.85,
+          0.59
+        ],
+        "description": "Estimated percentile lower bound; GPT-3.5 sorting; AP Biology bin artifact explained in caption.",
+        "page_image_sha256": "dad0645108833cf26a73a4f1d5ba3a613ddb85290402e417d9d84cbc2ba02aaa"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-test-14",
+    "split": "test",
+    "group": "chart",
+    "fact_key": "lowest-mmlu-languages",
+    "question": "Trong Figure 5 MMLU đa ngôn ngữ, hai thanh ngôn ngữ thấp nhất là gì và accuracy tương ứng bao nhiêu?",
+    "answerable": true,
+    "expected_answer": "Telugu 62.0%; Marathi 66.7%.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 8,
+        "region": "Figure 5, bottom two language bars",
+        "bbox": [
+          0.17,
+          0.53,
+          0.85,
+          0.58
+        ],
+        "description": "Telugu 62.0 and Marathi 66.7 percent, excluding baseline models.",
+        "page_image_sha256": "4e9abc55c2fa3e18aa4cc9237ed0bdb4c7604e8da2915bf411d402602f4eca57"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-test-15",
+    "split": "test",
+    "group": "chart",
+    "fact_key": "factuality-bars",
+    "question": "Trong Figure 6 internal factual eval, thanh màu nào ứng với GPT-4, nó đứng thế nào so với các phiên bản ChatGPT ở các nhóm, và mức cải thiện tổng được ghi là bao nhiêu?",
+    "answerable": true,
+    "expected_answer": "GPT-4 màu xanh lá; cao hơn các phiên bản ChatGPT ở cả chín nhóm; cải thiện tổng 19 điểm phần trăm so với bản ChatGPT mới nhất được so sánh.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 10,
+        "region": "Figure 6 grouped bars, legend and caption",
+        "bbox": [
+          0.17,
+          0.26,
+          0.85,
+          0.65
+        ],
+        "description": "Green GPT-4 bars highest across nine categories; caption says +19 percentage points versus latest GPT-3.5/ChatGPT baseline.",
+        "page_image_sha256": "f4a932418c2d105f3feec3de083be59349e9f2898d4dec80734d79907ea4175e"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-test-16",
+    "split": "test",
+    "group": "chart",
+    "fact_key": "incorrect-behavior-bars",
+    "question": "Trong Figure 9, metric tốt lên khi tăng hay giảm? GPT-4 đứng thế nào so với text-davinci-003 và gpt-3.5-turbo ở cả hai nhóm prompt?",
+    "answerable": true,
+    "expected_answer": "Giảm là tốt; GPT-4 có incorrect behavior rate thấp nhất ở cả Sensitive Prompts và Disallowed Prompts.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 14,
+        "region": "Figure 9, chart and caption",
+        "bbox": [
+          0.17,
+          0.08,
+          0.85,
+          0.4
+        ],
+        "description": "Lower values are better; green GPT-4 lowest for both categories.",
+        "page_image_sha256": "8ddb2eac9ee4bfcc3d972fb2b17d89a2bd6433855e2a706e12370831309cd5c6"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-test-17",
+    "split": "test",
+    "group": "multi_hop",
+    "fact_key": "modalities-output",
+    "question": "Kết hợp Abstract và mục Visual Inputs: GPT-4 trong báo cáo nhận các modality nào, có thể đan xen chúng không và đầu ra là modality gì?",
+    "answerable": true,
+    "expected_answer": "Nhận text và image, có thể đan xen tùy ý; đầu ra text, không phải khẳng định sinh ảnh.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 1,
+        "region": "Abstract opening",
+        "bbox": [
+          0.17,
+          0.26,
+          0.85,
+          0.45
+        ],
+        "description": "Accept image and text inputs; produce text outputs.",
+        "page_image_sha256": "466a032c83f6f860064b1ae9f4bf9fac8d16ad48054537d7c5132a08e84acd2a"
+      },
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 8,
+        "region": "Section 4.1 Visual Inputs",
+        "bbox": [
+          0.17,
+          0.75,
+          0.85,
+          0.9
+        ],
+        "description": "Arbitrarily interlaced text and images yield text outputs.",
+        "page_image_sha256": "4e9abc55c2fa3e18aa4cc9237ed0bdb4c7604e8da2915bf411d402602f4eca57"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-test-18",
+    "split": "test",
+    "group": "multi_hop",
+    "fact_key": "usabo-score-method",
+    "question": "Kết hợp Bảng 1 với Appendix A.2: GPT-4 đạt USABO Semifinal 2020 bao nhiêu trên 150 và vì sao phần này không theo đúng quy trình holdout/nonholdout như hầu hết exam khác?",
+    "answerable": true,
+    "expected_answer": "87/150; không có nonholdout cho USABO (và MKSAP), nên chạy một lần với phương pháp best-guess suy ra khi lặp trên AP Biology.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 5,
+        "region": "Table 1, USABO Semifinal 2020 row",
+        "bbox": [
+          0.17,
+          0.28,
+          0.85,
+          0.31
+        ],
+        "description": "USABO GPT-4 87/150.",
+        "page_image_sha256": "dd616bce24c62cf4d60b8cbae426ab3c8e1201e0badc260b6555a4f832ffc954"
+      },
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 24,
+        "region": "Appendix A.2 nonholdout exception",
+        "bbox": [
+          0.17,
+          0.35,
+          0.85,
+          0.45
+        ],
+        "description": "USABO and MKSAP no nonholdout; run once using methodology developed on AP Biology.",
+        "page_image_sha256": "6371615a70fc058d137bf73dfa6d2b06a5f81f7149f4362930d76a6bd3b39e27"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-test-19",
+    "split": "test",
+    "group": "multi_hop",
+    "fact_key": "contamination-bigbench-gsm",
+    "question": "Kết hợp chú thích về BIG-bench và Appendix E: BIG-bench được xử lý ra sao do contamination, còn kết quả GSM-8K phải được diễn giải thế nào và vì sao?",
+    "answerable": true,
+    "expected_answer": "Loại BIG-bench khỏi kết quả vì một phần bị trộn vào train. GSM-8K nằm giữa true few-shot transfer và benchmark-specific tuning vì có dữ liệu train MATH/GSM-8K trong pretraining; đã kiểm tra test GSM-8K không trong train.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 6,
+        "region": "Footnote 5 BIG-bench",
+        "bbox": [
+          0.17,
+          0.87,
+          0.85,
+          0.9
+        ],
+        "description": "BIG-bench portions inadvertently mixed into train; excluded from reported results.",
+        "page_image_sha256": "dad0645108833cf26a73a4f1d5ba3a613ddb85290402e417d9d84cbc2ba02aaa"
+      },
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 29,
+        "region": "Appendix E GSM-8K in GPT-4 training",
+        "bbox": [
+          0.17,
+          0.38,
+          0.85,
+          0.59
+        ],
+        "description": "Train MATH/GSM-8K mixed in; test contamination checked; interpret between transfer and tuning.",
+        "page_image_sha256": "cd75c504389e1d291e805ce9b92d843252462fbf5abf3d237cb5e328d207835e"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-test-20",
+    "split": "test",
+    "group": "multi_hop",
+    "fact_key": "humaneval-prediction-design",
+    "question": "Kết hợp mục 3.2 và đoạn tiếp theo: dự đoán HumanEval dựa trên mô hình dùng compute nhỏ hơn GPT-4 cỡ bao nhiêu lần, chia bài thành mấy bucket và loại bao nhiêu bài khó nhất?",
+    "answerable": true,
+    "expected_answer": "Mô hình nhỏ dùng compute ít hơn cỡ 1000 lần; chia thành 6 difficulty buckets sau khi bỏ 15 bài khó nhất.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 2,
+        "region": "Section 3.2 HumanEval scaling",
+        "bbox": [
+          0.17,
+          0.75,
+          0.85,
+          0.84
+        ],
+        "description": "Prediction from models trained with at most 1000x less compute.",
+        "page_image_sha256": "a2aa7e52786cf9d43aaeeeb83ee8809f55f792aa028aa9779fdfdafc2d8f29f4"
+      },
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 4,
+        "region": "HumanEval prediction registration paragraph",
+        "bbox": [
+          0.17,
+          0.1,
+          0.85,
+          0.2
+        ],
+        "description": "All but 15 hardest problems split into 6 difficulty buckets.",
+        "page_image_sha256": "f1c89b988d97a8bb3adfeb7f49564c5ff89bd3f9a768f41e4953e52a7bbdf727"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-test-21",
+    "split": "test",
+    "group": "text",
+    "fact_key": "training-data-types",
+    "question": "Theo Scope and Limitations, pre-training GPT-4 dùng những loại nguồn dữ liệu nào và bước tinh chỉnh sau đó là gì?",
+    "answerable": true,
+    "expected_answer": "Dữ liệu công khai như internet và dữ liệu được cấp phép từ bên thứ ba; sau đó fine-tune bằng RLHF.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 2,
+        "region": "Section 2 Scope and Limitations",
+        "bbox": [
+          0.17,
+          0.26,
+          0.85,
+          0.36
+        ],
+        "description": "Publicly available data and licensed third-party data, followed by RLHF.",
+        "page_image_sha256": "a2aa7e52786cf9d43aaeeeb83ee8809f55f792aa028aa9779fdfdafc2d8f29f4"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-test-22",
+    "split": "test",
+    "group": "text",
+    "fact_key": "knowledge-cutoff",
+    "question": "Theo phần Limitations, phần lớn dữ liệu pre-training dừng ở thời điểm nào và chú thích có ngoại lệ gì?",
+    "answerable": true,
+    "expected_answer": "Tháng 9/2021; pre-training và post-training vẫn có một lượng nhỏ dữ liệu mới hơn.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 10,
+        "region": "Section 5 knowledge cutoff and footnote 10",
+        "bbox": [
+          0.17,
+          0.81,
+          0.85,
+          0.94
+        ],
+        "description": "Vast majority cut off September 2021; footnote says small amount of more recent data.",
+        "page_image_sha256": "f4a932418c2d105f3feec3de083be59349e9f2898d4dec80734d79907ea4175e"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-test-23",
+    "split": "test",
+    "group": "text",
+    "fact_key": "mcq-temperature",
+    "question": "Theo Appendix A.2, khi lấy lời giải để trích đáp án multiple-choice, temperature ban đầu là bao nhiêu?",
+    "answerable": true,
+    "expected_answer": "0.3; đó là temperature lấy explanation, không nhầm với bước riêng lấy chữ cái ở 0 cho một số lượt.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 24,
+        "region": "Appendix A.2 first paragraph",
+        "bbox": [
+          0.17,
+          0.31,
+          0.85,
+          0.36
+        ],
+        "description": "Sample explanation at temperature 0.3 to extract answer letter(s).",
+        "page_image_sha256": "6371615a70fc058d137bf73dfa6d2b06a5f81f7149f4362930d76a6bd3b39e27"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-test-24",
+    "split": "test",
+    "group": "text",
+    "fact_key": "author-gpt4-uses",
+    "question": "Theo Acknowledgements của System Card, GPT-4 được dùng vào ba công việc biên soạn nào?",
+    "answerable": true,
+    "expected_answer": "Lặp/chỉnh định dạng LaTeX; tóm tắt văn bản; copyediting.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 70,
+        "region": "Acknowledgements paragraph on GPT-4 use",
+        "bbox": [
+          0.12,
+          0.31,
+          0.87,
+          0.36
+        ],
+        "description": "LaTeX formatting, text summarization, copyediting.",
+        "page_image_sha256": "aa8e1b6c27e32e4954184d5fe606031cbcc4e39f8dd4730c62b0d351178bba79"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-test-u01",
+    "split": "test",
+    "group": "unanswerable",
+    "fact_key": "parameter-count",
+    "question": "Theo tài liệu, GPT-4 có chính xác bao nhiêu tham số?",
+    "answerable": false,
+    "expected_answer": "Từ chối hoặc nêu rõ không đủ bằng chứng, không thêm phỏng đoán.",
+    "gold": [],
+    "absence_reason": "Không công bố kích thước mô hình/số tham số.",
+    "absence_check": {
+      "pages_reviewed": [
+        2
+      ],
+      "search_terms": [
+        "parameters",
+        "model size"
+      ],
+      "method": "Full 100-page text/visual-index search plus source-page scope/figure inspection. No absence conclusion from top-k alone."
+    },
+    "verification": "Codex AI corpus/scope review; not independent human confirmation."
+  },
+  {
+    "id": "adv-test-u02",
+    "split": "test",
+    "group": "unanswerable",
+    "fact_key": "training-gpu",
+    "question": "Tài liệu xác nhận model GPU cụ thể và chính xác bao nhiêu GPU dùng cho lần huấn luyện GPT-4 này?",
+    "answerable": false,
+    "expected_answer": "Từ chối hoặc nêu rõ không đủ bằng chứng, không thêm phỏng đoán.",
+    "gold": [],
+    "absence_reason": "Không công bố chi tiết hardware/số GPU cho lần huấn luyện.",
+    "absence_check": {
+      "pages_reviewed": [
+        2
+      ],
+      "search_terms": [
+        "GPU",
+        "hardware"
+      ],
+      "method": "Full 100-page text/visual-index search plus source-page scope/figure inspection. No absence conclusion from top-k alone."
+    },
+    "verification": "Codex AI corpus/scope review; not independent human confirmation."
+  },
+  {
+    "id": "adv-test-u03",
+    "split": "test",
+    "group": "unanswerable",
+    "fact_key": "training-dollars",
+    "question": "Chi phí huấn luyện GPT-4 chính xác tính bằng USD trong tài liệu là bao nhiêu?",
+    "answerable": false,
+    "expected_answer": "Từ chối hoặc nêu rõ không đủ bằng chứng, không thêm phỏng đoán.",
+    "gold": [],
+    "absence_reason": "Không công bố tổng chi phí USD của lần huấn luyện.",
+    "absence_check": {
+      "pages_reviewed": [
+        2
+      ],
+      "search_terms": [
+        "training cost",
+        "dollars",
+        "USD"
+      ],
+      "method": "Full 100-page text/visual-index search plus source-page scope/figure inspection. No absence conclusion from top-k alone."
+    },
+    "verification": "Codex AI corpus/scope review; not independent human confirmation."
+  },
+  {
+    "id": "adv-test-u04",
+    "split": "test",
+    "group": "unanswerable",
+    "fact_key": "licensed-data-list",
+    "question": "Hãy liệt kê đầy đủ tên mọi bộ dữ liệu cấp phép từ bên thứ ba được dùng để pre-train GPT-4 theo báo cáo.",
+    "answerable": false,
+    "expected_answer": "Từ chối hoặc nêu rõ không đủ bằng chứng, không thêm phỏng đoán.",
+    "gold": [],
+    "absence_reason": "Chỉ nêu loại dữ liệu được cấp phép, không công bố danh mục đầy đủ.",
+    "absence_check": {
+      "pages_reviewed": [
+        2
+      ],
+      "search_terms": [
+        "licensed",
+        "dataset construction"
+      ],
+      "method": "Full 100-page text/visual-index search plus source-page scope/figure inspection. No absence conclusion from top-k alone."
+    },
+    "verification": "Codex AI corpus/scope review; not independent human confirmation."
+  },
+  {
+    "id": "adv-test-u05",
+    "split": "test",
+    "group": "unanswerable",
+    "fact_key": "vietnamese-mmlu",
+    "question": "Figure 5 báo accuracy MMLU 3-shot của tiếng Việt chính xác bao nhiêu phần trăm?",
+    "answerable": false,
+    "expected_answer": "Từ chối hoặc nêu rõ không đủ bằng chứng, không thêm phỏng đoán.",
+    "gold": [],
+    "absence_reason": "Figure 5 không có thanh Vietnamese/tiếng Việt; không thể suy từ các ngôn ngữ khác.",
+    "absence_check": {
+      "pages_reviewed": [
+        8,
+        29
+      ],
+      "search_terms": [
+        "Vietnamese",
+        "Vietnam"
+      ],
+      "method": "Full 100-page text/visual-index search plus source-page scope/figure inspection. No absence conclusion from top-k alone."
+    },
+    "verification": "Codex AI corpus/scope review; not independent human confirmation."
+  },
+  {
+    "id": "adv-test-u06",
+    "split": "test",
+    "group": "unanswerable",
+    "fact_key": "ironing-person-name",
+    "question": "Người đàn ông mặc áo vàng trong ảnh Extreme Ironing tên thật đầy đủ là gì theo tài liệu?",
+    "answerable": false,
+    "expected_answer": "Từ chối hoặc nêu rõ không đủ bằng chứng, không thêm phỏng đoán.",
+    "gold": [],
+    "absence_reason": "Ảnh/ví dụ không cho biết danh tính người này; không đoán tên từ ảnh.",
+    "absence_check": {
+      "pages_reviewed": [
+        36
+      ],
+      "search_terms": [
+        "Extreme Ironing",
+        "name"
+      ],
+      "method": "Full 100-page text/visual-index search plus source-page scope/figure inspection. No absence conclusion from top-k alone."
+    },
+    "verification": "Codex AI corpus/scope review; not independent human confirmation."
+  }
+]

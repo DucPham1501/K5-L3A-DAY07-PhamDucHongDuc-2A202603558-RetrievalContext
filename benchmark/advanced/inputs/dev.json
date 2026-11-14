@@ -1,0 +1,74 @@
+[
+  {
+    "id": "adv-dev-01",
+    "question": "Theo Bảng 1, GPT-4 và GPT-3.5 giải được bao nhiêu bài Leetcode mức medium trên tổng bao nhiêu bài?"
+  },
+  {
+    "id": "adv-dev-02",
+    "question": "Theo hàng Average của Bảng 8, điểm base và sau RLHF là bao nhiêu, chênh lệch mấy điểm phần trăm?"
+  },
+  {
+    "id": "adv-dev-03",
+    "question": "Trong Bảng 9, tỷ lệ contamination của Medical Knowledge Self-Assessment là bao nhiêu?"
+  },
+  {
+    "id": "adv-dev-04",
+    "question": "Bảng 10 có bao nhiêu câu GRE Writing và tỷ lệ contamination của hàng đó là bao nhiêu?"
+  },
+  {
+    "id": "adv-dev-05",
+    "question": "Hình Extreme Ironing trong báo cáo có hoạt động gì bất thường, liên quan loại xe nào?"
+  },
+  {
+    "id": "adv-dev-06",
+    "question": "Trong hình Daily meat consumption per person, 1997, tổng của Georgia và Western Asia là bao nhiêu và đơn vị gì?"
+  },
+  {
+    "id": "adv-dev-07",
+    "question": "Trong heatmap Figure 11 của System Card, hàng GPT-4 RLHF thắng cột GPT-3.5 Turbo RLHF bao nhiêu phần trăm?"
+  },
+  {
+    "id": "adv-dev-08",
+    "question": "Trong Figure 8 phần Technical Report, ECE trước huấn luyện hậu kỳ và sau PPO lần lượt là bao nhiêu? Bản nào calibration tốt hơn?"
+  },
+  {
+    "id": "adv-dev-09",
+    "question": "Theo Abstract của System Card, các biện pháp giảm thiểu đã giải quyết hoàn toàn rủi ro chưa? Tác giả nêu giới hạn gì?"
+  },
+  {
+    "id": "adv-dev-10",
+    "question": "Theo đoạn đánh giá ARC trong System Card, kết luận sơ bộ về khả năng tự sao chép và thu thập tài nguyên của mô hình khi đó là gì?"
+  },
+  {
+    "id": "adv-dev-11",
+    "question": "System Card khuyến nghị thiết kế đánh giá rủi ro mới nổi như thế nào để vừa nhắm rủi ro nguy hiểm vừa phát hiện rủi ro chưa dự kiến?"
+  },
+  {
+    "id": "adv-dev-12",
+    "question": "Kết hợp Bảng 2 và Figure 5: accuracy MMLU tiếng Anh của GPT-4 là bao nhiêu ở từng nơi, và điều kiện số-shot khác nhau thế nào?"
+  },
+  {
+    "id": "adv-dev-13",
+    "question": "Kết hợp Bảng 1 và Bảng 8: GPT-4 đạt điểm SAT Math thang 800 là bao nhiêu, còn tỷ lệ MCQ base và RLHF trong Bảng 8 lần lượt là bao nhiêu?"
+  },
+  {
+    "id": "adv-dev-14",
+    "question": "Kết hợp phần Limitations của Technical Report và Abstract System Card: vì sao không nên xem năng lực cao hoặc có mitigations là bảo đảm hệ thống hoàn toàn đáng tin?"
+  },
+  {
+    "id": "adv-dev-15",
+    "question": "Kết hợp Appendix F và Bảng 12: dùng dịch vụ gì để dịch MMLU, Bảng 12 minh họa hai ngôn ngữ nào và các token nào được giữ bằng tiếng Anh?"
+  },
+  {
+    "id": "adv-dev-u01",
+    "question": "Báo cáo ghi chính xác bao nhiêu lít nước tiêu thụ để huấn luyện GPT-4?"
+  },
+  {
+    "id": "adv-dev-u02",
+    "question": "Checkpoint trọng số GPT-4 được báo cáo có SHA-256 chính xác là chuỗi nào?"
+  },
+  {
+    "id": "adv-dev-u03",
+    "question": "Theo báo cáo này, doanh thu GPT-4 riêng trong năm 2025 là bao nhiêu USD?"
+  }
+]

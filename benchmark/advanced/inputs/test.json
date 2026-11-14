@@ -1,0 +1,122 @@
+[
+  {
+    "id": "adv-test-01",
+    "question": "Theo Bảng 1, Uniform Bar Exam của GPT-4 và GPT-3.5 lần lượt đạt bao nhiêu trên 400, xấp xỉ percentile nào, và chênh lệch điểm là bao nhiêu?"
+  },
+  {
+    "id": "adv-test-02",
+    "question": "Theo Bảng 2, GPT-4 và GPT-3.5 có accuracy HellaSwag bao nhiêu, với mấy shot, và chênh lệch mấy điểm phần trăm?"
+  },
+  {
+    "id": "adv-test-03",
+    "question": "Trong Bảng 8, GRE Quantitative của base và RLHF đạt bao nhiêu phần trăm? RLHF tăng hay giảm, bao nhiêu điểm phần trăm?"
+  },
+  {
+    "id": "adv-test-04",
+    "question": "Theo Bảng 9, LSAT có contamination bao nhiêu phần trăm và GPT-4 có vision đạt điểm bao nhiêu trên toàn bộ so với non-contaminated?"
+  },
+  {
+    "id": "adv-test-05",
+    "question": "Theo Bảng 10, hàng AP Statistics (MCQ) có bao nhiêu câu và tỷ lệ contamination là bao nhiêu?"
+  },
+  {
+    "id": "adv-test-06",
+    "question": "Theo Bảng 11, HumanEval có contamination bao nhiêu, accuracy non-contaminated bao nhiêu và degradation ghi trong bảng là bao nhiêu?"
+  },
+  {
+    "id": "adv-test-07",
+    "question": "Trong ảnh nhiều panel về Lightning Cable của báo cáo, hai đầu nối nào bị ghép với nhau và điều gì tạo nên sự vô lý?"
+  },
+  {
+    "id": "adv-test-08",
+    "question": "Trong sơ đồ bolometer của ví dụ École Polytechnique, bức xạ chiếu vào bộ phận nào và bộ phận đó nối nhiệt với thermostat bằng gì?"
+  },
+  {
+    "id": "adv-test-09",
+    "question": "Trong sơ đồ Figure 2 của bài InstructGPT được chụp trong ví dụ Pixel to Paper Summaries, ba giai đoạn theo thứ tự là gì?"
+  },
+  {
+    "id": "adv-test-10",
+    "question": "Ở hình Chicken Nugget Map, vật gì được sắp xếp thành hình gì, và nó đối lập thế nào với dòng chữ phía trên?"
+  },
+  {
+    "id": "adv-test-11",
+    "question": "Trong comic Moar Layers, hai nhãn panel là gì và lời khuyên ngắn ở panel neural networks tương phản thế nào với panel còn lại?"
+  },
+  {
+    "id": "adv-test-12",
+    "question": "Trong Figure 2 về 23 bài coding, trục ngang được chuẩn hóa ra sao, trục dọc là metric nào và đường chấm có quan hệ gì với điểm GPT-4?"
+  },
+  {
+    "id": "adv-test-13",
+    "question": "Trong Figure 4, trục dọc biểu diễn gì, các exam được sắp theo mô hình nào, và vì sao GPT-4 đạt 5/5 AP Biology mà cột chỉ khoảng percentile 85?"
+  },
+  {
+    "id": "adv-test-14",
+    "question": "Trong Figure 5 MMLU đa ngôn ngữ, hai thanh ngôn ngữ thấp nhất là gì và accuracy tương ứng bao nhiêu?"
+  },
+  {
+    "id": "adv-test-15",
+    "question": "Trong Figure 6 internal factual eval, thanh màu nào ứng với GPT-4, nó đứng thế nào so với các phiên bản ChatGPT ở các nhóm, và mức cải thiện tổng được ghi là bao nhiêu?"
+  },
+  {
+    "id": "adv-test-16",
+    "question": "Trong Figure 9, metric tốt lên khi tăng hay giảm? GPT-4 đứng thế nào so với text-davinci-003 và gpt-3.5-turbo ở cả hai nhóm prompt?"
+  },
+  {
+    "id": "adv-test-17",
+    "question": "Kết hợp Abstract và mục Visual Inputs: GPT-4 trong báo cáo nhận các modality nào, có thể đan xen chúng không và đầu ra là modality gì?"
+  },
+  {
+    "id": "adv-test-18",
+    "question": "Kết hợp Bảng 1 với Appendix A.2: GPT-4 đạt USABO Semifinal 2020 bao nhiêu trên 150 và vì sao phần này không theo đúng quy trình holdout/nonholdout như hầu hết exam khác?"
+  },
+  {
+    "id": "adv-test-19",
+    "question": "Kết hợp chú thích về BIG-bench và Appendix E: BIG-bench được xử lý ra sao do contamination, còn kết quả GSM-8K phải được diễn giải thế nào và vì sao?"
+  },
+  {
+    "id": "adv-test-20",
+    "question": "Kết hợp mục 3.2 và đoạn tiếp theo: dự đoán HumanEval dựa trên mô hình dùng compute nhỏ hơn GPT-4 cỡ bao nhiêu lần, chia bài thành mấy bucket và loại bao nhiêu bài khó nhất?"
+  },
+  {
+    "id": "adv-test-21",
+    "question": "Theo Scope and Limitations, pre-training GPT-4 dùng những loại nguồn dữ liệu nào và bước tinh chỉnh sau đó là gì?"
+  },
+  {
+    "id": "adv-test-22",
+    "question": "Theo phần Limitations, phần lớn dữ liệu pre-training dừng ở thời điểm nào và chú thích có ngoại lệ gì?"
+  },
+  {
+    "id": "adv-test-23",
+    "question": "Theo Appendix A.2, khi lấy lời giải để trích đáp án multiple-choice, temperature ban đầu là bao nhiêu?"
+  },
+  {
+    "id": "adv-test-24",
+    "question": "Theo Acknowledgements của System Card, GPT-4 được dùng vào ba công việc biên soạn nào?"
+  },
+  {
+    "id": "adv-test-u01",
+    "question": "Theo tài liệu, GPT-4 có chính xác bao nhiêu tham số?"
+  },
+  {
+    "id": "adv-test-u02",
+    "question": "Tài liệu xác nhận model GPU cụ thể và chính xác bao nhiêu GPU dùng cho lần huấn luyện GPT-4 này?"
+  },
+  {
+    "id": "adv-test-u03",
+    "question": "Chi phí huấn luyện GPT-4 chính xác tính bằng USD trong tài liệu là bao nhiêu?"
+  },
+  {
+    "id": "adv-test-u04",
+    "question": "Hãy liệt kê đầy đủ tên mọi bộ dữ liệu cấp phép từ bên thứ ba được dùng để pre-train GPT-4 theo báo cáo."
+  },
+  {
+    "id": "adv-test-u05",
+    "question": "Figure 5 báo accuracy MMLU 3-shot của tiếng Việt chính xác bao nhiêu phần trăm?"
+  },
+  {
+    "id": "adv-test-u06",
+    "question": "Người đàn ông mặc áo vàng trong ảnh Extreme Ironing tên thật đầy đủ là gì theo tài liệu?"
+  }
+]

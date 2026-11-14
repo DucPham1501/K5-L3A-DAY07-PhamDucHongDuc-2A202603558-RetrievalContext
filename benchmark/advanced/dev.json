@@ -1,0 +1,499 @@
+[
+  {
+    "id": "adv-dev-01",
+    "split": "dev",
+    "group": "table",
+    "fact_key": "leetcode-medium",
+    "question": "Theo Bảng 1, GPT-4 và GPT-3.5 giải được bao nhiêu bài Leetcode mức medium trên tổng bao nhiêu bài?",
+    "answerable": true,
+    "expected_answer": "GPT-4 21/80; GPT-3.5 8/80.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 5,
+        "region": "Table 1, Leetcode medium row",
+        "bbox": [
+          0.17,
+          0.13,
+          0.83,
+          0.83
+        ],
+        "description": "Medium: 21/80 versus 8/80.",
+        "page_image_sha256": "dd616bce24c62cf4d60b8cbae426ab3c8e1201e0badc260b6555a4f832ffc954"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-dev-02",
+    "split": "dev",
+    "group": "table",
+    "fact_key": "average-rlhf",
+    "question": "Theo hàng Average của Bảng 8, điểm base và sau RLHF là bao nhiêu, chênh lệch mấy điểm phần trăm?",
+    "answerable": true,
+    "expected_answer": "Base 73.7%, RLHF 74.0%; tăng 0.3 điểm phần trăm.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 28,
+        "region": "Table 8, Average row",
+        "bbox": [
+          0.3,
+          0.32,
+          0.7,
+          0.8
+        ],
+        "description": "Average 73.7% and 74.0%; subtraction 74.0-73.7=0.3 pp.",
+        "page_image_sha256": "afdd8b3bde72bc5dc09cb3eab44e638f609bccc52eac5691c75d6dce68ba63c7"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-dev-03",
+    "split": "dev",
+    "group": "table",
+    "fact_key": "mksap-contam",
+    "question": "Trong Bảng 9, tỷ lệ contamination của Medical Knowledge Self-Assessment là bao nhiêu?",
+    "answerable": true,
+    "expected_answer": "19%.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 30,
+        "region": "Table 9, Medical Knowledge Self-Assessment row",
+        "bbox": [
+          0.15,
+          0.15,
+          0.86,
+          0.73
+        ],
+        "description": "Contam column is 19%.",
+        "page_image_sha256": "dda4b62abb22cf8810218154fb1aad856c325c71df913dd6897b4a6d54205663"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-dev-04",
+    "split": "dev",
+    "group": "table",
+    "fact_key": "gre-writing-count",
+    "question": "Bảng 10 có bao nhiêu câu GRE Writing và tỷ lệ contamination của hàng đó là bao nhiêu?",
+    "answerable": true,
+    "expected_answer": "2 câu; 100.00%.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 31,
+        "region": "Table 10, GRE Writing row",
+        "bbox": [
+          0.14,
+          0.09,
+          0.87,
+          0.83
+        ],
+        "description": "GRE Writing #questions 2, contamination 100.00%.",
+        "page_image_sha256": "73939f8601c9ee78d376e10d47491ac3c629219b73b282dd3303b97c68e1b0ea"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-dev-05",
+    "split": "dev",
+    "group": "image",
+    "fact_key": "extreme-ironing-scene",
+    "question": "Hình Extreme Ironing trong báo cáo có hoạt động gì bất thường, liên quan loại xe nào?",
+    "answerable": true,
+    "expected_answer": "Một người đang là quần áo trên bàn là gắn với xe taxi màu vàng, trong cảnh đường phố; báo cáo mô tả taxi đang di chuyển.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 36,
+        "region": "Table 16, photograph and accompanying response",
+        "bbox": [
+          0.25,
+          0.35,
+          0.7,
+          0.65
+        ],
+        "description": "Man ironing on ironing board attached to yellow taxi; image and printed response identify unusual arrangement.",
+        "page_image_sha256": "f7a58fa44302d4b339d87c60b108c492e654cda71a7877bee52c950cd52c8bb8"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-dev-06",
+    "split": "dev",
+    "group": "chart",
+    "fact_key": "meat-sum",
+    "question": "Trong hình Daily meat consumption per person, 1997, tổng của Georgia và Western Asia là bao nhiêu và đơn vị gì?",
+    "answerable": true,
+    "expected_answer": "79.84 + 69.62 = 149.46 gram/người/ngày.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 34,
+        "region": "Table 14, embedded horizontal bar chart",
+        "bbox": [
+          0.27,
+          0.28,
+          0.7,
+          0.52
+        ],
+        "description": "Georgia 79.84 g and Western Asia 69.62 g per person per day; sum 149.46.",
+        "page_image_sha256": "fb51db548a3265c4f3086f42091adeb150efa28b799cf8caf349459c0c61e1af"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-dev-07",
+    "split": "dev",
+    "group": "chart",
+    "fact_key": "preference-heatmap",
+    "question": "Trong heatmap Figure 11 của System Card, hàng GPT-4 RLHF thắng cột GPT-3.5 Turbo RLHF bao nhiêu phần trăm?",
+    "answerable": true,
+    "expected_answer": "61.1%.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 98,
+        "region": "Figure 11, first row second column",
+        "bbox": [
+          0.3,
+          0.22,
+          0.87,
+          0.67
+        ],
+        "description": "GPT-4 RLHF row and GPT-3.5 Turbo RLHF column intersect at 61.1%.",
+        "page_image_sha256": "9dddf44968311ce2cc74830bdb17be237237ea629028335cdeba93d08f91fa03"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-dev-08",
+    "split": "dev",
+    "group": "chart",
+    "fact_key": "calibration-ece",
+    "question": "Trong Figure 8 phần Technical Report, ECE trước huấn luyện hậu kỳ và sau PPO lần lượt là bao nhiêu? Bản nào calibration tốt hơn?",
+    "answerable": true,
+    "expected_answer": "Pre-train 0.007, PPO 0.074; pre-train tốt hơn (ECE thấp hơn).",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 12,
+        "region": "Figure 8, paired calibration charts",
+        "bbox": [
+          0.17,
+          0.09,
+          0.86,
+          0.34
+        ],
+        "description": "Left ECE .007, right ECE .074; left closer to perfect diagonal.",
+        "page_image_sha256": "6515b66adbcd5ae54c46006c1dd437ee50ce6deeb0687da21e141af200be9308"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-dev-09",
+    "split": "dev",
+    "group": "text",
+    "fact_key": "system-card-scope",
+    "question": "Theo Abstract của System Card, các biện pháp giảm thiểu đã giải quyết hoàn toàn rủi ro chưa? Tác giả nêu giới hạn gì?",
+    "answerable": true,
+    "expected_answer": "Chưa; chỉ ngăn một số kiểu lạm dụng, còn giới hạn và đôi lúc dễ vỡ/brittle, cần anticipatory planning và governance.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 41,
+        "region": "System Card Abstract",
+        "bbox": [
+          0.17,
+          0.15,
+          0.85,
+          0.47
+        ],
+        "description": "Mitigations prevent certain misuse but remain limited and brittle in some cases.",
+        "page_image_sha256": "c90142788b4faea7676891c487d2ae5cb06976e9e787d9089bf0b2c9434ee5dc"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-dev-10",
+    "split": "dev",
+    "group": "text",
+    "fact_key": "arc-conclusion",
+    "question": "Theo đoạn đánh giá ARC trong System Card, kết luận sơ bộ về khả năng tự sao chép và thu thập tài nguyên của mô hình khi đó là gì?",
+    "answerable": true,
+    "expected_answer": "Mô hình hiện tại có lẽ chưa có khả năng tự thực hiện; đây là đánh giá sơ bộ, không chứng minh mọi mô hình tương lai đều an toàn.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 43,
+        "region": "Paragraph describing ARC evaluation",
+        "bbox": [
+          0.12,
+          0.23,
+          0.86,
+          0.34
+        ],
+        "description": "Current model probably not yet capable of autonomously replicating and gathering resources.",
+        "page_image_sha256": "4cf29eb1729463a4c040d7c27c2c45e9ae9dbd01b9d1d96500ea13ace8dc418d"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-dev-11",
+    "split": "dev",
+    "group": "text",
+    "fact_key": "emergent-evaluation",
+    "question": "System Card khuyến nghị thiết kế đánh giá rủi ro mới nổi như thế nào để vừa nhắm rủi ro nguy hiểm vừa phát hiện rủi ro chưa dự kiến?",
+    "answerable": true,
+    "expected_answer": "Nhắm các năng lực tiên tiến có thể nguy hiểm nếu xuất hiện, đồng thời đủ mở để phát hiện rủi ro không lường trước.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 69,
+        "region": "Ensure that safety assessments cover emergent risks",
+        "bbox": [
+          0.12,
+          0.21,
+          0.87,
+          0.31
+        ],
+        "description": "Target advanced dangerous capabilities while remaining open-ended to unforeseen risks.",
+        "page_image_sha256": "e9cd4f4627ee07e7e0d066138389902c02a81e340922b2806f472b5dd9751dd2"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-dev-12",
+    "split": "dev",
+    "group": "multi_hop",
+    "fact_key": "mmlu-shot-conditions",
+    "question": "Kết hợp Bảng 2 và Figure 5: accuracy MMLU tiếng Anh của GPT-4 là bao nhiêu ở từng nơi, và điều kiện số-shot khác nhau thế nào?",
+    "answerable": true,
+    "expected_answer": "Bảng 2: 86.4% với 5-shot; Figure 5: 85.5% với 3-shot. Hai điều kiện đánh giá khác nhau.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 7,
+        "region": "Table 2, MMLU row",
+        "bbox": [
+          0.18,
+          0.09,
+          0.8,
+          0.19
+        ],
+        "description": "MMLU 86.4%, 5-shot.",
+        "page_image_sha256": "095c5f50433f74be9e46eae5db78f3e76be13aad51e758f39b0a546ada644f27"
+      },
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 8,
+        "region": "Figure 5, title and GPT-4 English bar",
+        "bbox": [
+          0.17,
+          0.08,
+          0.85,
+          0.2
+        ],
+        "description": "Chart title says 3-shot; English 85.5%.",
+        "page_image_sha256": "4e9abc55c2fa3e18aa4cc9237ed0bdb4c7604e8da2915bf411d402602f4eca57"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-dev-13",
+    "split": "dev",
+    "group": "multi_hop",
+    "fact_key": "sat-score-and-rlhf",
+    "question": "Kết hợp Bảng 1 và Bảng 8: GPT-4 đạt điểm SAT Math thang 800 là bao nhiêu, còn tỷ lệ MCQ base và RLHF trong Bảng 8 lần lượt là bao nhiêu?",
+    "answerable": true,
+    "expected_answer": "Bảng 1: 700/800; Bảng 8 SAT Math MCQ: base 91.4%, RLHF 86.2%. Không coi hai thang đo là một.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 5,
+        "region": "Table 1, SAT Math row",
+        "bbox": [
+          0.16,
+          0.21,
+          0.83,
+          0.24
+        ],
+        "description": "SAT Math GPT-4 700/800.",
+        "page_image_sha256": "dd616bce24c62cf4d60b8cbae426ab3c8e1201e0badc260b6555a4f832ffc954"
+      },
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 28,
+        "region": "Table 8, SAT Math MCQ row",
+        "bbox": [
+          0.3,
+          0.37,
+          0.69,
+          0.39
+        ],
+        "description": "Base 91.4%, RLHF 86.2%.",
+        "page_image_sha256": "afdd8b3bde72bc5dc09cb3eab44e638f609bccc52eac5691c75d6dce68ba63c7"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-dev-14",
+    "split": "dev",
+    "group": "multi_hop",
+    "fact_key": "limitations-across-parts",
+    "question": "Kết hợp phần Limitations của Technical Report và Abstract System Card: vì sao không nên xem năng lực cao hoặc có mitigations là bảo đảm hệ thống hoàn toàn đáng tin?",
+    "answerable": true,
+    "expected_answer": "Technical Report nói còn hallucination và lỗi suy luận; System Card nói mitigations còn giới hạn và brittle.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 10,
+        "region": "Section 5 Limitations opening",
+        "bbox": [
+          0.17,
+          0.07,
+          0.85,
+          0.19
+        ],
+        "description": "Not fully reliable; hallucinations and reasoning errors remain.",
+        "page_image_sha256": "f4a932418c2d105f3feec3de083be59349e9f2898d4dec80734d79907ea4175e"
+      },
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 41,
+        "region": "System Card Abstract",
+        "bbox": [
+          0.17,
+          0.15,
+          0.85,
+          0.47
+        ],
+        "description": "Mitigations limited and brittle.",
+        "page_image_sha256": "c90142788b4faea7676891c487d2ae5cb06976e9e787d9089bf0b2c9434ee5dc"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-dev-15",
+    "split": "dev",
+    "group": "multi_hop",
+    "fact_key": "translation-and-prompt",
+    "question": "Kết hợp Appendix F và Bảng 12: dùng dịch vụ gì để dịch MMLU, Bảng 12 minh họa hai ngôn ngữ nào và các token nào được giữ bằng tiếng Anh?",
+    "answerable": true,
+    "expected_answer": "Azure Translate; English và Swahili; giữ Answer và các lựa chọn A-D bằng tiếng Anh.",
+    "gold": [
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 29,
+        "region": "Appendix F Multilingual MMLU",
+        "bbox": [
+          0.17,
+          0.6,
+          0.85,
+          0.92
+        ],
+        "description": "Azure Translate; preserve Answer and A-D tokens.",
+        "page_image_sha256": "cd75c504389e1d291e805ce9b92d843252462fbf5abf3d237cb5e328d207835e"
+      },
+      {
+        "source_id": "arxiv-2303.08774v6",
+        "page": 32,
+        "region": "Table 12 English and Swahili example",
+        "bbox": [
+          0.17,
+          0.56,
+          0.85,
+          0.86
+        ],
+        "description": "Headers English and Swahili; Answer and A-D preserved.",
+        "page_image_sha256": "2d5ec5b85d3e02cd2c33eac94fe7bfb0503130ba0724271987ee6915ea918a1f"
+      }
+    ],
+    "verification": "Codex AI read original rendered PDF page(s); not independent human confirmation."
+  },
+  {
+    "id": "adv-dev-u01",
+    "split": "dev",
+    "group": "unanswerable",
+    "fact_key": "water-litres",
+    "question": "Báo cáo ghi chính xác bao nhiêu lít nước tiêu thụ để huấn luyện GPT-4?",
+    "answerable": false,
+    "expected_answer": "Từ chối hoặc nêu rõ không đủ bằng chứng, không thêm phỏng đoán.",
+    "gold": [],
+    "absence_reason": "Không có số lít nước huấn luyện GPT-4 trong báo cáo.",
+    "absence_check": {
+      "pages_reviewed": [
+        2,
+        14
+      ],
+      "search_terms": [
+        "water",
+        "litres",
+        "liters"
+      ],
+      "method": "Full 100-page text/visual-index search plus source-page scope/figure inspection. No absence conclusion from top-k alone."
+    },
+    "verification": "Codex AI corpus/scope review; not independent human confirmation."
+  },
+  {
+    "id": "adv-dev-u02",
+    "split": "dev",
+    "group": "unanswerable",
+    "fact_key": "checkpoint-sha",
+    "question": "Checkpoint trọng số GPT-4 được báo cáo có SHA-256 chính xác là chuỗi nào?",
+    "answerable": false,
+    "expected_answer": "Từ chối hoặc nêu rõ không đủ bằng chứng, không thêm phỏng đoán.",
+    "gold": [],
+    "absence_reason": "Không công bố hash checkpoint trọng số; không nhầm hash file PDF do hệ thống tự tính.",
+    "absence_check": {
+      "pages_reviewed": [
+        2
+      ],
+      "search_terms": [
+        "checkpoint",
+        "sha-256",
+        "sha256"
+      ],
+      "method": "Full 100-page text/visual-index search plus source-page scope/figure inspection. No absence conclusion from top-k alone."
+    },
+    "verification": "Codex AI corpus/scope review; not independent human confirmation."
+  },
+  {
+    "id": "adv-dev-u03",
+    "split": "dev",
+    "group": "unanswerable",
+    "fact_key": "2025-revenue",
+    "question": "Theo báo cáo này, doanh thu GPT-4 riêng trong năm 2025 là bao nhiêu USD?",
+    "answerable": false,
+    "expected_answer": "Từ chối hoặc nêu rõ không đủ bằng chứng, không thêm phỏng đoán.",
+    "gold": [],
+    "absence_reason": "Tài liệu bản tháng 3/2024 không cung cấp doanh thu GPT-4 năm 2025.",
+    "absence_check": {
+      "pages_reviewed": [
+        1,
+        14
+      ],
+      "search_terms": [
+        "2025",
+        "revenue"
+      ],
+      "method": "Full 100-page text/visual-index search plus source-page scope/figure inspection. No absence conclusion from top-k alone."
+    },
+    "verification": "Codex AI corpus/scope review; not independent human confirmation."
+  }
+]
