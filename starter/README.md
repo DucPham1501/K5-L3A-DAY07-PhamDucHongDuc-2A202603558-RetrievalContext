@@ -16,7 +16,7 @@ Trong `agentic.py`, hiện thực:
 - `Controller.decide`: gọi model thật và trả `{action: "search", query: "..."}` hoặc `{action: "answer", answer: "... [chunk-id]", citations: ["chunk-id"]}`.
 - `Retriever.search`: tạo query embedding tương thích Day 6, truy vấn vector store thật và trả chunk theo [định dạng dữ liệu](../data/README.md).
 
-Tự viết chương trình nối hai phần với `run_agent`, hoặc thay thế bằng kiến trúc nhiều tool. Tham số `max_searches`, `top_k` và `budget` chỉ là mặc định của ví dụ, không phải giới hạn của đề. Xem `tests/test_agentic.py` để hiểu cách gọi; kết nối trong test là mock. Khung code kiểm tra citation ID có trong context, nhưng bạn phải tự đọc xem nguồn có hỗ trợ câu trả lời. Báo lỗi kết nối, không thay bằng kết quả giả.
+Tự viết chương trình nối hai phần với `run_agent`, hoặc thay thế bằng kiến trúc nhiều tool. Tham số `max_searches`, `top_k` và `budget` chỉ là mặc định của ví dụ, không phải giới hạn của đề. Xem hàm `run_agent` trong `starter/agentic.py` để hiểu cách gọi. Bài này dùng agent riêng ở `src/agent.py`; các test starter mẫu đã được bỏ, test của agent thực tế nằm ở `tests/test_real_agent.py`. Khung code kiểm tra citation ID có trong context, nhưng bạn phải tự đọc xem nguồn có hỗ trợ câu trả lời. Báo lỗi kết nối, không thay bằng kết quả giả.
 
 ## 2. Chạy TF-IDF baseline
 
@@ -24,7 +24,7 @@ Chạy từ thư mục gốc với Python 3.11 trở lên:
 
 ```bash
 python3 -m unittest discover -s tests -v
-python3 starter/baseline.py --chunks data/example_chunks.json --questions data/example_questions.json --split dev --output starter/results/example-dev
+python3 starter/baseline.py --chunks data/example/example_chunks.json --questions data/example/example_questions.json --split dev --output starter/results/example-dev
 ```
 
 Kết quả có `summary.json` và `traces.json`. Dữ liệu mẫu chỉ có một câu, không đủ để nộp bài. TF-IDF là lexical retrieval, không dùng filter và không thay dense retrieval.
