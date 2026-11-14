@@ -1,0 +1,24 @@
+{
+  "status": "offline_verified",
+  "content_pages": 60,
+  "characters": 115159,
+  "chunks": {
+    "A": 275,
+    "B": 336,
+    "C": 336
+  },
+  "day7_chunks": 336,
+  "document_vectors_verified": 611,
+  "model": "text-embedding-3-small",
+  "dimensions": 1536,
+  "database_checked": true,
+  "api_calls": 0,
+  "database": {
+    "status": "verified",
+    "postgresql": "16.16 (Debian 16.16-1.pgdg12+1)",
+    "pgvector": "0.8.7",
+    "metric": "cosine",
+    "search": "exact",
+    "table": "day6_chunks"
+  }
+}

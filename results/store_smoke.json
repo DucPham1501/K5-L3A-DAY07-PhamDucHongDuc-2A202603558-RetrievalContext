@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "check": "Real pgvector cosine search using an inherited document vector; no benchmark query or gold supplied.",
+  "model": "text-embedding-3-small",
+  "dimensions": 1536,
+  "strategy": "C",
+  "top_k": 3,
+  "self_match_found": true,
+  "api_calls": 0
+}

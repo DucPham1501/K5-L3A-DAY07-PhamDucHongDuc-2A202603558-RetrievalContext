@@ -1,0 +1,239 @@
+{
+  "status": "complete",
+  "timestamp": "2026-11-13T11:28:36.854960+00:00",
+  "content_pages": 60,
+  "corpus_sha256": "23c285e55542ffe99fca7bbd484deb155a6bd031d941b09dad6ed1a0dc740add",
+  "benchmark_sha256": "6576730194fbdf4da2846c3dbcd671fa96d6fccad5eb83fdd164eb1e80a064ce",
+  "model": "text-embedding-3-small",
+  "dimensions": 1536,
+  "input_processing": "NFC + collapse whitespace; no prefixes; identical document/query processing",
+  "strategies": {
+    "A": {
+      "config": {
+        "chunking": "fixed",
+        "chunk_size": 500,
+        "overlap": 50,
+        "filter": false
+      },
+      "chunk_count": 275,
+      "characters": 125798,
+      "tokens": 61533,
+      "chunking_and_statistics_seconds": 0.06304420000014943,
+      "length_characters": {
+        "min": 80,
+        "p50": 499,
+        "p95": 500,
+        "max": 500,
+        "mean": 457.4472727272727
+      },
+      "max_input_tokens": 282
+    },
+    "B": {
+      "config": {
+        "chunking": "paragraph",
+        "chunk_size": 500,
+        "overlap": 0,
+        "filter": false
+      },
+      "chunk_count": 336,
+      "characters": 114752,
+      "tokens": 56138,
+      "chunking_and_statistics_seconds": 0.052410799999961455,
+      "length_characters": {
+        "min": 2,
+        "p50": 375.5,
+        "p95": 490,
+        "max": 498,
+        "mean": 341.5238095238095
+      },
+      "max_input_tokens": 262
+    },
+    "C": {
+      "config": {
+        "chunking": "paragraph",
+        "chunk_size": 500,
+        "overlap": 0,
+        "filter": true
+      },
+      "chunk_count": 336,
+      "characters": 114752,
+      "tokens": 56138,
+      "chunking_and_statistics_seconds": 0.045077600000695384,
+      "length_characters": {
+        "min": 2,
+        "p50": 375.5,
+        "p95": 490,
+        "max": 498,
+        "mean": 341.5238095238095
+      },
+      "max_input_tokens": 262
+    }
+  },
+  "versions": {
+    "openai": "2.54.0",
+    "psycopg": "3.3.9",
+    "tiktoken": "0.14.0",
+    "pypdf": "6.21.4",
+    "python-dotenv": "1.2.4"
+  },
+  "store": {
+    "postgresql": "16.16 (Debian 16.16-1.pgdg12+1)",
+    "pgvector": "0.8.7",
+    "metric": "cosine",
+    "search": "exact",
+    "table": "day6_chunks"
+  },
+  "namespace": "day6-v1:text-embedding-3-small:1536:nfc-ws-v1",
+  "ingestion": {
+    "A": {
+      "ingest_seconds": 76.95578520000072,
+      "reingest_check_seconds": 0.7252158999999665,
+      "first_count": 275,
+      "second_count": 275,
+      "same_ids_after_reingest": true,
+      "api_tokens": 61533,
+      "cache_hits": 0,
+      "estimated_api_cost_usd": 0.00123066,
+      "rate_usd_per_million": 0.02
+    },
+    "B": {
+      "ingest_seconds": 9.104047299999365,
+      "reingest_check_seconds": 0.8905992999998489,
+      "first_count": 336,
+      "second_count": 336,
+      "same_ids_after_reingest": true,
+      "api_tokens": 55896,
+      "cache_hits": 1,
+      "estimated_api_cost_usd": 0.00111792,
+      "rate_usd_per_million": 0.02
+    },
+    "C": {
+      "ingest_seconds": 8.253064800000175,
+      "reingest_check_seconds": 0.8766889999997147,
+      "first_count": 336,
+      "second_count": 336,
+      "same_ids_after_reingest": true,
+      "api_tokens": 0,
+      "cache_hits": 336,
+      "estimated_api_cost_usd": 0.0,
+      "rate_usd_per_million": 0.02
+    }
+  },
+  "api_usage": {
+    "tokens": 117429,
+    "requests": [
+      {
+        "request_id": "req_719bbb990ff040b8b576675354f68645",
+        "model": "text-embedding-3-small",
+        "tokens": 7334
+      },
+      {
+        "request_id": "req_87c3e200cde64b9ba253e584114433ab",
+        "model": "text-embedding-3-small",
+        "tokens": 6950
+      },
+      {
+        "request_id": "req_6fc8325aebd34eb68f98a4a944a9d708",
+        "model": "text-embedding-3-small",
+        "tokens": 7309
+      },
+      {
+        "request_id": "req_ab0a6fccf6f74333a74df2ee5355d841",
+        "model": "text-embedding-3-small",
+        "tokens": 7162
+      },
+      {
+        "request_id": "req_850693cd5281469a91d50119dcbcda15",
+        "model": "text-embedding-3-small",
+        "tokens": 7400
+      },
+      {
+        "request_id": "req_f8d38a475bab4de085ac0532e995c36b",
+        "model": "text-embedding-3-small",
+        "tokens": 7169
+      },
+      {
+        "request_id": "req_429758b717db49b4b1896e3bb8d5e460",
+        "model": "text-embedding-3-small",
+        "tokens": 6976
+      },
+      {
+        "request_id": "req_9044bc802dbf40329a05d3cc746b083e",
+        "model": "text-embedding-3-small",
+        "tokens": 7197
+      },
+      {
+        "request_id": "req_92154495e5b6455098be9f3194fded69",
+        "model": "text-embedding-3-small",
+        "tokens": 4036
+      },
+      {
+        "request_id": "req_6dc2c0dd78404dd18fb0f32c29cfd8bd",
+        "model": "text-embedding-3-small",
+        "tokens": 5159
+      },
+      {
+        "request_id": "req_9a0cbf73c4a5423f970bb5619c9102ab",
+        "model": "text-embedding-3-small",
+        "tokens": 5664
+      },
+      {
+        "request_id": "req_ff859d69c7214098862d1ea0d5652931",
+        "model": "text-embedding-3-small",
+        "tokens": 5508
+      },
+      {
+        "request_id": "req_50dcaa1f85684c7ab2d836dc1e20063f",
+        "model": "text-embedding-3-small",
+        "tokens": 5602
+      },
+      {
+        "request_id": "req_f3658cf0854843afa0ccea14559cd8d5",
+        "model": "text-embedding-3-small",
+        "tokens": 5225
+      },
+      {
+        "request_id": "req_8dabd41966a24ef3a37ab566963329ca",
+        "model": "text-embedding-3-small",
+        "tokens": 5370
+      },
+      {
+        "request_id": "req_baae37fe3b034cab8982b4389550e682",
+        "model": "text-embedding-3-small",
+        "tokens": 5480
+      },
+      {
+        "request_id": "req_30b3da4cd5464b238060403911889322",
+        "model": "text-embedding-3-small",
+        "tokens": 5536
+      },
+      {
+        "request_id": "req_80c2c831a5aa44d9b3bf6165aa30be18",
+        "model": "text-embedding-3-small",
+        "tokens": 5307
+      },
+      {
+        "request_id": "req_18ecac6bb8a84abaaec0f1e3e4fbcc55",
+        "model": "text-embedding-3-small",
+        "tokens": 4651
+      },
+      {
+        "request_id": "req_c41b4bde591e4bf19d388fb39b4597c9",
+        "model": "text-embedding-3-small",
+        "tokens": 2394
+      }
+    ],
+    "cache_hits": 337
+  },
+  "pricing": {
+    "provider": "OpenAI",
+    "model": "text-embedding-3-small",
+    "api_mode": "standard synchronous embeddings, not Batch API",
+    "usd_per_million_tokens": 0.02,
+    "source_url": "https://developers.openai.com/api/docs/models/text-embedding-3-small",
+    "verified_at": "2026-11-13T11:50:47.567660+00:00",
+    "ingest_api_tokens": 117429,
+    "estimated_ingest_cost_usd": 0.00234858,
+    "scope": "Recorded successful ingestion API usage only; excludes search, taxes, FX and unrecorded retries; not an invoice."
+  }
+}

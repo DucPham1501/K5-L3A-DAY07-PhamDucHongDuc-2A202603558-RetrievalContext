@@ -1,0 +1,534 @@
+{
+  "topic": "An ninh mạng và bảo vệ dữ liệu cá nhân tại Việt Nam",
+  "snapshot_policy": "Hai văn bản gốc theo năm ban hành, không phải bộ pháp luật hợp nhất/cập nhật hiện hành.",
+  "page_numbering": "page là số trang vật lý PDF tính từ 1, không phải số trang in Công báo.",
+  "counting_rule": "Tính 32 trang Luật và 28 trang nội dung chính Nghị định. Loại 11 trang phụ lục/biểu mẫu Nghị định khỏi corpus chính. Không nhân bản hoặc tái phân trang.",
+  "content_pages": 60,
+  "normalized_characters": 115159,
+  "metadata_schema": {
+    "doc_type": "string: Luật | Nghị định; từ loại văn bản tại nguồn",
+    "year": "integer: 2018 | 2023; năm ban hành, không phải năm hiệu lực",
+    "language": "string: vi"
+  },
+  "limitations": [
+    "OCR Nghị định chưa được hiệu đính toàn văn; đối chiếu PDF trước khi lấy gold evidence.",
+    "Hai trường doc_type và year tương quan hoàn toàn trong corpus hai văn bản; không suy ra tác động độc lập của từng trường.",
+    "Không khẳng định hiệu lực pháp lý hiện tại của các bản gốc."
+  ],
+  "documents": [
+    {
+      "source_id": "luat-24-2018-qh14",
+      "title": "Luật An ninh mạng",
+      "number": "24/2018/QH14",
+      "year": 2018,
+      "doc_type": "Luật",
+      "issued_at": "2018-06-12",
+      "effective_date_as_issued": "2019-01-01",
+      "source_path_or_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=206114",
+      "download_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2022/07/24-2018-qh14..pdf",
+      "local_path": "data/raw/24-2018-qh14.pdf",
+      "prefix": "24-2018-qh14",
+      "physical_pages": 32,
+      "content_end": 32,
+      "extraction": "pdftotext-layout",
+      "sha256": "7ba6b742325359b442b4e5a7a905defba286eedb39210f59a1d8983d3d916a4a",
+      "accessed_at": "2026-11-13T10:23:26.839Z",
+      "license_or_permission": "Văn bản quy phạm pháp luật: không thuộc phạm vi bảo hộ quyền tác giả theo khoản 2 Điều 15 Luật Sở hữu trí tuệ. Ghi nguồn Cổng TTĐT Chính phủ; không áp dụng cho nội dung biên tập/thiết kế website.",
+      "license_basis_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/9/46214/58977-1-20251383-1384155-vbhn-vpqh.pdf",
+      "legal_status": "original_historical_snapshot_current_validity_not_assessed",
+      "included_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "excluded_pages": [],
+      "page_character_counts": [
+        {
+          "page": 1,
+          "characters": 1382,
+          "included": true
+        },
+        {
+          "page": 2,
+          "characters": 2265,
+          "included": true
+        },
+        {
+          "page": 3,
+          "characters": 2073,
+          "included": true
+        },
+        {
+          "page": 4,
+          "characters": 1634,
+          "included": true
+        },
+        {
+          "page": 5,
+          "characters": 1918,
+          "included": true
+        },
+        {
+          "page": 6,
+          "characters": 1910,
+          "included": true
+        },
+        {
+          "page": 7,
+          "characters": 2025,
+          "included": true
+        },
+        {
+          "page": 8,
+          "characters": 1740,
+          "included": true
+        },
+        {
+          "page": 9,
+          "characters": 1721,
+          "included": true
+        },
+        {
+          "page": 10,
+          "characters": 1913,
+          "included": true
+        },
+        {
+          "page": 11,
+          "characters": 2092,
+          "included": true
+        },
+        {
+          "page": 12,
+          "characters": 2003,
+          "included": true
+        },
+        {
+          "page": 13,
+          "characters": 1890,
+          "included": true
+        },
+        {
+          "page": 14,
+          "characters": 1843,
+          "included": true
+        },
+        {
+          "page": 15,
+          "characters": 2252,
+          "included": true
+        },
+        {
+          "page": 16,
+          "characters": 2200,
+          "included": true
+        },
+        {
+          "page": 17,
+          "characters": 1939,
+          "included": true
+        },
+        {
+          "page": 18,
+          "characters": 2151,
+          "included": true
+        },
+        {
+          "page": 19,
+          "characters": 2255,
+          "included": true
+        },
+        {
+          "page": 20,
+          "characters": 2073,
+          "included": true
+        },
+        {
+          "page": 21,
+          "characters": 1929,
+          "included": true
+        },
+        {
+          "page": 22,
+          "characters": 1686,
+          "included": true
+        },
+        {
+          "page": 23,
+          "characters": 1880,
+          "included": true
+        },
+        {
+          "page": 24,
+          "characters": 2080,
+          "included": true
+        },
+        {
+          "page": 25,
+          "characters": 2149,
+          "included": true
+        },
+        {
+          "page": 26,
+          "characters": 1817,
+          "included": true
+        },
+        {
+          "page": 27,
+          "characters": 1823,
+          "included": true
+        },
+        {
+          "page": 28,
+          "characters": 2273,
+          "included": true
+        },
+        {
+          "page": 29,
+          "characters": 1847,
+          "included": true
+        },
+        {
+          "page": 30,
+          "characters": 1983,
+          "included": true
+        },
+        {
+          "page": 31,
+          "characters": 2106,
+          "included": true
+        },
+        {
+          "page": 32,
+          "characters": 1572,
+          "included": true
+        }
+      ],
+      "normalized_characters": 62424
+    },
+    {
+      "source_id": "nghi-dinh-13-2023-nd-cp",
+      "title": "Nghị định về bảo vệ dữ liệu cá nhân",
+      "number": "13/2023/NĐ-CP",
+      "year": 2023,
+      "doc_type": "Nghị định",
+      "issued_at": "2023-04-17",
+      "effective_date_as_issued": "2023-07-01",
+      "source_path_or_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+      "download_url": "https://datafiles.chinhphu.vn/cpp/files/vbpq/2023/4/13nd.signed.pdf",
+      "local_path": "data/raw/13-2023-nd-cp.pdf",
+      "prefix": "13-2023-nd-cp",
+      "physical_pages": 39,
+      "content_end": 28,
+      "extraction": "tesseract-vie-200dpi-psm3",
+      "sha256": "d5d2e1648e5f8a9840e654c29b23f7654db3dac5c2b7efc75d924d2f870b2f01",
+      "accessed_at": "2026-11-13T10:23:28.967Z",
+      "license_or_permission": "Văn bản quy phạm pháp luật: không thuộc phạm vi bảo hộ quyền tác giả theo khoản 2 Điều 15 Luật Sở hữu trí tuệ. Ghi nguồn Cổng TTĐT Chính phủ; không áp dụng cho nội dung biên tập/thiết kế website.",
+      "license_basis_url": "https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/9/46214/58977-1-20251383-1384155-vbhn-vpqh.pdf",
+      "legal_status": "original_historical_snapshot_current_validity_not_assessed",
+      "included_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "excluded_pages": [
+        {
+          "page": 29,
+          "reason": "Phụ lục/biểu mẫu, giữ nguyên bản gốc nhưng không tính vào corpus chính."
+        },
+        {
+          "page": 30,
+          "reason": "Phụ lục/biểu mẫu, giữ nguyên bản gốc nhưng không tính vào corpus chính."
+        },
+        {
+          "page": 31,
+          "reason": "Phụ lục/biểu mẫu, giữ nguyên bản gốc nhưng không tính vào corpus chính."
+        },
+        {
+          "page": 32,
+          "reason": "Phụ lục/biểu mẫu, giữ nguyên bản gốc nhưng không tính vào corpus chính."
+        },
+        {
+          "page": 33,
+          "reason": "Phụ lục/biểu mẫu, giữ nguyên bản gốc nhưng không tính vào corpus chính."
+        },
+        {
+          "page": 34,
+          "reason": "Phụ lục/biểu mẫu, giữ nguyên bản gốc nhưng không tính vào corpus chính."
+        },
+        {
+          "page": 35,
+          "reason": "Phụ lục/biểu mẫu, giữ nguyên bản gốc nhưng không tính vào corpus chính."
+        },
+        {
+          "page": 36,
+          "reason": "Phụ lục/biểu mẫu, giữ nguyên bản gốc nhưng không tính vào corpus chính."
+        },
+        {
+          "page": 37,
+          "reason": "Phụ lục/biểu mẫu, giữ nguyên bản gốc nhưng không tính vào corpus chính."
+        },
+        {
+          "page": 38,
+          "reason": "Phụ lục/biểu mẫu, giữ nguyên bản gốc nhưng không tính vào corpus chính."
+        },
+        {
+          "page": 39,
+          "reason": "Phụ lục/biểu mẫu, giữ nguyên bản gốc nhưng không tính vào corpus chính."
+        }
+      ],
+      "page_character_counts": [
+        {
+          "page": 1,
+          "characters": 1368,
+          "included": true
+        },
+        {
+          "page": 2,
+          "characters": 1728,
+          "included": true
+        },
+        {
+          "page": 3,
+          "characters": 2127,
+          "included": true
+        },
+        {
+          "page": 4,
+          "characters": 2063,
+          "included": true
+        },
+        {
+          "page": 5,
+          "characters": 1930,
+          "included": true
+        },
+        {
+          "page": 6,
+          "characters": 1794,
+          "included": true
+        },
+        {
+          "page": 7,
+          "characters": 1369,
+          "included": true
+        },
+        {
+          "page": 8,
+          "characters": 1656,
+          "included": true
+        },
+        {
+          "page": 9,
+          "characters": 1800,
+          "included": true
+        },
+        {
+          "page": 10,
+          "characters": 1951,
+          "included": true
+        },
+        {
+          "page": 11,
+          "characters": 2091,
+          "included": true
+        },
+        {
+          "page": 12,
+          "characters": 2103,
+          "included": true
+        },
+        {
+          "page": 13,
+          "characters": 2034,
+          "included": true
+        },
+        {
+          "page": 14,
+          "characters": 2099,
+          "included": true
+        },
+        {
+          "page": 15,
+          "characters": 2155,
+          "included": true
+        },
+        {
+          "page": 16,
+          "characters": 2096,
+          "included": true
+        },
+        {
+          "page": 17,
+          "characters": 2109,
+          "included": true
+        },
+        {
+          "page": 18,
+          "characters": 1812,
+          "included": true
+        },
+        {
+          "page": 19,
+          "characters": 1996,
+          "included": true
+        },
+        {
+          "page": 20,
+          "characters": 2146,
+          "included": true
+        },
+        {
+          "page": 21,
+          "characters": 2242,
+          "included": true
+        },
+        {
+          "page": 22,
+          "characters": 1801,
+          "included": true
+        },
+        {
+          "page": 23,
+          "characters": 1894,
+          "included": true
+        },
+        {
+          "page": 24,
+          "characters": 1662,
+          "included": true
+        },
+        {
+          "page": 25,
+          "characters": 1881,
+          "included": true
+        },
+        {
+          "page": 26,
+          "characters": 1957,
+          "included": true
+        },
+        {
+          "page": 27,
+          "characters": 1773,
+          "included": true
+        },
+        {
+          "page": 28,
+          "characters": 1098,
+          "included": true
+        },
+        {
+          "page": 29,
+          "characters": 471,
+          "included": false
+        },
+        {
+          "page": 30,
+          "characters": 1557,
+          "included": false
+        },
+        {
+          "page": 31,
+          "characters": 1569,
+          "included": false
+        },
+        {
+          "page": 32,
+          "characters": 1351,
+          "included": false
+        },
+        {
+          "page": 33,
+          "characters": 450,
+          "included": false
+        },
+        {
+          "page": 34,
+          "characters": 1196,
+          "included": false
+        },
+        {
+          "page": 35,
+          "characters": 282,
+          "included": false
+        },
+        {
+          "page": 36,
+          "characters": 1413,
+          "included": false
+        },
+        {
+          "page": 37,
+          "characters": 279,
+          "included": false
+        },
+        {
+          "page": 38,
+          "characters": 1085,
+          "included": false
+        },
+        {
+          "page": 39,
+          "characters": 299,
+          "included": false
+        }
+      ],
+      "normalized_characters": 52735
+    }
+  ]
+}
