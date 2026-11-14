@@ -1,0 +1,33 @@
+{
+  "version": "agent-exp-focused",
+  "model": "gpt-4.1-mini-2025-04-14",
+  "temperature": 0,
+  "max_completion_tokens": 1000,
+  "max_searches": 3,
+  "max_model_calls": 6,
+  "top_k": 3,
+  "candidate_k": 20,
+  "context_budget_chars": 2000,
+  "context_policy": "recent_first",
+  "allowed_search_tools": [
+    "search_dense",
+    "search_bm25",
+    "search_hybrid"
+  ],
+  "bm25": {
+    "k1": 1.5,
+    "b": 0.75
+  },
+  "rrf": {
+    "rank_constant": 60
+  },
+  "pricing_usd_per_million": {
+    "input": 0.4,
+    "cached_input": 0.1,
+    "output": 1.6
+  },
+  "pricing_source": "https://developers.openai.com/api/docs/models/gpt-4.1-mini",
+  "pricing_verified_at": "2026-11-14",
+  "design_reason": "Dev hypothesis E2: generic intent/evidence-scope check may correct definition-vs-measures confusion and unsupported generalization, without changing retrieval/context parameters.",
+  "answer_policy": "focused_evidence"
+}

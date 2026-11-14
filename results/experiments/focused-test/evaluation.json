@@ -1,0 +1,59 @@
+{
+  "cases": 7,
+  "provider_errors": 0,
+  "tool_use": {
+    "n": 7,
+    "N": 7
+  },
+  "grounded_answer": {
+    "0": 0,
+    "1": 0,
+    "2": 5,
+    "N": 5,
+    "mean": 2.0
+  },
+  "citation_validity": {
+    "n": 5,
+    "N": 5
+  },
+  "answer_citation_coverage": {
+    "n": 5,
+    "N": 5
+  },
+  "abstention": {
+    "n": 2,
+    "N": 2
+  },
+  "false_abstention": {
+    "n": 0,
+    "N": 5
+  },
+  "split": "test",
+  "review_file": "results\\experiments\\focused-test\\reviews.json",
+  "reviewer_types": [
+    "Codex AI assistant; post-lock test source review; not independent human confirmation"
+  ],
+  "human_review_completed": false,
+  "test_run": true,
+  "first_retrieval_exact": {
+    "hit1": {
+      "n": 4,
+      "N": 5,
+      "rate": 0.8
+    },
+    "hit3": {
+      "n": 5,
+      "N": 5,
+      "rate": 1.0
+    }
+  },
+  "context_grades": {
+    "2": 5
+  },
+  "context_evidence_exact": {
+    "n": 5,
+    "N": 5,
+    "rate": 1.0
+  },
+  "note": "Semantic labels come from explicit post-run source reviews, not from citation IDs or exact-match checks. AI review is disclosed and is not independent human confirmation."
+}

@@ -1,0 +1,93 @@
+{
+  "split": "test",
+  "cases": 7,
+  "statuses": {
+    "answered": 5,
+    "abstain": 2
+  },
+  "tool_use": {
+    "n": 7,
+    "N": 7
+  },
+  "search_count_distribution": {
+    "1": 5,
+    "3": 2
+  },
+  "tools_used": {
+    "search_hybrid": 10,
+    "search_bm25": 1
+  },
+  "stop_reasons": {
+    "model_answer": 5,
+    "model_insufficient_evidence": 2
+  },
+  "median_elapsed_ms": 3215.0864000013826,
+  "model_usage": {
+    "input_tokens": 21043,
+    "cached_input_tokens": 0,
+    "output_tokens": 1079,
+    "estimated_usd": 0.010143600000000001,
+    "requests_with_usage": 18,
+    "requests_without_usage": 0
+  },
+  "embedding_usage": {
+    "tokens": 405,
+    "cache_hits": 0,
+    "requests": [
+      {
+        "request_id": "req_acea60e12db64a2b84a9ea1a6c090f9d",
+        "model": "text-embedding-3-small",
+        "tokens": 43
+      },
+      {
+        "request_id": "req_bac826f99d874e408bcf554a0f6d49bf",
+        "model": "text-embedding-3-small",
+        "tokens": 63
+      },
+      {
+        "request_id": "req_6e7c3c58228c4e558774304f8e574472",
+        "model": "text-embedding-3-small",
+        "tokens": 24
+      },
+      {
+        "request_id": "req_1ac965f8c00a40af906a1999c8946648",
+        "model": "text-embedding-3-small",
+        "tokens": 72
+      },
+      {
+        "request_id": "req_f41b26009c074840bf008bfdb50670ef",
+        "model": "text-embedding-3-small",
+        "tokens": 37
+      },
+      {
+        "request_id": "req_911c2f512a98486699c74d34be3d7c3b",
+        "model": "text-embedding-3-small",
+        "tokens": 33
+      },
+      {
+        "request_id": "req_c896999dfe2a459f8f8fc9f1a3171a2b",
+        "model": "text-embedding-3-small",
+        "tokens": 40
+      },
+      {
+        "request_id": "req_1908323a320945dab232d55aaaf469f5",
+        "model": "text-embedding-3-small",
+        "tokens": 27
+      },
+      {
+        "request_id": "req_f7e62d1a4bc54ac5b893cb0c6136f51a",
+        "model": "text-embedding-3-small",
+        "tokens": 35
+      },
+      {
+        "request_id": "req_1b9bd879efdd4c47a07034806fc2411f",
+        "model": "text-embedding-3-small",
+        "tokens": 31
+      }
+    ]
+  },
+  "embedding_estimated_usd": 8.1e-06,
+  "quality_review_completed": false,
+  "test_run": true,
+  "note": "Counts and citation structure do not establish answer correctness/semantic grounding. Read sources and label separately."
+}

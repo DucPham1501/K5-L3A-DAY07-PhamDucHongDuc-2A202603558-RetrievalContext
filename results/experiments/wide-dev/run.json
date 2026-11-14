@@ -1,0 +1,119 @@
+{
+  "status": "complete",
+  "started_at": "2026-11-14T09:41:22.922663+00:00",
+  "split": "dev",
+  "config": {
+    "version": "agent-exp-wide",
+    "model": "gpt-4.1-mini-2025-04-14",
+    "temperature": 0,
+    "max_completion_tokens": 1000,
+    "max_searches": 3,
+    "max_model_calls": 6,
+    "top_k": 15,
+    "candidate_k": 40,
+    "context_budget_chars": 10000,
+    "context_policy": "recent_first",
+    "allowed_search_tools": [
+      "search_dense",
+      "search_bm25",
+      "search_hybrid"
+    ],
+    "bm25": {
+      "k1": 1.5,
+      "b": 0.75
+    },
+    "rrf": {
+      "rank_constant": 60
+    },
+    "pricing_usd_per_million": {
+      "input": 0.4,
+      "cached_input": 0.1,
+      "output": 1.6
+    },
+    "pricing_source": "https://developers.openai.com/api/docs/models/gpt-4.1-mini",
+    "pricing_verified_at": "2026-11-14",
+    "design_reason": "Dev hypothesis E1: deeper candidates and larger context may include evidence lost below top-3, at the cost of tokens, latency and distraction. Other agent policy unchanged."
+  },
+  "config_sha256": "eb2bcfb3d26c11716f1e44a231cfbdfc9aad8c47244294dc4d8f13e6ee85384c",
+  "asset_sha256": {
+    "data/chunks.json": "a9c8dd4a2bbac0b22f8eb0aa390d12e8bea48cdab4c7c7d657bc88e5d5cef346",
+    "data/processed/corpus.pages.jsonl": "23c285e55542ffe99fca7bbd484deb155a6bd031d941b09dad6ed1a0dc740add",
+    "benchmark/inputs/dev.json": "4fd8384bfe9a45c6e355f03672351d4441f4c93211badcff2cdec9240daf62d8",
+    "benchmark/dev.json": "af2fe20cbec784bfa7ce25065cdd76d03d2a2543d72444a8373a60310c9825cf"
+  },
+  "code_sha256": {
+    "src/agent.py": "5b9c1273118958cb321b105f7e35fc533e32c42ba8c4bc622563722eccc4f496",
+    "src/agent_controller.py": "895e0dc923890152d4f4b3fbb1e99a0ccb6a88eff7a4a56d6e3b59a3afdb2b3a",
+    "src/agent_benchmark.py": "2cff53862914eb16b0f0de0fa63c28c2a56a3d89f8736ab75705a4a24bf62e29",
+    "src/retrieval.py": "d804ca18093ab6be0253d2de8296d52d802301577d3d99766dc049a0656f2217",
+    "src/day6/retrieval.py": "772ec75a4c2445070f916ecc6bd1b274ed97db1269ae13322b3050a3886148f4",
+    "src/day6/embeddings.py": "5888eb8ca673ace120558f163ae00ee69f094e36d6dd53e7fe3ac11851e05b4a",
+    "src/day6/store.py": "5551db584b086a52bfd2e82d56e35d1bb045567c7c4026e919de689345e61617"
+  },
+  "versions": {
+    "openai": "2.54.0",
+    "psycopg": "3.3.9",
+    "tiktoken": "0.14.0"
+  },
+  "query_count": 17,
+  "chunk_count": 336,
+  "test_run": false,
+  "quality_review_completed": false,
+  "model_preflight_id": "gpt-4.1-mini-2025-04-14",
+  "store": {
+    "postgresql": "16.16 (Debian 16.16-1.pgdg12+1)",
+    "pgvector": "0.8.7",
+    "metric": "cosine",
+    "search": "exact",
+    "table": "day6_chunks"
+  },
+  "embedding_model": "text-embedding-3-small",
+  "embedding_dimensions": 1536,
+  "finished_at": "2026-11-14T09:42:23.211580+00:00",
+  "completed_queries": 17,
+  "model_usage": {
+    "input_tokens": 99356,
+    "cached_input_tokens": 0,
+    "output_tokens": 2928,
+    "estimated_usd": 0.04442720000000001,
+    "requests_with_usage": 38,
+    "requests_without_usage": 0
+  },
+  "embedding_usage": {
+    "tokens": 230,
+    "cache_hits": 13,
+    "requests": [
+      {
+        "request_id": "req_667debe904794ce3abe859c85fd560fa",
+        "model": "text-embedding-3-small",
+        "tokens": 48
+      },
+      {
+        "request_id": "req_a3d1cb6a34a14fc8bf0568de6c9b0421",
+        "model": "text-embedding-3-small",
+        "tokens": 40
+      },
+      {
+        "request_id": "req_2770e2d64d2945f887b9b62c7d363b5d",
+        "model": "text-embedding-3-small",
+        "tokens": 32
+      },
+      {
+        "request_id": "req_30265b62f4274808802a32132b4ed69c",
+        "model": "text-embedding-3-small",
+        "tokens": 36
+      },
+      {
+        "request_id": "req_8c96046d67134bca98e84eb13130bd8e",
+        "model": "text-embedding-3-small",
+        "tokens": 38
+      },
+      {
+        "request_id": "req_6a5d89e022904e7ba314f26eb48fdd6e",
+        "model": "text-embedding-3-small",
+        "tokens": 36
+      }
+    ]
+  },
+  "embedding_estimated_usd": 4.600000000000001e-06
+}

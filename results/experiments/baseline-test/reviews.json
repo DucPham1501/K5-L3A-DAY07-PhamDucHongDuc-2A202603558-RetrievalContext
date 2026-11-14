@@ -1,0 +1,85 @@
+[
+  {
+    "query_id": "d7-test-01",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Đủ phẩm chất đạo đức, sức khỏe, trình độ, kiến thức an ninh mạng/an toàn thông tin/CNTT và có nguyện vọng; đúng chủ thể công dân Việt Nam, nguồn Điều 32 Luật trang vật lý 28."
+    ],
+    "context_grade": 2,
+    "reason": "Đủ phẩm chất đạo đức, sức khỏe, trình độ, kiến thức an ninh mạng/an toàn thông tin/CNTT và có nguyện vọng; đúng chủ thể công dân Việt Nam, nguồn Điều 32 Luật trang vật lý 28.",
+    "reviewer": "Codex AI assistant; post-lock test source review; not independent human confirmation",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "d7-test-02",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Xác định đúng Ủy ban nhân dân cấp tỉnh và nhiệm vụ phổ biến/nâng nhận thức cho cơ quan, tổ chức, cá nhân địa phương; khoản 3 Điều 34 Luật trang 28."
+    ],
+    "context_grade": 2,
+    "reason": "Xác định đúng Ủy ban nhân dân cấp tỉnh và nhiệm vụ phổ biến/nâng nhận thức cho cơ quan, tổ chức, cá nhân địa phương; khoản 3 Điều 34 Luật trang 28.",
+    "reviewer": "Codex AI assistant; post-lock test source review; not independent human confirmation",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "d7-test-03",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Đúng 72 giờ sau khi có yêu cầu, toàn bộ dữ liệu được yêu cầu hạn chế và ngoại lệ luật có quy định khác; khoản 6 Điều 9 Nghị định trang 7. Không nhầm với thông báo sự cố sau khi xảy ra vi phạm."
+    ],
+    "context_grade": 2,
+    "reason": "Đúng 72 giờ sau khi có yêu cầu, toàn bộ dữ liệu được yêu cầu hạn chế và ngoại lệ luật có quy định khác; khoản 6 Điều 9 Nghị định trang 7. Không nhầm với thông báo sự cố sau khi xảy ra vi phạm.",
+    "reviewer": "Codex AI assistant; post-lock test source review; not independent human confirmation",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "d7-test-04",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Đủ nơi nhận Bộ Công an/Cục chuyên trách, 01 bản chính, Mẫu 04 và thời hạn 60 ngày từ ngày tiến hành xử lý; khoản 4 Điều 24 Nghị định trang 19. Không nhầm Mẫu 06 của chuyển dữ liệu ra nước ngoài."
+    ],
+    "context_grade": 2,
+    "reason": "Đủ nơi nhận Bộ Công an/Cục chuyên trách, 01 bản chính, Mẫu 04 và thời hạn 60 ngày từ ngày tiến hành xử lý; khoản 4 Điều 24 Nghị định trang 19. Không nhầm Mẫu 06 của chuyển dữ liệu ra nước ngoài.",
+    "reviewer": "Codex AI assistant; post-lock test source review; not independent human confirmation",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "d7-test-05",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Đúng tổ chức/doanh nghiệp tự bố trí và thực hiện kinh phí, không gán ngân sách nhà nước cho doanh nghiệp; khoản 3 Điều 31 Nghị định trang 24."
+    ],
+    "context_grade": 2,
+    "reason": "Đúng tổ chức/doanh nghiệp tự bố trí và thực hiện kinh phí, không gán ngân sách nhà nước cho doanh nghiệp; khoản 3 Điều 31 Nghị định trang 24.",
+    "reviewer": "Codex AI assistant; post-lock test source review; not independent human confirmation",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "d7-test-u01",
+    "citation_support": [],
+    "citation_reasons": [],
+    "context_grade": 0,
+    "reason": "Đọc câu trả lời và trace: từ chối, không bịa thống kê khiếu nại 2025, không suy ra số 0 hoặc nêu số liệu ngoài corpus.",
+    "reviewer": "Codex AI assistant; post-lock test source review; not independent human confirmation",
+    "abstention_correct": true
+  },
+  {
+    "query_id": "d7-test-u02",
+    "citation_support": [],
+    "citation_reasons": [],
+    "context_grade": 0,
+    "reason": "Đọc câu trả lời và trace: từ chối, không tự tạo câu SQL rồi gán cho tài liệu; không có khẳng định thiếu căn cứ.",
+    "reviewer": "Codex AI assistant; post-lock test source review; not independent human confirmation",
+    "abstention_correct": true
+  }
+]

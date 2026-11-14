@@ -1,0 +1,25 @@
+{
+  "created_at": "2026-11-14T09:39:45.477263+00:00",
+  "status": "registered_before_experiments",
+  "baseline": {
+    "config": "configs/agent.json",
+    "dev_run": "results/agent/dev-v2",
+    "note": "Reuse measured initial agent; default system prompt and behavior retained when adding policy dispatch. Cache/latency differences will be disclosed."
+  },
+  "experiments": [
+    {
+      "id": "wide",
+      "config": "configs/agent-wide.json",
+      "dev_run": "results/experiments/wide-dev",
+      "hypothesis": "Dev hypothesis E1: deeper candidates and larger context may include evidence lost below top-3, at the cost of tokens, latency and distraction. Other agent policy unchanged."
+    },
+    {
+      "id": "focused",
+      "config": "configs/agent-focused.json",
+      "dev_run": "results/experiments/focused-dev",
+      "hypothesis": "Dev hypothesis E2: generic intent/evidence-scope check may correct definition-vs-measures confusion and unsupported generalization, without changing retrieval/context parameters."
+    }
+  ],
+  "selection_criteria": "Existing benchmark manifest order: grounded mean, citation validity (0/0 is not perfect), correct abstention, context evidence, first-retrieval Evidence Hit@3 then Hit@1, latency, estimated cost, simplicity. Report original-query reference separately from model-transformed queries.",
+  "test_policy": "Lock selection/config/code/benchmark checksums after all dev reviews and before baseline/selected test. No test tuning."
+}

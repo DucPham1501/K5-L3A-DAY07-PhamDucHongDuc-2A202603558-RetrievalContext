@@ -1,0 +1,229 @@
+[
+  {
+    "query_id": "d7-dev-01",
+    "citation_support": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "citation_reasons": [
+      "Đã đối chiếu chunk/trang 4: hỗ trợ phần biện pháp/triển khai tương ứng trong danh sách. Việc danh sách có nguồn không làm nó thành đáp án đủ cho định nghĩa được hỏi.",
+      "Đã đối chiếu chunk/trang 22: hỗ trợ phần biện pháp/triển khai tương ứng trong danh sách. Việc danh sách có nguồn không làm nó thành đáp án đủ cho định nghĩa được hỏi.",
+      "Đã đối chiếu chunk/trang 9: hỗ trợ phần biện pháp/triển khai tương ứng trong danh sách. Việc danh sách có nguồn không làm nó thành đáp án đủ cho định nghĩa được hỏi.",
+      "Đã đối chiếu chunk/trang 22: hỗ trợ phần biện pháp/triển khai tương ứng trong danh sách. Việc danh sách có nguồn không làm nó thành đáp án đủ cho định nghĩa được hỏi.",
+      "Đã đối chiếu chunk/trang 4: hỗ trợ phần biện pháp/triển khai tương ứng trong danh sách. Việc danh sách có nguồn không làm nó thành đáp án đủ cho định nghĩa được hỏi."
+    ],
+    "context_grade": 2,
+    "reason": "Context đã có định nghĩa đủ ở trang 1. Câu trả lời có phòng ngừa/phát hiện/ngăn chặn nhưng thiếu hoạt động xử lý và vẫn trộn một danh sách dài biện pháp/điều kiện triển khai thay cho định nghĩa bốn hoạt động. Chấm một phần, không chấm đủ chỉ vì gold nằm trong context.",
+    "reviewer": "Codex AI assistant; explicit post-run source review under the same rubric; not independent human confirmation",
+    "answer_grade": 1
+  },
+  {
+    "query_id": "d7-dev-02",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Trả lời đúng tội phạm mạng và định nghĩa; khoản 7 Điều 2 trang 2 hỗ trợ đầy đủ."
+    ],
+    "context_grade": 2,
+    "reason": "Trả lời đúng tội phạm mạng và định nghĩa; khoản 7 Điều 2 trang 2 hỗ trợ đầy đủ.",
+    "reviewer": "Codex AI assistant; explicit post-run source review under the same rubric; not independent human confirmation",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "d7-dev-03",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Đủ các nguyên tắc tôn trọng độc lập/chủ quyền/toàn vẹn lãnh thổ, không can thiệp nội bộ, bình đẳng/cùng có lợi tại Điều 7 trang 5."
+    ],
+    "context_grade": 2,
+    "reason": "Đủ các nguyên tắc tôn trọng độc lập/chủ quyền/toàn vẹn lãnh thổ, không can thiệp nội bộ, bình đẳng/cùng có lợi tại Điều 7 trang 5.",
+    "reviewer": "Codex AI assistant; explicit post-run source review under the same rubric; not independent human confirmation",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "d7-dev-04",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Đúng hai nhóm hậu quả và các chủ thể được hỏi; điểm d trang 6 có đủ evidence, filter Luật/2018 đúng."
+    ],
+    "context_grade": 2,
+    "reason": "Đúng hai nhóm hậu quả và các chủ thể được hỏi; điểm d trang 6 có đủ evidence, filter Luật/2018 đúng.",
+    "reviewer": "Codex AI assistant; explicit post-run source review under the same rubric; not independent human confirmation",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "d7-dev-05",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Đủ ba hình thức xử lý tùy tính chất/mức độ và nghĩa vụ bồi thường nếu gây thiệt hại; Điều 9 trang 7."
+    ],
+    "context_grade": 2,
+    "reason": "Đủ ba hình thức xử lý tùy tính chất/mức độ và nghĩa vụ bồi thường nếu gây thiệt hại; Điều 9 trang 7.",
+    "reviewer": "Codex AI assistant; explicit post-run source review under the same rubric; not independent human confirmation",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "d7-dev-06",
+    "citation_support": [
+      true,
+      true,
+      false
+    ],
+    "citation_reasons": [
+      "Nguồn Điều 29 trang 26 hỗ trợ phần quyền hoặc phối hợp/bảo đảm bảo vệ trẻ em được trích trong câu; đối chiếu đúng vai trò chủ thể.",
+      "Nguồn Điều 29 trang 27 hỗ trợ phần quyền hoặc phối hợp/bảo đảm bảo vệ trẻ em được trích trong câu; đối chiếu đúng vai trò chủ thể.",
+      "Đoạn trách nhiệm kiểm soát dịch vụ/phối hợp xử lý không đủ hỗ trợ gán trách nhiệm xử lý nghiêm cho mọi cơ quan/tổ chức/cá nhân trong câu thêm; thiếu phân biệt lực lượng tại khoản 5."
+    ],
+    "context_grade": 2,
+    "reason": "Liệt kê đúng quyền trẻ em, nhưng thêm mệnh đề gom mọi cơ quan/tổ chức/cá nhân vào trách nhiệm xử lý nghiêm. Khoản 5 Điều 29 giao áp dụng biện pháp và xử lý nghiêm cho lực lượng chuyên trách/cơ quan chức năng; các chủ thể tại khoản 3/4 có vai trò phối hợp/bảo đảm. Phần thêm làm rộng chủ thể nên chấm một phần theo cùng nguyên tắc kiểm tra phạm vi như dev-10.",
+    "reviewer": "Codex AI assistant; explicit post-run source review under the same rubric; not independent human confirmation",
+    "answer_grade": 1
+  },
+  {
+    "query_id": "d7-dev-07",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Đúng Bộ Công an và Bộ Quốc phòng theo khoản 1 Điều 30 trang 27."
+    ],
+    "context_grade": 2,
+    "reason": "Đúng Bộ Công an và Bộ Quốc phòng theo khoản 1 Điều 30 trang 27.",
+    "reviewer": "Codex AI assistant; explicit post-run source review under the same rubric; not independent human confirmation",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "d7-dev-08",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Đúng ngân sách nhà nước và dự toán hằng năm; phần quản lý/sử dụng kinh phí cũng có trong Điều 35 trang 29."
+    ],
+    "context_grade": 2,
+    "reason": "Đúng ngân sách nhà nước và dự toán hằng năm; phần quản lý/sử dụng kinh phí cũng có trong Điều 35 trang 29.",
+    "reviewer": "Codex AI assistant; explicit post-run source review under the same rubric; not independent human confirmation",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "d7-dev-09",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Đúng thông tin nhóm máu được loại trừ tại điểm b khoản 4 Điều 2 trang 2; đánh giá trong phạm vi điểm quy định về hồ sơ bệnh án, không mở rộng thành kết luận về mọi loại dữ liệu."
+    ],
+    "context_grade": 2,
+    "reason": "Đúng thông tin nhóm máu được loại trừ tại điểm b khoản 4 Điều 2 trang 2; đánh giá trong phạm vi điểm quy định về hồ sơ bệnh án, không mở rộng thành kết luận về mọi loại dữ liệu.",
+    "reviewer": "Codex AI assistant; explicit post-run source review under the same rubric; not independent human confirmation",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "d7-dev-10",
+    "citation_support": [
+      true,
+      false
+    ],
+    "citation_reasons": [
+      "Đúng quy tắc cấm mua/bán và ngoại lệ luật quy định khác. Phần bổ sung consent bắt buộc cho mọi xử lý khái quát vượt khoản 2 Điều 22 và bỏ ngoại lệ, tương tự baseline; chấm một phần.",
+      "Đoạn Điều 22 không hỗ trợ khái quát mọi xử lý đều phải có đồng ý không giữ ngoại lệ; cùng lỗi phạm vi với baseline."
+    ],
+    "context_grade": 2,
+    "reason": "Đúng quy tắc cấm mua/bán và ngoại lệ luật quy định khác. Phần bổ sung consent bắt buộc cho mọi xử lý khái quát vượt khoản 2 Điều 22 và bỏ ngoại lệ, tương tự baseline; chấm một phần.",
+    "reviewer": "Codex AI assistant; explicit post-run source review under the same rubric; not independent human confirmation",
+    "answer_grade": 1
+  },
+  {
+    "query_id": "d7-dev-11",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Đúng im lặng/không phản hồi không được coi là sự đồng ý theo khoản 6 Điều 11 trang 9."
+    ],
+    "context_grade": 2,
+    "reason": "Đúng im lặng/không phản hồi không được coi là sự đồng ý theo khoản 6 Điều 11 trang 9.",
+    "reviewer": "Codex AI assistant; explicit post-run source review under the same rubric; not independent human confirmation",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "d7-dev-12",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Đúng việc rút lại đồng ý không ảnh hưởng tính hợp pháp của xử lý đã được đồng ý trước đó; khoản 1 Điều 12 trang 10."
+    ],
+    "context_grade": 2,
+    "reason": "Đúng việc rút lại đồng ý không ảnh hưởng tính hợp pháp của xử lý đã được đồng ý trước đó; khoản 1 Điều 12 trang 10.",
+    "reviewer": "Codex AI assistant; explicit post-run source review under the same rubric; not independent human confirmation",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "d7-dev-13",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Giữ đúng câu chữ nguồn sau 72 giờ kể từ khi nhận yêu cầu nếu không thể chỉnh sửa; khoản 2 Điều 15 trang 13. Không tự đổi thành thời hạn tối đa 72 giờ."
+    ],
+    "context_grade": 2,
+    "reason": "Giữ đúng câu chữ nguồn sau 72 giờ kể từ khi nhận yêu cầu nếu không thể chỉnh sửa; khoản 2 Điều 15 trang 13. Không tự đổi thành thời hạn tối đa 72 giờ.",
+    "reviewer": "Codex AI assistant; explicit post-run source review under the same rubric; not independent human confirmation",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "d7-dev-14",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Đủ nơi nhận, mốc chậm nhất 72 giờ sau khi xảy ra vi phạm và lý do chậm/muộn; khoản 1 Điều 23 trang 17. Câu hỏi không yêu cầu số mẫu biểu nên không trừ điểm vì không nêu Mẫu 03."
+    ],
+    "context_grade": 2,
+    "reason": "Đủ nơi nhận, mốc chậm nhất 72 giờ sau khi xảy ra vi phạm và lý do chậm/muộn; khoản 1 Điều 23 trang 17. Câu hỏi không yêu cầu số mẫu biểu nên không trừ điểm vì không nêu Mẫu 03.",
+    "reviewer": "Codex AI assistant; explicit post-run source review under the same rubric; not independent human confirmation",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "d7-dev-15",
+    "citation_support": [
+      true
+    ],
+    "citation_reasons": [
+      "Đúng ngay từ khi bắt đầu và trong suốt quá trình xử lý, theo khoản 1 Điều 26 trang 21."
+    ],
+    "context_grade": 2,
+    "reason": "Đúng ngay từ khi bắt đầu và trong suốt quá trình xử lý, theo khoản 1 Điều 26 trang 21.",
+    "reviewer": "Codex AI assistant; explicit post-run source review under the same rubric; not independent human confirmation",
+    "answer_grade": 2
+  },
+  {
+    "query_id": "d7-dev-u01",
+    "citation_support": [],
+    "citation_reasons": [],
+    "context_grade": 0,
+    "reason": "Đã đọc câu trả lời cuối và các lượt tìm: từ chối vì thiếu bằng chứng, không thêm khẳng định hoặc thông số thiếu căn cứ. Lý do dừng thực tế: model_insufficient_evidence.",
+    "reviewer": "Codex AI assistant; explicit post-run source review under the same rubric; not independent human confirmation",
+    "abstention_correct": true
+  },
+  {
+    "query_id": "d7-dev-u02",
+    "citation_support": [],
+    "citation_reasons": [],
+    "context_grade": 0,
+    "reason": "Đã đọc câu trả lời cuối và các lượt tìm: từ chối vì thiếu bằng chứng, không thêm khẳng định hoặc thông số thiếu căn cứ. Lý do dừng thực tế: model_insufficient_evidence.",
+    "reviewer": "Codex AI assistant; explicit post-run source review under the same rubric; not independent human confirmation",
+    "abstention_correct": true
+  }
+]

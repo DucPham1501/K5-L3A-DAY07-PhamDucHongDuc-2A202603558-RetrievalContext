@@ -1,0 +1,1635 @@
+{
+  "split": "test",
+  "selection_locked_at": "2026-11-14T09:47:22.062262+00:00",
+  "query_policy": "Original questions, fixed user filter; no model rewriting",
+  "api_calls": 7,
+  "embedding_tokens": 532,
+  "embedding_requests": [
+    {
+      "request_id": "req_b6ecae984aec448ea50fbbf2557dbf3c",
+      "model": "text-embedding-3-small",
+      "tokens": 74
+    },
+    {
+      "request_id": "req_49c47c5b427247c087b6f4540b438857",
+      "model": "text-embedding-3-small",
+      "tokens": 92
+    },
+    {
+      "request_id": "req_3e90f65cb7394a1089b321c5f99d28dd",
+      "model": "text-embedding-3-small",
+      "tokens": 81
+    },
+    {
+      "request_id": "req_45169ed8e3104ad1bd4fea1e2029cff0",
+      "model": "text-embedding-3-small",
+      "tokens": 103
+    },
+    {
+      "request_id": "req_0eec9e9381a34bd2a1455a35048142c9",
+      "model": "text-embedding-3-small",
+      "tokens": 61
+    },
+    {
+      "request_id": "req_40894f4c1e5744cfb31afeee152311d4",
+      "model": "text-embedding-3-small",
+      "tokens": 63
+    },
+    {
+      "request_id": "req_a1db908ee99445ad9e973ee57d01567b",
+      "model": "text-embedding-3-small",
+      "tokens": 58
+    }
+  ],
+  "embedding_cache_hits": 0,
+  "embedding_estimated_usd": 1.064e-05,
+  "source": "Live pgvector plus real query embeddings shared across both fixed configurations",
+  "config_sha256": {
+    "baseline": "db430ceb421700011b64c214a4beedf76d4f102bf6e7e9e9478895252397b4b3",
+    "focused": "914230c777d33472a556d1544f186a0fe4bd52c9b34d7a7d667f709b9fedb3fa"
+  },
+  "metrics": {
+    "baseline": {
+      "hit1": {
+        "n": 4,
+        "N": 5,
+        "rate": 0.8
+      },
+      "hit3": {
+        "n": 5,
+        "N": 5,
+        "rate": 1.0
+      },
+      "context_evidence": {
+        "n": 5,
+        "N": 5,
+        "rate": 1.0
+      }
+    },
+    "focused": {
+      "hit1": {
+        "n": 4,
+        "N": 5,
+        "rate": 0.8
+      },
+      "hit3": {
+        "n": 5,
+        "N": 5,
+        "rate": 1.0
+      },
+      "context_evidence": {
+        "n": 5,
+        "N": 5,
+        "rate": 1.0
+      }
+    }
+  },
+  "traces": [
+    {
+      "query_id": "d7-test-01",
+      "config": "baseline",
+      "query_original": "Theo Luật An ninh mạng trong corpus, công dân Việt Nam cần đáp ứng những tiêu chuẩn và nguyện vọng nào để có thể được tuyển chọn vào lực lượng bảo vệ an ninh mạng?",
+      "filter": null,
+      "results": [
+        {
+          "id": "694d240638b3d12694d3a08db51ef6203a629e3c987011adaacd65c73bee7a51",
+          "text": "Điều 32. Tuyển chọn, đào tạo, phát triển lực lượng bảo vệ an ninh mạng\n1. Công dân Việt Nam có đủ tiêu chuẩn về phẩm chất đạo đức, sức khỏe, trình\nđộ, kiến thức về an ninh mạng, an toàn thông tin mạng, công nghệ thông tin, có\nnguyện vọng thì có thể được tuyển chọn vào lực lượng bảo vệ an ninh mạng.\n2. Ưu tiên đào tạo, phát triển lực lượng bảo vệ an ninh mạng có chất lượng cao.",
+          "source_id": "luat-24-2018-qh14",
+          "source": "data/raw/24-2018-qh14.pdf",
+          "page": 28,
+          "metadata": {
+            "year": 2018,
+            "chunking": "paragraph",
+            "doc_type": "Luật",
+            "end_char": 816,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=206114",
+            "start_char": 437,
+            "document_number": "24/2018/QH14",
+            "extraction_method": "pdftotext-layout",
+            "ocr_review_status": "not_applicable",
+            "included_in_corpus": true
+          },
+          "score": 0.03278688524590164,
+          "branch_ranks": {
+            "dense": 1,
+            "bm25": 1
+          },
+          "branch_scores": {
+            "dense": 0.6876431462934693,
+            "bm25": 57.36872265456272
+          },
+          "rank": 1,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        },
+        {
+          "id": "061ae9e547c3f3a3dd4e7947143a3746837af704464d19ac54a1e4375f551935",
+          "text": "Điều 31. Bảo đảm nguồn nhân lực bảo vệ an ninh mạng\n1. Công dân Việt Nam có kiến thức về an ninh mạng, an toàn thông tin mạng,\ncông nghệ thông tin là nguồn lực cơ bản, chủ yếu bảo vệ an ninh mạng.\n2. Nhà nước có chương trình, kế hoạch xây dựng, phát triển nguồn nhân lực\nbảo vệ an ninh mạng.",
+          "source_id": "luat-24-2018-qh14",
+          "source": "data/raw/24-2018-qh14.pdf",
+          "page": 27,
+          "metadata": {
+            "year": 2018,
+            "chunking": "paragraph",
+            "doc_type": "Luật",
+            "end_char": 1823,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=206114",
+            "start_char": 1532,
+            "document_number": "24/2018/QH14",
+            "extraction_method": "pdftotext-layout",
+            "ocr_review_status": "not_applicable",
+            "included_in_corpus": true
+          },
+          "score": 0.031746031746031744,
+          "branch_ranks": {
+            "dense": 3,
+            "bm25": 3
+          },
+          "branch_scores": {
+            "dense": 0.6363437175019417,
+            "bm25": 19.600797314559223
+          },
+          "rank": 2,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        },
+        {
+          "id": "9fde7fb3651d6aaa710bf7183591658d9de2fe7c733357553bdd0690021a0046",
+          "text": "Điều 4. Nguyên tắc bảo vệ an ninh mạng\n1. Tuân thủ Hiến pháp và pháp luật; bảo đảm lợi ích của Nhà nước, quyền và\nlợi ích hợp pháp của cơ quan, tổ chức, cá nhân.\n2. Đặt dưới sự lãnh đạo của Đảng Cộng sản Việt Nam, sự quản lý thống nhất\ncủa Nhà nước; huy động sức mạnh tổng hợp của hệ thống chính trị và toàn dân tộc;\nphát huy vai trò nòng cốt của lực lượng chuyên trách bảo vệ an ninh mạng.",
+          "source_id": "luat-24-2018-qh14",
+          "source": "data/raw/24-2018-qh14.pdf",
+          "page": 3,
+          "metadata": {
+            "year": 2018,
+            "chunking": "paragraph",
+            "doc_type": "Luật",
+            "end_char": 2073,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=206114",
+            "start_char": 1683,
+            "document_number": "24/2018/QH14",
+            "extraction_method": "pdftotext-layout",
+            "ocr_review_status": "not_applicable",
+            "included_in_corpus": true
+          },
+          "score": 0.02964254577157803,
+          "branch_ranks": {
+            "dense": 2,
+            "bm25": 14
+          },
+          "branch_scores": {
+            "dense": 0.664833359865373,
+            "bm25": 16.588185382020857
+          },
+          "rank": 3,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        }
+      ],
+      "context": "[694d240638b3d12694d3a08db51ef6203a629e3c987011adaacd65c73bee7a51 | data/raw/24-2018-qh14.pdf | page 28]\nĐiều 32. Tuyển chọn, đào tạo, phát triển lực lượng bảo vệ an ninh mạng\n1. Công dân Việt Nam có đủ tiêu chuẩn về phẩm chất đạo đức, sức khỏe, trình\nđộ, kiến thức về an ninh mạng, an toàn thông tin mạng, công nghệ thông tin, có\nnguyện vọng thì có thể được tuyển chọn vào lực lượng bảo vệ an ninh mạng.\n2. Ưu tiên đào tạo, phát triển lực lượng bảo vệ an ninh mạng có chất lượng cao.\n\n[061ae9e547c3f3a3dd4e7947143a3746837af704464d19ac54a1e4375f551935 | data/raw/24-2018-qh14.pdf | page 27]\nĐiều 31. Bảo đảm nguồn nhân lực bảo vệ an ninh mạng\n1. Công dân Việt Nam có kiến thức về an ninh mạng, an toàn thông tin mạng,\ncông nghệ thông tin là nguồn lực cơ bản, chủ yếu bảo vệ an ninh mạng.\n2. Nhà nước có chương trình, kế hoạch xây dựng, phát triển nguồn nhân lực\nbảo vệ an ninh mạng.\n\n[9fde7fb3651d6aaa710bf7183591658d9de2fe7c733357553bdd0690021a0046 | data/raw/24-2018-qh14.pdf | page 3]\nĐiều 4. Nguyên tắc bảo vệ an ninh mạng\n1. Tuân thủ Hiến pháp và pháp luật; bảo đảm lợi ích của Nhà nước, quyền và\nlợi ích hợp pháp của cơ quan, tổ chức, cá nhân.\n2. Đặt dưới sự lãnh đạo của Đảng Cộng sản Việt Nam, sự quản lý thống nhất\ncủa Nhà nước; huy động sức mạnh tổng hợp của hệ thống chính trị và toàn dân tộc;\nphát huy vai trò nòng cốt của lực lượng chuyên trách bảo vệ an ninh mạng.",
+      "context_ids": [
+        "694d240638b3d12694d3a08db51ef6203a629e3c987011adaacd65c73bee7a51",
+        "061ae9e547c3f3a3dd4e7947143a3746837af704464d19ac54a1e4375f551935",
+        "9fde7fb3651d6aaa710bf7183591658d9de2fe7c733357553bdd0690021a0046"
+      ]
+    },
+    {
+      "query_id": "d7-test-01",
+      "config": "focused",
+      "query_original": "Theo Luật An ninh mạng trong corpus, công dân Việt Nam cần đáp ứng những tiêu chuẩn và nguyện vọng nào để có thể được tuyển chọn vào lực lượng bảo vệ an ninh mạng?",
+      "filter": null,
+      "results": [
+        {
+          "id": "694d240638b3d12694d3a08db51ef6203a629e3c987011adaacd65c73bee7a51",
+          "text": "Điều 32. Tuyển chọn, đào tạo, phát triển lực lượng bảo vệ an ninh mạng\n1. Công dân Việt Nam có đủ tiêu chuẩn về phẩm chất đạo đức, sức khỏe, trình\nđộ, kiến thức về an ninh mạng, an toàn thông tin mạng, công nghệ thông tin, có\nnguyện vọng thì có thể được tuyển chọn vào lực lượng bảo vệ an ninh mạng.\n2. Ưu tiên đào tạo, phát triển lực lượng bảo vệ an ninh mạng có chất lượng cao.",
+          "source_id": "luat-24-2018-qh14",
+          "source": "data/raw/24-2018-qh14.pdf",
+          "page": 28,
+          "metadata": {
+            "year": 2018,
+            "chunking": "paragraph",
+            "doc_type": "Luật",
+            "end_char": 816,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=206114",
+            "start_char": 437,
+            "document_number": "24/2018/QH14",
+            "extraction_method": "pdftotext-layout",
+            "ocr_review_status": "not_applicable",
+            "included_in_corpus": true
+          },
+          "score": 0.03278688524590164,
+          "branch_ranks": {
+            "dense": 1,
+            "bm25": 1
+          },
+          "branch_scores": {
+            "dense": 0.6876431462934693,
+            "bm25": 57.36872265456272
+          },
+          "rank": 1,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        },
+        {
+          "id": "061ae9e547c3f3a3dd4e7947143a3746837af704464d19ac54a1e4375f551935",
+          "text": "Điều 31. Bảo đảm nguồn nhân lực bảo vệ an ninh mạng\n1. Công dân Việt Nam có kiến thức về an ninh mạng, an toàn thông tin mạng,\ncông nghệ thông tin là nguồn lực cơ bản, chủ yếu bảo vệ an ninh mạng.\n2. Nhà nước có chương trình, kế hoạch xây dựng, phát triển nguồn nhân lực\nbảo vệ an ninh mạng.",
+          "source_id": "luat-24-2018-qh14",
+          "source": "data/raw/24-2018-qh14.pdf",
+          "page": 27,
+          "metadata": {
+            "year": 2018,
+            "chunking": "paragraph",
+            "doc_type": "Luật",
+            "end_char": 1823,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=206114",
+            "start_char": 1532,
+            "document_number": "24/2018/QH14",
+            "extraction_method": "pdftotext-layout",
+            "ocr_review_status": "not_applicable",
+            "included_in_corpus": true
+          },
+          "score": 0.031746031746031744,
+          "branch_ranks": {
+            "dense": 3,
+            "bm25": 3
+          },
+          "branch_scores": {
+            "dense": 0.6363437175019417,
+            "bm25": 19.600797314559223
+          },
+          "rank": 2,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        },
+        {
+          "id": "9fde7fb3651d6aaa710bf7183591658d9de2fe7c733357553bdd0690021a0046",
+          "text": "Điều 4. Nguyên tắc bảo vệ an ninh mạng\n1. Tuân thủ Hiến pháp và pháp luật; bảo đảm lợi ích của Nhà nước, quyền và\nlợi ích hợp pháp của cơ quan, tổ chức, cá nhân.\n2. Đặt dưới sự lãnh đạo của Đảng Cộng sản Việt Nam, sự quản lý thống nhất\ncủa Nhà nước; huy động sức mạnh tổng hợp của hệ thống chính trị và toàn dân tộc;\nphát huy vai trò nòng cốt của lực lượng chuyên trách bảo vệ an ninh mạng.",
+          "source_id": "luat-24-2018-qh14",
+          "source": "data/raw/24-2018-qh14.pdf",
+          "page": 3,
+          "metadata": {
+            "year": 2018,
+            "chunking": "paragraph",
+            "doc_type": "Luật",
+            "end_char": 2073,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=206114",
+            "start_char": 1683,
+            "document_number": "24/2018/QH14",
+            "extraction_method": "pdftotext-layout",
+            "ocr_review_status": "not_applicable",
+            "included_in_corpus": true
+          },
+          "score": 0.02964254577157803,
+          "branch_ranks": {
+            "dense": 2,
+            "bm25": 14
+          },
+          "branch_scores": {
+            "dense": 0.664833359865373,
+            "bm25": 16.588185382020857
+          },
+          "rank": 3,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        }
+      ],
+      "context": "[694d240638b3d12694d3a08db51ef6203a629e3c987011adaacd65c73bee7a51 | data/raw/24-2018-qh14.pdf | page 28]\nĐiều 32. Tuyển chọn, đào tạo, phát triển lực lượng bảo vệ an ninh mạng\n1. Công dân Việt Nam có đủ tiêu chuẩn về phẩm chất đạo đức, sức khỏe, trình\nđộ, kiến thức về an ninh mạng, an toàn thông tin mạng, công nghệ thông tin, có\nnguyện vọng thì có thể được tuyển chọn vào lực lượng bảo vệ an ninh mạng.\n2. Ưu tiên đào tạo, phát triển lực lượng bảo vệ an ninh mạng có chất lượng cao.\n\n[061ae9e547c3f3a3dd4e7947143a3746837af704464d19ac54a1e4375f551935 | data/raw/24-2018-qh14.pdf | page 27]\nĐiều 31. Bảo đảm nguồn nhân lực bảo vệ an ninh mạng\n1. Công dân Việt Nam có kiến thức về an ninh mạng, an toàn thông tin mạng,\ncông nghệ thông tin là nguồn lực cơ bản, chủ yếu bảo vệ an ninh mạng.\n2. Nhà nước có chương trình, kế hoạch xây dựng, phát triển nguồn nhân lực\nbảo vệ an ninh mạng.\n\n[9fde7fb3651d6aaa710bf7183591658d9de2fe7c733357553bdd0690021a0046 | data/raw/24-2018-qh14.pdf | page 3]\nĐiều 4. Nguyên tắc bảo vệ an ninh mạng\n1. Tuân thủ Hiến pháp và pháp luật; bảo đảm lợi ích của Nhà nước, quyền và\nlợi ích hợp pháp của cơ quan, tổ chức, cá nhân.\n2. Đặt dưới sự lãnh đạo của Đảng Cộng sản Việt Nam, sự quản lý thống nhất\ncủa Nhà nước; huy động sức mạnh tổng hợp của hệ thống chính trị và toàn dân tộc;\nphát huy vai trò nòng cốt của lực lượng chuyên trách bảo vệ an ninh mạng.",
+      "context_ids": [
+        "694d240638b3d12694d3a08db51ef6203a629e3c987011adaacd65c73bee7a51",
+        "061ae9e547c3f3a3dd4e7947143a3746837af704464d19ac54a1e4375f551935",
+        "9fde7fb3651d6aaa710bf7183591658d9de2fe7c733357553bdd0690021a0046"
+      ]
+    },
+    {
+      "query_id": "d7-test-02",
+      "config": "baseline",
+      "query_original": "Theo Luật An ninh mạng trong corpus, cơ quan nào ở địa phương có trách nhiệm xây dựng và triển khai phổ biến kiến thức, nâng cao nhận thức về an ninh mạng cho cơ quan, tổ chức, cá nhân của địa phương?",
+      "filter": null,
+      "results": [
+        {
+          "id": "449ee48860602762e61032d95fa1137208ff1485a297a60a8bc432b762650560",
+          "text": "Điều 34. Phổ biến kiến thức về an ninh mạng\n1. Nhà nước có chính sách phổ biến kiến thức về an ninh mạng trong phạm vi\ncả nước, khuyến khích cơ quan nhà nước phối hợp với tổ chức tư nhân, cá nhân\nthực hiện chương trình giáo dục và nâng cao nhận thức về an ninh mạng.\n2. Bộ, ngành, cơ quan, tổ chức có trách nhiệm xây dựng và triển khai hoạt\nđộng phổ biến kiến thức về an ninh mạng cho cán bộ, công chức, viên chức, người\nlao động trong Bộ, ngành, cơ quan, tổ chức.",
+          "source_id": "luat-24-2018-qh14",
+          "source": "data/raw/24-2018-qh14.pdf",
+          "page": 28,
+          "metadata": {
+            "year": 2018,
+            "chunking": "paragraph",
+            "doc_type": "Luật",
+            "end_char": 2096,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=206114",
+            "start_char": 1632,
+            "document_number": "24/2018/QH14",
+            "extraction_method": "pdftotext-layout",
+            "ocr_review_status": "not_applicable",
+            "included_in_corpus": true
+          },
+          "score": 0.03252247488101534,
+          "branch_ranks": {
+            "dense": 1,
+            "bm25": 2
+          },
+          "branch_scores": {
+            "dense": 0.7047698851221255,
+            "bm25": 57.413451355793065
+          },
+          "rank": 1,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        },
+        {
+          "id": "5c4323c5e28b2e6fa26247afce6e63d5979d1cb2e47fa8e8535a56ece50996c1",
+          "text": "3. Ủy ban nhân dân cấp tỉnh có trách nhiệm xây dựng và triển khai hoạt động\nphổ biến kiến thức, nâng cao nhận thức về an ninh mạng cho cơ quan, tổ chức, cá\nnhân của địa phương.",
+          "source_id": "luat-24-2018-qh14",
+          "source": "data/raw/24-2018-qh14.pdf",
+          "page": 28,
+          "metadata": {
+            "year": 2018,
+            "chunking": "paragraph",
+            "doc_type": "Luật",
+            "end_char": 2273,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=206114",
+            "start_char": 2097,
+            "document_number": "24/2018/QH14",
+            "extraction_method": "pdftotext-layout",
+            "ocr_review_status": "not_applicable",
+            "included_in_corpus": true
+          },
+          "score": 0.03252247488101534,
+          "branch_ranks": {
+            "dense": 2,
+            "bm25": 1
+          },
+          "branch_scores": {
+            "dense": 0.6874481188518796,
+            "bm25": 67.22516491113954
+          },
+          "rank": 2,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        },
+        {
+          "id": "5a5be8d3ca3d45bbdf01b082a8f6f3ec7dd7368d40851379b197305f95a27ae6",
+          "text": "b) Ứng dụng, triển khai phương án, biện pháp, công nghệ bảo vệ an ninh mạng\nđối với hệ thống thông tin và thông tin, tài liệu được lưu trữ, soạn thảo, truyền đưa\ntrên hệ thống thông tin thuộc phạm vi quản lý;\nc) Tổ chức bồi dưỡng kiến thức về an ninh mạng cho cán bộ, công chức, viên\nchức, người lao động; nâng cao năng lực bảo vệ an ninh mạng cho lực lượng bảo\nvệ an ninh mạng;",
+          "source_id": "luat-24-2018-qh14",
+          "source": "data/raw/24-2018-qh14.pdf",
+          "page": 22,
+          "metadata": {
+            "year": 2018,
+            "chunking": "paragraph",
+            "doc_type": "Luật",
+            "end_char": 1686,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=206114",
+            "start_char": 1308,
+            "document_number": "24/2018/QH14",
+            "extraction_method": "pdftotext-layout",
+            "ocr_review_status": "not_applicable",
+            "included_in_corpus": true
+          },
+          "score": 0.03076923076923077,
+          "branch_ranks": {
+            "dense": 5,
+            "bm25": 5
+          },
+          "branch_scores": {
+            "dense": 0.6300872087473034,
+            "bm25": 28.36087377853497
+          },
+          "rank": 3,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        }
+      ],
+      "context": "[449ee48860602762e61032d95fa1137208ff1485a297a60a8bc432b762650560 | data/raw/24-2018-qh14.pdf | page 28]\nĐiều 34. Phổ biến kiến thức về an ninh mạng\n1. Nhà nước có chính sách phổ biến kiến thức về an ninh mạng trong phạm vi\ncả nước, khuyến khích cơ quan nhà nước phối hợp với tổ chức tư nhân, cá nhân\nthực hiện chương trình giáo dục và nâng cao nhận thức về an ninh mạng.\n2. Bộ, ngành, cơ quan, tổ chức có trách nhiệm xây dựng và triển khai hoạt\nđộng phổ biến kiến thức về an ninh mạng cho cán bộ, công chức, viên chức, người\nlao động trong Bộ, ngành, cơ quan, tổ chức.\n\n[5c4323c5e28b2e6fa26247afce6e63d5979d1cb2e47fa8e8535a56ece50996c1 | data/raw/24-2018-qh14.pdf | page 28]\n3. Ủy ban nhân dân cấp tỉnh có trách nhiệm xây dựng và triển khai hoạt động\nphổ biến kiến thức, nâng cao nhận thức về an ninh mạng cho cơ quan, tổ chức, cá\nnhân của địa phương.\n\n[5a5be8d3ca3d45bbdf01b082a8f6f3ec7dd7368d40851379b197305f95a27ae6 | data/raw/24-2018-qh14.pdf | page 22]\nb) Ứng dụng, triển khai phương án, biện pháp, công nghệ bảo vệ an ninh mạng\nđối với hệ thống thông tin và thông tin, tài liệu được lưu trữ, soạn thảo, truyền đưa\ntrên hệ thống thông tin thuộc phạm vi quản lý;\nc) Tổ chức bồi dưỡng kiến thức về an ninh mạng cho cán bộ, công chức, viên\nchức, người lao động; nâng cao năng lực bảo vệ an ninh mạng cho lực lượng bảo\nvệ an ninh mạng;",
+      "context_ids": [
+        "449ee48860602762e61032d95fa1137208ff1485a297a60a8bc432b762650560",
+        "5c4323c5e28b2e6fa26247afce6e63d5979d1cb2e47fa8e8535a56ece50996c1",
+        "5a5be8d3ca3d45bbdf01b082a8f6f3ec7dd7368d40851379b197305f95a27ae6"
+      ]
+    },
+    {
+      "query_id": "d7-test-02",
+      "config": "focused",
+      "query_original": "Theo Luật An ninh mạng trong corpus, cơ quan nào ở địa phương có trách nhiệm xây dựng và triển khai phổ biến kiến thức, nâng cao nhận thức về an ninh mạng cho cơ quan, tổ chức, cá nhân của địa phương?",
+      "filter": null,
+      "results": [
+        {
+          "id": "449ee48860602762e61032d95fa1137208ff1485a297a60a8bc432b762650560",
+          "text": "Điều 34. Phổ biến kiến thức về an ninh mạng\n1. Nhà nước có chính sách phổ biến kiến thức về an ninh mạng trong phạm vi\ncả nước, khuyến khích cơ quan nhà nước phối hợp với tổ chức tư nhân, cá nhân\nthực hiện chương trình giáo dục và nâng cao nhận thức về an ninh mạng.\n2. Bộ, ngành, cơ quan, tổ chức có trách nhiệm xây dựng và triển khai hoạt\nđộng phổ biến kiến thức về an ninh mạng cho cán bộ, công chức, viên chức, người\nlao động trong Bộ, ngành, cơ quan, tổ chức.",
+          "source_id": "luat-24-2018-qh14",
+          "source": "data/raw/24-2018-qh14.pdf",
+          "page": 28,
+          "metadata": {
+            "year": 2018,
+            "chunking": "paragraph",
+            "doc_type": "Luật",
+            "end_char": 2096,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=206114",
+            "start_char": 1632,
+            "document_number": "24/2018/QH14",
+            "extraction_method": "pdftotext-layout",
+            "ocr_review_status": "not_applicable",
+            "included_in_corpus": true
+          },
+          "score": 0.03252247488101534,
+          "branch_ranks": {
+            "dense": 1,
+            "bm25": 2
+          },
+          "branch_scores": {
+            "dense": 0.7047698851221255,
+            "bm25": 57.413451355793065
+          },
+          "rank": 1,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        },
+        {
+          "id": "5c4323c5e28b2e6fa26247afce6e63d5979d1cb2e47fa8e8535a56ece50996c1",
+          "text": "3. Ủy ban nhân dân cấp tỉnh có trách nhiệm xây dựng và triển khai hoạt động\nphổ biến kiến thức, nâng cao nhận thức về an ninh mạng cho cơ quan, tổ chức, cá\nnhân của địa phương.",
+          "source_id": "luat-24-2018-qh14",
+          "source": "data/raw/24-2018-qh14.pdf",
+          "page": 28,
+          "metadata": {
+            "year": 2018,
+            "chunking": "paragraph",
+            "doc_type": "Luật",
+            "end_char": 2273,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=206114",
+            "start_char": 2097,
+            "document_number": "24/2018/QH14",
+            "extraction_method": "pdftotext-layout",
+            "ocr_review_status": "not_applicable",
+            "included_in_corpus": true
+          },
+          "score": 0.03252247488101534,
+          "branch_ranks": {
+            "dense": 2,
+            "bm25": 1
+          },
+          "branch_scores": {
+            "dense": 0.6874481188518796,
+            "bm25": 67.22516491113954
+          },
+          "rank": 2,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        },
+        {
+          "id": "5a5be8d3ca3d45bbdf01b082a8f6f3ec7dd7368d40851379b197305f95a27ae6",
+          "text": "b) Ứng dụng, triển khai phương án, biện pháp, công nghệ bảo vệ an ninh mạng\nđối với hệ thống thông tin và thông tin, tài liệu được lưu trữ, soạn thảo, truyền đưa\ntrên hệ thống thông tin thuộc phạm vi quản lý;\nc) Tổ chức bồi dưỡng kiến thức về an ninh mạng cho cán bộ, công chức, viên\nchức, người lao động; nâng cao năng lực bảo vệ an ninh mạng cho lực lượng bảo\nvệ an ninh mạng;",
+          "source_id": "luat-24-2018-qh14",
+          "source": "data/raw/24-2018-qh14.pdf",
+          "page": 22,
+          "metadata": {
+            "year": 2018,
+            "chunking": "paragraph",
+            "doc_type": "Luật",
+            "end_char": 1686,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=206114",
+            "start_char": 1308,
+            "document_number": "24/2018/QH14",
+            "extraction_method": "pdftotext-layout",
+            "ocr_review_status": "not_applicable",
+            "included_in_corpus": true
+          },
+          "score": 0.03076923076923077,
+          "branch_ranks": {
+            "dense": 5,
+            "bm25": 5
+          },
+          "branch_scores": {
+            "dense": 0.6300872087473034,
+            "bm25": 28.36087377853497
+          },
+          "rank": 3,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        }
+      ],
+      "context": "[449ee48860602762e61032d95fa1137208ff1485a297a60a8bc432b762650560 | data/raw/24-2018-qh14.pdf | page 28]\nĐiều 34. Phổ biến kiến thức về an ninh mạng\n1. Nhà nước có chính sách phổ biến kiến thức về an ninh mạng trong phạm vi\ncả nước, khuyến khích cơ quan nhà nước phối hợp với tổ chức tư nhân, cá nhân\nthực hiện chương trình giáo dục và nâng cao nhận thức về an ninh mạng.\n2. Bộ, ngành, cơ quan, tổ chức có trách nhiệm xây dựng và triển khai hoạt\nđộng phổ biến kiến thức về an ninh mạng cho cán bộ, công chức, viên chức, người\nlao động trong Bộ, ngành, cơ quan, tổ chức.\n\n[5c4323c5e28b2e6fa26247afce6e63d5979d1cb2e47fa8e8535a56ece50996c1 | data/raw/24-2018-qh14.pdf | page 28]\n3. Ủy ban nhân dân cấp tỉnh có trách nhiệm xây dựng và triển khai hoạt động\nphổ biến kiến thức, nâng cao nhận thức về an ninh mạng cho cơ quan, tổ chức, cá\nnhân của địa phương.\n\n[5a5be8d3ca3d45bbdf01b082a8f6f3ec7dd7368d40851379b197305f95a27ae6 | data/raw/24-2018-qh14.pdf | page 22]\nb) Ứng dụng, triển khai phương án, biện pháp, công nghệ bảo vệ an ninh mạng\nđối với hệ thống thông tin và thông tin, tài liệu được lưu trữ, soạn thảo, truyền đưa\ntrên hệ thống thông tin thuộc phạm vi quản lý;\nc) Tổ chức bồi dưỡng kiến thức về an ninh mạng cho cán bộ, công chức, viên\nchức, người lao động; nâng cao năng lực bảo vệ an ninh mạng cho lực lượng bảo\nvệ an ninh mạng;",
+      "context_ids": [
+        "449ee48860602762e61032d95fa1137208ff1485a297a60a8bc432b762650560",
+        "5c4323c5e28b2e6fa26247afce6e63d5979d1cb2e47fa8e8535a56ece50996c1",
+        "5a5be8d3ca3d45bbdf01b082a8f6f3ec7dd7368d40851379b197305f95a27ae6"
+      ]
+    },
+    {
+      "query_id": "d7-test-03",
+      "config": "baseline",
+      "query_original": "Chỉ xét Nghị định năm 2023: yêu cầu hạn chế xử lý dữ liệu cá nhân của chủ thể dữ liệu phải được thực hiện trong bao lâu, áp dụng cho phần dữ liệu nào và có ngoại lệ gì?",
+      "filter": {
+        "doc_type": "Nghị định",
+        "year": 2023
+      },
+      "results": [
+        {
+          "id": "93f1a19cad06fcb4483a39a959d38ad01b298b8d33c9182a3beb3a026c9a0a54",
+          "text": "b) Việc hạn chế xử lý dữ liệu được thực hiện trong 72 giờ sau khi có yêu cầu\ncủa chủ thê dữ liệu, với toàn bộ dữ liệu cá nhân mà chủ thê dữ liệu yêu cầu hạn\nchê, trừ trường hợp luật có quy định khác.\n\n7. Quyền cung cấp dữ liệu\n\nChủ thể dữ liệu được yêu cầu Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm\n\nsoát và xử lý dữ liệu cá nhân cung cấp cho bản thân dữ liệu cá nhân của mình,\ntrừ trường hợp luật có quy định khác.",
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "source": "data/raw/13-2023-nd-cp.pdf",
+          "page": 7,
+          "metadata": {
+            "year": 2023,
+            "chunking": "paragraph",
+            "doc_type": "Nghị định",
+            "end_char": 1369,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+            "start_char": 956,
+            "document_number": "13/2023/NĐ-CP",
+            "extraction_method": "tesseract-vie-200dpi-psm3",
+            "ocr_review_status": "sample_checked_not_fully_corrected",
+            "included_in_corpus": true
+          },
+          "score": 0.03278688524590164,
+          "branch_ranks": {
+            "dense": 1,
+            "bm25": 1
+          },
+          "branch_scores": {
+            "dense": 0.7512833430926698,
+            "bm25": 32.05615548818403
+          },
+          "rank": 1,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        },
+        {
+          "id": "338f4951a2d2b586150b2c3ccdd42aa0696e4d231e7184e84ae5b21a185ebe89",
+          "text": "3. Khi nhận yêu cầu rút lại sự đồng ý của chủ thể dữ liệu, Bên Kiểm soát dữ\nliệu cá nhân, Bên Kiêm soát và xử ly dữ liệu cá nhân thông báo cho chủ thê dữ\nliệu về hậu quả, thiệt hại có thê xảy ra khi rút lại sự đông ý.\n\n4. Sau khi thực hiện quy định tại khoản 2 Điều này, Bên Kiểm soát đữ\nliệu, Bên Xử lý dữ liệu, Bên Kiêm soát và xử lý dữ liệu, Bên thứ ba phải ngừng\nvà yêu cầu các tô chức, cá nhân có liên quan ngừng xử lý dữ liệu của chủ thê\ndữ liệu đã rút lại sự đông ý.",
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "source": "data/raw/13-2023-nd-cp.pdf",
+          "page": 10,
+          "metadata": {
+            "year": 2023,
+            "chunking": "paragraph",
+            "doc_type": "Nghị định",
+            "end_char": 1187,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+            "start_char": 714,
+            "document_number": "13/2023/NĐ-CP",
+            "extraction_method": "tesseract-vie-200dpi-psm3",
+            "ocr_review_status": "sample_checked_not_fully_corrected",
+            "included_in_corpus": true
+          },
+          "score": 0.02964426877470356,
+          "branch_ranks": {
+            "dense": 6,
+            "bm25": 9
+          },
+          "branch_scores": {
+            "dense": 0.6751605895828222,
+            "bm25": 22.780154706372365
+          },
+          "rank": 2,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        },
+        {
+          "id": "4113e8fe86b7955cefe44fd04c8a791e81b03946eb33926e0aecd3a10e164088",
+          "text": "2. Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử ly dữ liệu cá nhân\nchỉnh sửa dữ liệu cá nhân của chủ thể đữ liệu sau khi được chủ thể dữ liệu cá\nnhân đồng ý ngay khi có thể hoặc theo quy định của pháp luật chuyên ngành.\nTrường hợp không thể thực hiện thì thông báo tới chủ thể dữ liệu sau 72 giờ kế\nkhi nhận được yêu cầu chỉnh sửa đữ liệu cá nhân của chủ thê dữ liệu.",
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "source": "data/raw/13-2023-nd-cp.pdf",
+          "page": 13,
+          "metadata": {
+            "year": 2023,
+            "chunking": "paragraph",
+            "doc_type": "Nghị định",
+            "end_char": 993,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+            "start_char": 620,
+            "document_number": "13/2023/NĐ-CP",
+            "extraction_method": "tesseract-vie-200dpi-psm3",
+            "ocr_review_status": "sample_checked_not_fully_corrected",
+            "included_in_corpus": true
+          },
+          "score": 0.029386529386529386,
+          "branch_ranks": {
+            "dense": 3,
+            "bm25": 14
+          },
+          "branch_scores": {
+            "dense": 0.7134765131381439,
+            "bm25": 21.193081029757256
+          },
+          "rank": 3,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        }
+      ],
+      "context": "[93f1a19cad06fcb4483a39a959d38ad01b298b8d33c9182a3beb3a026c9a0a54 | data/raw/13-2023-nd-cp.pdf | page 7]\nb) Việc hạn chế xử lý dữ liệu được thực hiện trong 72 giờ sau khi có yêu cầu\ncủa chủ thê dữ liệu, với toàn bộ dữ liệu cá nhân mà chủ thê dữ liệu yêu cầu hạn\nchê, trừ trường hợp luật có quy định khác.\n\n7. Quyền cung cấp dữ liệu\n\nChủ thể dữ liệu được yêu cầu Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm\n\nsoát và xử lý dữ liệu cá nhân cung cấp cho bản thân dữ liệu cá nhân của mình,\ntrừ trường hợp luật có quy định khác.\n\n[338f4951a2d2b586150b2c3ccdd42aa0696e4d231e7184e84ae5b21a185ebe89 | data/raw/13-2023-nd-cp.pdf | page 10]\n3. Khi nhận yêu cầu rút lại sự đồng ý của chủ thể dữ liệu, Bên Kiểm soát dữ\nliệu cá nhân, Bên Kiêm soát và xử ly dữ liệu cá nhân thông báo cho chủ thê dữ\nliệu về hậu quả, thiệt hại có thê xảy ra khi rút lại sự đông ý.\n\n4. Sau khi thực hiện quy định tại khoản 2 Điều này, Bên Kiểm soát đữ\nliệu, Bên Xử lý dữ liệu, Bên Kiêm soát và xử lý dữ liệu, Bên thứ ba phải ngừng\nvà yêu cầu các tô chức, cá nhân có liên quan ngừng xử lý dữ liệu của chủ thê\ndữ liệu đã rút lại sự đông ý.\n\n[4113e8fe86b7955cefe44fd04c8a791e81b03946eb33926e0aecd3a10e164088 | data/raw/13-2023-nd-cp.pdf | page 13]\n2. Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử ly dữ liệu cá nhân\nchỉnh sửa dữ liệu cá nhân của chủ thể đữ liệu sau khi được chủ thể dữ liệu cá\nnhân đồng ý ngay khi có thể hoặc theo quy định của pháp luật chuyên ngành.\nTrường hợp không thể thực hiện thì thông báo tới chủ thể dữ liệu sau 72 giờ kế\nkhi nhận được yêu cầu chỉnh sửa đữ liệu cá nhân của chủ thê dữ liệu.",
+      "context_ids": [
+        "93f1a19cad06fcb4483a39a959d38ad01b298b8d33c9182a3beb3a026c9a0a54",
+        "338f4951a2d2b586150b2c3ccdd42aa0696e4d231e7184e84ae5b21a185ebe89",
+        "4113e8fe86b7955cefe44fd04c8a791e81b03946eb33926e0aecd3a10e164088"
+      ]
+    },
+    {
+      "query_id": "d7-test-03",
+      "config": "focused",
+      "query_original": "Chỉ xét Nghị định năm 2023: yêu cầu hạn chế xử lý dữ liệu cá nhân của chủ thể dữ liệu phải được thực hiện trong bao lâu, áp dụng cho phần dữ liệu nào và có ngoại lệ gì?",
+      "filter": {
+        "doc_type": "Nghị định",
+        "year": 2023
+      },
+      "results": [
+        {
+          "id": "93f1a19cad06fcb4483a39a959d38ad01b298b8d33c9182a3beb3a026c9a0a54",
+          "text": "b) Việc hạn chế xử lý dữ liệu được thực hiện trong 72 giờ sau khi có yêu cầu\ncủa chủ thê dữ liệu, với toàn bộ dữ liệu cá nhân mà chủ thê dữ liệu yêu cầu hạn\nchê, trừ trường hợp luật có quy định khác.\n\n7. Quyền cung cấp dữ liệu\n\nChủ thể dữ liệu được yêu cầu Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm\n\nsoát và xử lý dữ liệu cá nhân cung cấp cho bản thân dữ liệu cá nhân của mình,\ntrừ trường hợp luật có quy định khác.",
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "source": "data/raw/13-2023-nd-cp.pdf",
+          "page": 7,
+          "metadata": {
+            "year": 2023,
+            "chunking": "paragraph",
+            "doc_type": "Nghị định",
+            "end_char": 1369,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+            "start_char": 956,
+            "document_number": "13/2023/NĐ-CP",
+            "extraction_method": "tesseract-vie-200dpi-psm3",
+            "ocr_review_status": "sample_checked_not_fully_corrected",
+            "included_in_corpus": true
+          },
+          "score": 0.03278688524590164,
+          "branch_ranks": {
+            "dense": 1,
+            "bm25": 1
+          },
+          "branch_scores": {
+            "dense": 0.7512833430926698,
+            "bm25": 32.05615548818403
+          },
+          "rank": 1,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        },
+        {
+          "id": "338f4951a2d2b586150b2c3ccdd42aa0696e4d231e7184e84ae5b21a185ebe89",
+          "text": "3. Khi nhận yêu cầu rút lại sự đồng ý của chủ thể dữ liệu, Bên Kiểm soát dữ\nliệu cá nhân, Bên Kiêm soát và xử ly dữ liệu cá nhân thông báo cho chủ thê dữ\nliệu về hậu quả, thiệt hại có thê xảy ra khi rút lại sự đông ý.\n\n4. Sau khi thực hiện quy định tại khoản 2 Điều này, Bên Kiểm soát đữ\nliệu, Bên Xử lý dữ liệu, Bên Kiêm soát và xử lý dữ liệu, Bên thứ ba phải ngừng\nvà yêu cầu các tô chức, cá nhân có liên quan ngừng xử lý dữ liệu của chủ thê\ndữ liệu đã rút lại sự đông ý.",
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "source": "data/raw/13-2023-nd-cp.pdf",
+          "page": 10,
+          "metadata": {
+            "year": 2023,
+            "chunking": "paragraph",
+            "doc_type": "Nghị định",
+            "end_char": 1187,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+            "start_char": 714,
+            "document_number": "13/2023/NĐ-CP",
+            "extraction_method": "tesseract-vie-200dpi-psm3",
+            "ocr_review_status": "sample_checked_not_fully_corrected",
+            "included_in_corpus": true
+          },
+          "score": 0.02964426877470356,
+          "branch_ranks": {
+            "dense": 6,
+            "bm25": 9
+          },
+          "branch_scores": {
+            "dense": 0.6751605895828222,
+            "bm25": 22.780154706372365
+          },
+          "rank": 2,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        },
+        {
+          "id": "4113e8fe86b7955cefe44fd04c8a791e81b03946eb33926e0aecd3a10e164088",
+          "text": "2. Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử ly dữ liệu cá nhân\nchỉnh sửa dữ liệu cá nhân của chủ thể đữ liệu sau khi được chủ thể dữ liệu cá\nnhân đồng ý ngay khi có thể hoặc theo quy định của pháp luật chuyên ngành.\nTrường hợp không thể thực hiện thì thông báo tới chủ thể dữ liệu sau 72 giờ kế\nkhi nhận được yêu cầu chỉnh sửa đữ liệu cá nhân của chủ thê dữ liệu.",
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "source": "data/raw/13-2023-nd-cp.pdf",
+          "page": 13,
+          "metadata": {
+            "year": 2023,
+            "chunking": "paragraph",
+            "doc_type": "Nghị định",
+            "end_char": 993,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+            "start_char": 620,
+            "document_number": "13/2023/NĐ-CP",
+            "extraction_method": "tesseract-vie-200dpi-psm3",
+            "ocr_review_status": "sample_checked_not_fully_corrected",
+            "included_in_corpus": true
+          },
+          "score": 0.029386529386529386,
+          "branch_ranks": {
+            "dense": 3,
+            "bm25": 14
+          },
+          "branch_scores": {
+            "dense": 0.7134765131381439,
+            "bm25": 21.193081029757256
+          },
+          "rank": 3,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        }
+      ],
+      "context": "[93f1a19cad06fcb4483a39a959d38ad01b298b8d33c9182a3beb3a026c9a0a54 | data/raw/13-2023-nd-cp.pdf | page 7]\nb) Việc hạn chế xử lý dữ liệu được thực hiện trong 72 giờ sau khi có yêu cầu\ncủa chủ thê dữ liệu, với toàn bộ dữ liệu cá nhân mà chủ thê dữ liệu yêu cầu hạn\nchê, trừ trường hợp luật có quy định khác.\n\n7. Quyền cung cấp dữ liệu\n\nChủ thể dữ liệu được yêu cầu Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm\n\nsoát và xử lý dữ liệu cá nhân cung cấp cho bản thân dữ liệu cá nhân của mình,\ntrừ trường hợp luật có quy định khác.\n\n[338f4951a2d2b586150b2c3ccdd42aa0696e4d231e7184e84ae5b21a185ebe89 | data/raw/13-2023-nd-cp.pdf | page 10]\n3. Khi nhận yêu cầu rút lại sự đồng ý của chủ thể dữ liệu, Bên Kiểm soát dữ\nliệu cá nhân, Bên Kiêm soát và xử ly dữ liệu cá nhân thông báo cho chủ thê dữ\nliệu về hậu quả, thiệt hại có thê xảy ra khi rút lại sự đông ý.\n\n4. Sau khi thực hiện quy định tại khoản 2 Điều này, Bên Kiểm soát đữ\nliệu, Bên Xử lý dữ liệu, Bên Kiêm soát và xử lý dữ liệu, Bên thứ ba phải ngừng\nvà yêu cầu các tô chức, cá nhân có liên quan ngừng xử lý dữ liệu của chủ thê\ndữ liệu đã rút lại sự đông ý.\n\n[4113e8fe86b7955cefe44fd04c8a791e81b03946eb33926e0aecd3a10e164088 | data/raw/13-2023-nd-cp.pdf | page 13]\n2. Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử ly dữ liệu cá nhân\nchỉnh sửa dữ liệu cá nhân của chủ thể đữ liệu sau khi được chủ thể dữ liệu cá\nnhân đồng ý ngay khi có thể hoặc theo quy định của pháp luật chuyên ngành.\nTrường hợp không thể thực hiện thì thông báo tới chủ thể dữ liệu sau 72 giờ kế\nkhi nhận được yêu cầu chỉnh sửa đữ liệu cá nhân của chủ thê dữ liệu.",
+      "context_ids": [
+        "93f1a19cad06fcb4483a39a959d38ad01b298b8d33c9182a3beb3a026c9a0a54",
+        "338f4951a2d2b586150b2c3ccdd42aa0696e4d231e7184e84ae5b21a185ebe89",
+        "4113e8fe86b7955cefe44fd04c8a791e81b03946eb33926e0aecd3a10e164088"
+      ]
+    },
+    {
+      "query_id": "d7-test-04",
+      "config": "baseline",
+      "query_original": "Theo Nghị định bảo vệ dữ liệu cá nhân trong corpus, Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân phải gửi cho đơn vị nào, bao nhiêu bản chính, theo mẫu nào và trong thời gian bao lâu kể từ mốc nào?",
+      "filter": null,
+      "results": [
+        {
+          "id": "4ac08fda6cf72ac2bcff823cffc9a5c24cd982d0d3e4b4417e2bb55074479fff",
+          "text": "4. Hồ sơ đánh giá tác động xử lý đữ liệu cá nhân phải luôn có sẵn để phục\nvụ hoạt động kiểm tra, đánh giá của Bộ Công an và gửi Bộ Công an (Cục An\nninh mạng và phòng, chống tội phạm sử dụng công nghệ cao) 01 bản chính theo\nMẫu số 04 tại Phụ lục của Nghị định này trong thời gian 60 ngày kế từ ngày tiến\nhành xử lý đữ liệu cá nhân.\n\n5. Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công\nnghệ cao) đánh giá, yêu câu Bên Kiểm soát dữ liệu cá nhân, Bên Kiêm soát và",
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "source": "data/raw/13-2023-nd-cp.pdf",
+          "page": 19,
+          "metadata": {
+            "year": 2023,
+            "chunking": "paragraph",
+            "doc_type": "Nghị định",
+            "end_char": 1996,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+            "start_char": 1519,
+            "document_number": "13/2023/NĐ-CP",
+            "extraction_method": "tesseract-vie-200dpi-psm3",
+            "ocr_review_status": "sample_checked_not_fully_corrected",
+            "included_in_corpus": true
+          },
+          "score": 0.03200204813108039,
+          "branch_ranks": {
+            "dense": 3,
+            "bm25": 2
+          },
+          "branch_scores": {
+            "dense": 0.6260877983439266,
+            "bm25": 42.96024517787203
+          },
+          "rank": 1,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        },
+        {
+          "id": "9c877ccc4f07e611e6a70b0f90d79e23d9cb4195dbc03d21f0d62dc56f0654bb",
+          "text": "21\n\n3. Hồ sơ đánh giá tác động chuyến dữ liệu cá nhân ra nước ngoài phải luôn\ncó săn đề phục vụ hoạt động kiêm tra, đánh giá của Bộ Công an.\n\nBên chuyển đữ liệu ra nước ngoài gửi 01 bản chính hồ sơ tới Bộ Công an\n(Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao) theo Mẫu\nsố 06 tại Phụ lục của Nghị định này trong thời gian 60 ngày kế từ ngày tiến hành\nxử lý dữ liệu cá nhân.",
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "source": "data/raw/13-2023-nd-cp.pdf",
+          "page": 21,
+          "metadata": {
+            "year": 2023,
+            "chunking": "paragraph",
+            "doc_type": "Nghị định",
+            "end_char": 391,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+            "start_char": 0,
+            "document_number": "13/2023/NĐ-CP",
+            "extraction_method": "tesseract-vie-200dpi-psm3",
+            "ocr_review_status": "sample_checked_not_fully_corrected",
+            "included_in_corpus": true
+          },
+          "score": 0.03131881575727918,
+          "branch_ranks": {
+            "dense": 7,
+            "bm25": 1
+          },
+          "branch_scores": {
+            "dense": 0.6057511468049722,
+            "bm25": 47.69825142384885
+          },
+          "rank": 2,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        },
+        {
+          "id": "a8b807f97102d073dfa5fca841a42ef4c18a3f9a4d08bfe3e82d3c6a7d845d11",
+          "text": "4. Đánh giá kết quả công tác bảo vệ dữ liệu cá nhân của cơ quan, tổ chức,\ncá nhân có liên quan.\n\n5. Tiếp nhận hồ sơ, biểu mẫu, thông tin về bảo vệ dữ liệu cá nhân theo quy\n\nđịnh tại Nghị định này.\n\n6. Thúc đẩy các biện pháp và thực hiện nghiên cứu để đổi mới trong lĩnh\nvực bảo vệ đữ liệu cá nhân, triên khai hợp tác quộc tê về bảo vệ dữ liệu cá nhân.",
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "source": "data/raw/13-2023-nd-cp.pdf",
+          "page": 24,
+          "metadata": {
+            "year": 2023,
+            "chunking": "paragraph",
+            "doc_type": "Nghị định",
+            "end_char": 1662,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+            "start_char": 1311,
+            "document_number": "13/2023/NĐ-CP",
+            "extraction_method": "tesseract-vie-200dpi-psm3",
+            "ocr_review_status": "sample_checked_not_fully_corrected",
+            "included_in_corpus": true
+          },
+          "score": 0.03128054740957967,
+          "branch_ranks": {
+            "dense": 2,
+            "bm25": 6
+          },
+          "branch_scores": {
+            "dense": 0.6548485517582054,
+            "bm25": 30.36195523418597
+          },
+          "rank": 3,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        }
+      ],
+      "context": "[4ac08fda6cf72ac2bcff823cffc9a5c24cd982d0d3e4b4417e2bb55074479fff | data/raw/13-2023-nd-cp.pdf | page 19]\n4. Hồ sơ đánh giá tác động xử lý đữ liệu cá nhân phải luôn có sẵn để phục\nvụ hoạt động kiểm tra, đánh giá của Bộ Công an và gửi Bộ Công an (Cục An\nninh mạng và phòng, chống tội phạm sử dụng công nghệ cao) 01 bản chính theo\nMẫu số 04 tại Phụ lục của Nghị định này trong thời gian 60 ngày kế từ ngày tiến\nhành xử lý đữ liệu cá nhân.\n\n5. Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công\nnghệ cao) đánh giá, yêu câu Bên Kiểm soát dữ liệu cá nhân, Bên Kiêm soát và\n\n[9c877ccc4f07e611e6a70b0f90d79e23d9cb4195dbc03d21f0d62dc56f0654bb | data/raw/13-2023-nd-cp.pdf | page 21]\n21\n\n3. Hồ sơ đánh giá tác động chuyến dữ liệu cá nhân ra nước ngoài phải luôn\ncó săn đề phục vụ hoạt động kiêm tra, đánh giá của Bộ Công an.\n\nBên chuyển đữ liệu ra nước ngoài gửi 01 bản chính hồ sơ tới Bộ Công an\n(Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao) theo Mẫu\nsố 06 tại Phụ lục của Nghị định này trong thời gian 60 ngày kế từ ngày tiến hành\nxử lý dữ liệu cá nhân.\n\n[a8b807f97102d073dfa5fca841a42ef4c18a3f9a4d08bfe3e82d3c6a7d845d11 | data/raw/13-2023-nd-cp.pdf | page 24]\n4. Đánh giá kết quả công tác bảo vệ dữ liệu cá nhân của cơ quan, tổ chức,\ncá nhân có liên quan.\n\n5. Tiếp nhận hồ sơ, biểu mẫu, thông tin về bảo vệ dữ liệu cá nhân theo quy\n\nđịnh tại Nghị định này.\n\n6. Thúc đẩy các biện pháp và thực hiện nghiên cứu để đổi mới trong lĩnh\nvực bảo vệ đữ liệu cá nhân, triên khai hợp tác quộc tê về bảo vệ dữ liệu cá nhân.",
+      "context_ids": [
+        "4ac08fda6cf72ac2bcff823cffc9a5c24cd982d0d3e4b4417e2bb55074479fff",
+        "9c877ccc4f07e611e6a70b0f90d79e23d9cb4195dbc03d21f0d62dc56f0654bb",
+        "a8b807f97102d073dfa5fca841a42ef4c18a3f9a4d08bfe3e82d3c6a7d845d11"
+      ]
+    },
+    {
+      "query_id": "d7-test-04",
+      "config": "focused",
+      "query_original": "Theo Nghị định bảo vệ dữ liệu cá nhân trong corpus, Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân phải gửi cho đơn vị nào, bao nhiêu bản chính, theo mẫu nào và trong thời gian bao lâu kể từ mốc nào?",
+      "filter": null,
+      "results": [
+        {
+          "id": "4ac08fda6cf72ac2bcff823cffc9a5c24cd982d0d3e4b4417e2bb55074479fff",
+          "text": "4. Hồ sơ đánh giá tác động xử lý đữ liệu cá nhân phải luôn có sẵn để phục\nvụ hoạt động kiểm tra, đánh giá của Bộ Công an và gửi Bộ Công an (Cục An\nninh mạng và phòng, chống tội phạm sử dụng công nghệ cao) 01 bản chính theo\nMẫu số 04 tại Phụ lục của Nghị định này trong thời gian 60 ngày kế từ ngày tiến\nhành xử lý đữ liệu cá nhân.\n\n5. Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công\nnghệ cao) đánh giá, yêu câu Bên Kiểm soát dữ liệu cá nhân, Bên Kiêm soát và",
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "source": "data/raw/13-2023-nd-cp.pdf",
+          "page": 19,
+          "metadata": {
+            "year": 2023,
+            "chunking": "paragraph",
+            "doc_type": "Nghị định",
+            "end_char": 1996,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+            "start_char": 1519,
+            "document_number": "13/2023/NĐ-CP",
+            "extraction_method": "tesseract-vie-200dpi-psm3",
+            "ocr_review_status": "sample_checked_not_fully_corrected",
+            "included_in_corpus": true
+          },
+          "score": 0.03200204813108039,
+          "branch_ranks": {
+            "dense": 3,
+            "bm25": 2
+          },
+          "branch_scores": {
+            "dense": 0.6260877983439266,
+            "bm25": 42.96024517787203
+          },
+          "rank": 1,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        },
+        {
+          "id": "9c877ccc4f07e611e6a70b0f90d79e23d9cb4195dbc03d21f0d62dc56f0654bb",
+          "text": "21\n\n3. Hồ sơ đánh giá tác động chuyến dữ liệu cá nhân ra nước ngoài phải luôn\ncó săn đề phục vụ hoạt động kiêm tra, đánh giá của Bộ Công an.\n\nBên chuyển đữ liệu ra nước ngoài gửi 01 bản chính hồ sơ tới Bộ Công an\n(Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao) theo Mẫu\nsố 06 tại Phụ lục của Nghị định này trong thời gian 60 ngày kế từ ngày tiến hành\nxử lý dữ liệu cá nhân.",
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "source": "data/raw/13-2023-nd-cp.pdf",
+          "page": 21,
+          "metadata": {
+            "year": 2023,
+            "chunking": "paragraph",
+            "doc_type": "Nghị định",
+            "end_char": 391,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+            "start_char": 0,
+            "document_number": "13/2023/NĐ-CP",
+            "extraction_method": "tesseract-vie-200dpi-psm3",
+            "ocr_review_status": "sample_checked_not_fully_corrected",
+            "included_in_corpus": true
+          },
+          "score": 0.03131881575727918,
+          "branch_ranks": {
+            "dense": 7,
+            "bm25": 1
+          },
+          "branch_scores": {
+            "dense": 0.6057511468049722,
+            "bm25": 47.69825142384885
+          },
+          "rank": 2,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        },
+        {
+          "id": "a8b807f97102d073dfa5fca841a42ef4c18a3f9a4d08bfe3e82d3c6a7d845d11",
+          "text": "4. Đánh giá kết quả công tác bảo vệ dữ liệu cá nhân của cơ quan, tổ chức,\ncá nhân có liên quan.\n\n5. Tiếp nhận hồ sơ, biểu mẫu, thông tin về bảo vệ dữ liệu cá nhân theo quy\n\nđịnh tại Nghị định này.\n\n6. Thúc đẩy các biện pháp và thực hiện nghiên cứu để đổi mới trong lĩnh\nvực bảo vệ đữ liệu cá nhân, triên khai hợp tác quộc tê về bảo vệ dữ liệu cá nhân.",
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "source": "data/raw/13-2023-nd-cp.pdf",
+          "page": 24,
+          "metadata": {
+            "year": 2023,
+            "chunking": "paragraph",
+            "doc_type": "Nghị định",
+            "end_char": 1662,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+            "start_char": 1311,
+            "document_number": "13/2023/NĐ-CP",
+            "extraction_method": "tesseract-vie-200dpi-psm3",
+            "ocr_review_status": "sample_checked_not_fully_corrected",
+            "included_in_corpus": true
+          },
+          "score": 0.03128054740957967,
+          "branch_ranks": {
+            "dense": 2,
+            "bm25": 6
+          },
+          "branch_scores": {
+            "dense": 0.6548485517582054,
+            "bm25": 30.36195523418597
+          },
+          "rank": 3,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        }
+      ],
+      "context": "[4ac08fda6cf72ac2bcff823cffc9a5c24cd982d0d3e4b4417e2bb55074479fff | data/raw/13-2023-nd-cp.pdf | page 19]\n4. Hồ sơ đánh giá tác động xử lý đữ liệu cá nhân phải luôn có sẵn để phục\nvụ hoạt động kiểm tra, đánh giá của Bộ Công an và gửi Bộ Công an (Cục An\nninh mạng và phòng, chống tội phạm sử dụng công nghệ cao) 01 bản chính theo\nMẫu số 04 tại Phụ lục của Nghị định này trong thời gian 60 ngày kế từ ngày tiến\nhành xử lý đữ liệu cá nhân.\n\n5. Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công\nnghệ cao) đánh giá, yêu câu Bên Kiểm soát dữ liệu cá nhân, Bên Kiêm soát và\n\n[9c877ccc4f07e611e6a70b0f90d79e23d9cb4195dbc03d21f0d62dc56f0654bb | data/raw/13-2023-nd-cp.pdf | page 21]\n21\n\n3. Hồ sơ đánh giá tác động chuyến dữ liệu cá nhân ra nước ngoài phải luôn\ncó săn đề phục vụ hoạt động kiêm tra, đánh giá của Bộ Công an.\n\nBên chuyển đữ liệu ra nước ngoài gửi 01 bản chính hồ sơ tới Bộ Công an\n(Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao) theo Mẫu\nsố 06 tại Phụ lục của Nghị định này trong thời gian 60 ngày kế từ ngày tiến hành\nxử lý dữ liệu cá nhân.\n\n[a8b807f97102d073dfa5fca841a42ef4c18a3f9a4d08bfe3e82d3c6a7d845d11 | data/raw/13-2023-nd-cp.pdf | page 24]\n4. Đánh giá kết quả công tác bảo vệ dữ liệu cá nhân của cơ quan, tổ chức,\ncá nhân có liên quan.\n\n5. Tiếp nhận hồ sơ, biểu mẫu, thông tin về bảo vệ dữ liệu cá nhân theo quy\n\nđịnh tại Nghị định này.\n\n6. Thúc đẩy các biện pháp và thực hiện nghiên cứu để đổi mới trong lĩnh\nvực bảo vệ đữ liệu cá nhân, triên khai hợp tác quộc tê về bảo vệ dữ liệu cá nhân.",
+      "context_ids": [
+        "4ac08fda6cf72ac2bcff823cffc9a5c24cd982d0d3e4b4417e2bb55074479fff",
+        "9c877ccc4f07e611e6a70b0f90d79e23d9cb4195dbc03d21f0d62dc56f0654bb",
+        "a8b807f97102d073dfa5fca841a42ef4c18a3f9a4d08bfe3e82d3c6a7d845d11"
+      ]
+    },
+    {
+      "query_id": "d7-test-05",
+      "config": "baseline",
+      "query_original": "Theo Nghị định bảo vệ dữ liệu cá nhân trong corpus, kinh phí bảo vệ dữ liệu cá nhân của tổ chức, doanh nghiệp do ai bố trí và thực hiện?",
+      "filter": null,
+      "results": [
+        {
+          "id": "3b6e77c8eb98df0799c39497f7d0040b971d179299ea16ded6e077e177500a1b",
+          "text": "2. Kinh phí bảo vệ dữ liệu cá nhân của cơ quan nhà nước do ngân sách\nnhà nước bảo đảm, được bế trí trong dự toán ngân sách nhà nước hằng năm.\nViệc quản lý, sử dụng kinh phí từ ngân sách nhà nước được thực hiện theo quy\nđịnh của pháp luật về ngân sách nhà nước.\n\n3. Kinh phí bảo vệ dữ liệu cá nhân của tô chức, doanh nghiệp do các tổ\nchức, doanh nghiệp tự bố trí và thực hiện theo quy định.\n\nl _ ChươnIH\nTRÁCH NHIỆM CỦA CƠ QUAN, TỎ CHỨC, CÁ NHÂN",
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "source": "data/raw/13-2023-nd-cp.pdf",
+          "page": 24,
+          "metadata": {
+            "year": 2023,
+            "chunking": "paragraph",
+            "doc_type": "Nghị định",
+            "end_char": 857,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+            "start_char": 413,
+            "document_number": "13/2023/NĐ-CP",
+            "extraction_method": "tesseract-vie-200dpi-psm3",
+            "ocr_review_status": "sample_checked_not_fully_corrected",
+            "included_in_corpus": true
+          },
+          "score": 0.03278688524590164,
+          "branch_ranks": {
+            "dense": 1,
+            "bm25": 1
+          },
+          "branch_scores": {
+            "dense": 0.6579436959308422,
+            "bm25": 42.9632827111274
+          },
+          "rank": 1,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        },
+        {
+          "id": "aa3d6ef99cb162812a7b6460ec3973dfd2db7aeaf76b73b08cf69786c7c38d5e",
+          "text": "4. Bế trí kinh phí phục vụ hoạt động bảo vệ dữ liệu cá nhân theo phân cấp\nquản lý ngân sách hiện hành.\n\n5. Ban hành Danh mục đữ liệu mở phù hợp với quy định bảo vệ dữ liệu cá\nnhân.",
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "source": "data/raw/13-2023-nd-cp.pdf",
+          "page": 25,
+          "metadata": {
+            "year": 2023,
+            "chunking": "paragraph",
+            "doc_type": "Nghị định",
+            "end_char": 1881,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+            "start_char": 1701,
+            "document_number": "13/2023/NĐ-CP",
+            "extraction_method": "tesseract-vie-200dpi-psm3",
+            "ocr_review_status": "sample_checked_not_fully_corrected",
+            "included_in_corpus": true
+          },
+          "score": 0.03149801587301587,
+          "branch_ranks": {
+            "dense": 3,
+            "bm25": 4
+          },
+          "branch_scores": {
+            "dense": 0.6448816236268701,
+            "bm25": 22.655954633161677
+          },
+          "rank": 2,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        },
+        {
+          "id": "84a4ac87bd1ed88d208158eb76ca8df17cf30bbd38d7667d99a857ea47ae154a",
+          "text": "Điều 31. Kinh phí bảo đảm hoạt động bảo vệ dữ liệu cá nhân\n\n1. Nguồn tài chính thực hiện bảo vệ dữ liệu cá nhân bao gồm ngân sách\nnhà nước; ủng hộ của cơ quan, tổ chức, cá nhân trong và ngoài nước; nguồn\nthu từ hoạt động cung cấp dịch vụ bảo vệ dữ liệu cá nhân; viện trợ quốc tế và\ncác nguồn thu hợp pháp khác.",
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "source": "data/raw/13-2023-nd-cp.pdf",
+          "page": 24,
+          "metadata": {
+            "year": 2023,
+            "chunking": "paragraph",
+            "doc_type": "Nghị định",
+            "end_char": 411,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+            "start_char": 101,
+            "document_number": "13/2023/NĐ-CP",
+            "extraction_method": "tesseract-vie-200dpi-psm3",
+            "ocr_review_status": "sample_checked_not_fully_corrected",
+            "included_in_corpus": true
+          },
+          "score": 0.030330882352941176,
+          "branch_ranks": {
+            "dense": 4,
+            "bm25": 8
+          },
+          "branch_scores": {
+            "dense": 0.6448570242441908,
+            "bm25": 21.021103503449815
+          },
+          "rank": 3,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        }
+      ],
+      "context": "[3b6e77c8eb98df0799c39497f7d0040b971d179299ea16ded6e077e177500a1b | data/raw/13-2023-nd-cp.pdf | page 24]\n2. Kinh phí bảo vệ dữ liệu cá nhân của cơ quan nhà nước do ngân sách\nnhà nước bảo đảm, được bế trí trong dự toán ngân sách nhà nước hằng năm.\nViệc quản lý, sử dụng kinh phí từ ngân sách nhà nước được thực hiện theo quy\nđịnh của pháp luật về ngân sách nhà nước.\n\n3. Kinh phí bảo vệ dữ liệu cá nhân của tô chức, doanh nghiệp do các tổ\nchức, doanh nghiệp tự bố trí và thực hiện theo quy định.\n\nl _ ChươnIH\nTRÁCH NHIỆM CỦA CƠ QUAN, TỎ CHỨC, CÁ NHÂN\n\n[aa3d6ef99cb162812a7b6460ec3973dfd2db7aeaf76b73b08cf69786c7c38d5e | data/raw/13-2023-nd-cp.pdf | page 25]\n4. Bế trí kinh phí phục vụ hoạt động bảo vệ dữ liệu cá nhân theo phân cấp\nquản lý ngân sách hiện hành.\n\n5. Ban hành Danh mục đữ liệu mở phù hợp với quy định bảo vệ dữ liệu cá\nnhân.\n\n[84a4ac87bd1ed88d208158eb76ca8df17cf30bbd38d7667d99a857ea47ae154a | data/raw/13-2023-nd-cp.pdf | page 24]\nĐiều 31. Kinh phí bảo đảm hoạt động bảo vệ dữ liệu cá nhân\n\n1. Nguồn tài chính thực hiện bảo vệ dữ liệu cá nhân bao gồm ngân sách\nnhà nước; ủng hộ của cơ quan, tổ chức, cá nhân trong và ngoài nước; nguồn\nthu từ hoạt động cung cấp dịch vụ bảo vệ dữ liệu cá nhân; viện trợ quốc tế và\ncác nguồn thu hợp pháp khác.",
+      "context_ids": [
+        "3b6e77c8eb98df0799c39497f7d0040b971d179299ea16ded6e077e177500a1b",
+        "aa3d6ef99cb162812a7b6460ec3973dfd2db7aeaf76b73b08cf69786c7c38d5e",
+        "84a4ac87bd1ed88d208158eb76ca8df17cf30bbd38d7667d99a857ea47ae154a"
+      ]
+    },
+    {
+      "query_id": "d7-test-05",
+      "config": "focused",
+      "query_original": "Theo Nghị định bảo vệ dữ liệu cá nhân trong corpus, kinh phí bảo vệ dữ liệu cá nhân của tổ chức, doanh nghiệp do ai bố trí và thực hiện?",
+      "filter": null,
+      "results": [
+        {
+          "id": "3b6e77c8eb98df0799c39497f7d0040b971d179299ea16ded6e077e177500a1b",
+          "text": "2. Kinh phí bảo vệ dữ liệu cá nhân của cơ quan nhà nước do ngân sách\nnhà nước bảo đảm, được bế trí trong dự toán ngân sách nhà nước hằng năm.\nViệc quản lý, sử dụng kinh phí từ ngân sách nhà nước được thực hiện theo quy\nđịnh của pháp luật về ngân sách nhà nước.\n\n3. Kinh phí bảo vệ dữ liệu cá nhân của tô chức, doanh nghiệp do các tổ\nchức, doanh nghiệp tự bố trí và thực hiện theo quy định.\n\nl _ ChươnIH\nTRÁCH NHIỆM CỦA CƠ QUAN, TỎ CHỨC, CÁ NHÂN",
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "source": "data/raw/13-2023-nd-cp.pdf",
+          "page": 24,
+          "metadata": {
+            "year": 2023,
+            "chunking": "paragraph",
+            "doc_type": "Nghị định",
+            "end_char": 857,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+            "start_char": 413,
+            "document_number": "13/2023/NĐ-CP",
+            "extraction_method": "tesseract-vie-200dpi-psm3",
+            "ocr_review_status": "sample_checked_not_fully_corrected",
+            "included_in_corpus": true
+          },
+          "score": 0.03278688524590164,
+          "branch_ranks": {
+            "dense": 1,
+            "bm25": 1
+          },
+          "branch_scores": {
+            "dense": 0.6579436959308422,
+            "bm25": 42.9632827111274
+          },
+          "rank": 1,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        },
+        {
+          "id": "aa3d6ef99cb162812a7b6460ec3973dfd2db7aeaf76b73b08cf69786c7c38d5e",
+          "text": "4. Bế trí kinh phí phục vụ hoạt động bảo vệ dữ liệu cá nhân theo phân cấp\nquản lý ngân sách hiện hành.\n\n5. Ban hành Danh mục đữ liệu mở phù hợp với quy định bảo vệ dữ liệu cá\nnhân.",
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "source": "data/raw/13-2023-nd-cp.pdf",
+          "page": 25,
+          "metadata": {
+            "year": 2023,
+            "chunking": "paragraph",
+            "doc_type": "Nghị định",
+            "end_char": 1881,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+            "start_char": 1701,
+            "document_number": "13/2023/NĐ-CP",
+            "extraction_method": "tesseract-vie-200dpi-psm3",
+            "ocr_review_status": "sample_checked_not_fully_corrected",
+            "included_in_corpus": true
+          },
+          "score": 0.03149801587301587,
+          "branch_ranks": {
+            "dense": 3,
+            "bm25": 4
+          },
+          "branch_scores": {
+            "dense": 0.6448816236268701,
+            "bm25": 22.655954633161677
+          },
+          "rank": 2,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        },
+        {
+          "id": "84a4ac87bd1ed88d208158eb76ca8df17cf30bbd38d7667d99a857ea47ae154a",
+          "text": "Điều 31. Kinh phí bảo đảm hoạt động bảo vệ dữ liệu cá nhân\n\n1. Nguồn tài chính thực hiện bảo vệ dữ liệu cá nhân bao gồm ngân sách\nnhà nước; ủng hộ của cơ quan, tổ chức, cá nhân trong và ngoài nước; nguồn\nthu từ hoạt động cung cấp dịch vụ bảo vệ dữ liệu cá nhân; viện trợ quốc tế và\ncác nguồn thu hợp pháp khác.",
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "source": "data/raw/13-2023-nd-cp.pdf",
+          "page": 24,
+          "metadata": {
+            "year": 2023,
+            "chunking": "paragraph",
+            "doc_type": "Nghị định",
+            "end_char": 411,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+            "start_char": 101,
+            "document_number": "13/2023/NĐ-CP",
+            "extraction_method": "tesseract-vie-200dpi-psm3",
+            "ocr_review_status": "sample_checked_not_fully_corrected",
+            "included_in_corpus": true
+          },
+          "score": 0.030330882352941176,
+          "branch_ranks": {
+            "dense": 4,
+            "bm25": 8
+          },
+          "branch_scores": {
+            "dense": 0.6448570242441908,
+            "bm25": 21.021103503449815
+          },
+          "rank": 3,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        }
+      ],
+      "context": "[3b6e77c8eb98df0799c39497f7d0040b971d179299ea16ded6e077e177500a1b | data/raw/13-2023-nd-cp.pdf | page 24]\n2. Kinh phí bảo vệ dữ liệu cá nhân của cơ quan nhà nước do ngân sách\nnhà nước bảo đảm, được bế trí trong dự toán ngân sách nhà nước hằng năm.\nViệc quản lý, sử dụng kinh phí từ ngân sách nhà nước được thực hiện theo quy\nđịnh của pháp luật về ngân sách nhà nước.\n\n3. Kinh phí bảo vệ dữ liệu cá nhân của tô chức, doanh nghiệp do các tổ\nchức, doanh nghiệp tự bố trí và thực hiện theo quy định.\n\nl _ ChươnIH\nTRÁCH NHIỆM CỦA CƠ QUAN, TỎ CHỨC, CÁ NHÂN\n\n[aa3d6ef99cb162812a7b6460ec3973dfd2db7aeaf76b73b08cf69786c7c38d5e | data/raw/13-2023-nd-cp.pdf | page 25]\n4. Bế trí kinh phí phục vụ hoạt động bảo vệ dữ liệu cá nhân theo phân cấp\nquản lý ngân sách hiện hành.\n\n5. Ban hành Danh mục đữ liệu mở phù hợp với quy định bảo vệ dữ liệu cá\nnhân.\n\n[84a4ac87bd1ed88d208158eb76ca8df17cf30bbd38d7667d99a857ea47ae154a | data/raw/13-2023-nd-cp.pdf | page 24]\nĐiều 31. Kinh phí bảo đảm hoạt động bảo vệ dữ liệu cá nhân\n\n1. Nguồn tài chính thực hiện bảo vệ dữ liệu cá nhân bao gồm ngân sách\nnhà nước; ủng hộ của cơ quan, tổ chức, cá nhân trong và ngoài nước; nguồn\nthu từ hoạt động cung cấp dịch vụ bảo vệ dữ liệu cá nhân; viện trợ quốc tế và\ncác nguồn thu hợp pháp khác.",
+      "context_ids": [
+        "3b6e77c8eb98df0799c39497f7d0040b971d179299ea16ded6e077e177500a1b",
+        "aa3d6ef99cb162812a7b6460ec3973dfd2db7aeaf76b73b08cf69786c7c38d5e",
+        "84a4ac87bd1ed88d208158eb76ca8df17cf30bbd38d7667d99a857ea47ae154a"
+      ]
+    },
+    {
+      "query_id": "d7-test-u01",
+      "config": "baseline",
+      "query_original": "Dựa vào hai tài liệu trong corpus, tổng số khiếu nại về bảo vệ dữ liệu cá nhân mà Cổng thông tin quốc gia đã tiếp nhận trong năm 2025 là bao nhiêu?",
+      "filter": null,
+      "results": [
+        {
+          "id": "28d7169119a579b15749a8234e6630ed8925ebcec028802c713ffa5f562d7845",
+          "text": "ø) Sự đồng ý của chủ thể dữ liệu theo quy định tại Điều 11 Nghị định\nnày trên cơ sở biết rõ cơ chế phản hồi, khiếu nại khi có sự cố hoặc yêu cầu\nphát sinh;\n\nh) Có văn bản thể hiện sự ràng buộc, trách nhiệm giữa các tổ chức, cá nhân\nchuyển và nhận đữ liệu cá nhân của Công dân Việt Nam về việc xử ly dữ liệu\ncá nhân.",
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "source": "data/raw/13-2023-nd-cp.pdf",
+          "page": 20,
+          "metadata": {
+            "year": 2023,
+            "chunking": "paragraph",
+            "doc_type": "Nghị định",
+            "end_char": 2146,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+            "start_char": 1831,
+            "document_number": "13/2023/NĐ-CP",
+            "extraction_method": "tesseract-vie-200dpi-psm3",
+            "ocr_review_status": "sample_checked_not_fully_corrected",
+            "included_in_corpus": true
+          },
+          "score": 0.029910714285714284,
+          "branch_ranks": {
+            "dense": 4,
+            "bm25": 10
+          },
+          "branch_scores": {
+            "dense": 0.5517806142037207,
+            "bm25": 15.407146160524881
+          },
+          "rank": 1,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        },
+        {
+          "id": "a8b807f97102d073dfa5fca841a42ef4c18a3f9a4d08bfe3e82d3c6a7d845d11",
+          "text": "4. Đánh giá kết quả công tác bảo vệ dữ liệu cá nhân của cơ quan, tổ chức,\ncá nhân có liên quan.\n\n5. Tiếp nhận hồ sơ, biểu mẫu, thông tin về bảo vệ dữ liệu cá nhân theo quy\n\nđịnh tại Nghị định này.\n\n6. Thúc đẩy các biện pháp và thực hiện nghiên cứu để đổi mới trong lĩnh\nvực bảo vệ đữ liệu cá nhân, triên khai hợp tác quộc tê về bảo vệ dữ liệu cá nhân.",
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "source": "data/raw/13-2023-nd-cp.pdf",
+          "page": 24,
+          "metadata": {
+            "year": 2023,
+            "chunking": "paragraph",
+            "doc_type": "Nghị định",
+            "end_char": 1662,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+            "start_char": 1311,
+            "document_number": "13/2023/NĐ-CP",
+            "extraction_method": "tesseract-vie-200dpi-psm3",
+            "ocr_review_status": "sample_checked_not_fully_corrected",
+            "included_in_corpus": true
+          },
+          "score": 0.029631255487269532,
+          "branch_ranks": {
+            "dense": 7,
+            "bm25": 8
+          },
+          "branch_scores": {
+            "dense": 0.5402042198315371,
+            "bm25": 16.003405951289405
+          },
+          "rank": 2,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        },
+        {
+          "id": "3823a6898af9b488694ae16aa0fa87340b7d784e09a1fdcf15051231b27c827f",
+          "text": "b) Tuyên truyền, phổ biến chính sách, pháp luật về bảo vệ dữ liệu cá nhân;\nc) Cập nhật thông tin, tình hình bảo vệ dữ liệu cá nhân;\n\nd) Tiếp nhận thông tin, hồ sơ, đữ liệu về hoạt động bảo vệ dữ liệu cá nhân\nqua không gian mạng;\n\nđ) Cung cấp thông tin về kết quả đánh giá công tác bảo vệ dữ liệu cá nhân\ncủa cơ quan, tô chức, cá nhân có liên quan;\n\ne) Tiếp nhận thông báo vi phạm quy định về bảo vệ dữ liệu cá nhân;",
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "source": "data/raw/13-2023-nd-cp.pdf",
+          "page": 23,
+          "metadata": {
+            "year": 2023,
+            "chunking": "paragraph",
+            "doc_type": "Nghị định",
+            "end_char": 915,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+            "start_char": 500,
+            "document_number": "13/2023/NĐ-CP",
+            "extraction_method": "tesseract-vie-200dpi-psm3",
+            "ocr_review_status": "sample_checked_not_fully_corrected",
+            "included_in_corpus": true
+          },
+          "score": 0.028693528693528692,
+          "branch_ranks": {
+            "dense": 18,
+            "bm25": 3
+          },
+          "branch_scores": {
+            "dense": 0.5179236120883051,
+            "bm25": 18.188239542602897
+          },
+          "rank": 3,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        }
+      ],
+      "context": "[28d7169119a579b15749a8234e6630ed8925ebcec028802c713ffa5f562d7845 | data/raw/13-2023-nd-cp.pdf | page 20]\nø) Sự đồng ý của chủ thể dữ liệu theo quy định tại Điều 11 Nghị định\nnày trên cơ sở biết rõ cơ chế phản hồi, khiếu nại khi có sự cố hoặc yêu cầu\nphát sinh;\n\nh) Có văn bản thể hiện sự ràng buộc, trách nhiệm giữa các tổ chức, cá nhân\nchuyển và nhận đữ liệu cá nhân của Công dân Việt Nam về việc xử ly dữ liệu\ncá nhân.\n\n[a8b807f97102d073dfa5fca841a42ef4c18a3f9a4d08bfe3e82d3c6a7d845d11 | data/raw/13-2023-nd-cp.pdf | page 24]\n4. Đánh giá kết quả công tác bảo vệ dữ liệu cá nhân của cơ quan, tổ chức,\ncá nhân có liên quan.\n\n5. Tiếp nhận hồ sơ, biểu mẫu, thông tin về bảo vệ dữ liệu cá nhân theo quy\n\nđịnh tại Nghị định này.\n\n6. Thúc đẩy các biện pháp và thực hiện nghiên cứu để đổi mới trong lĩnh\nvực bảo vệ đữ liệu cá nhân, triên khai hợp tác quộc tê về bảo vệ dữ liệu cá nhân.\n\n[3823a6898af9b488694ae16aa0fa87340b7d784e09a1fdcf15051231b27c827f | data/raw/13-2023-nd-cp.pdf | page 23]\nb) Tuyên truyền, phổ biến chính sách, pháp luật về bảo vệ dữ liệu cá nhân;\nc) Cập nhật thông tin, tình hình bảo vệ dữ liệu cá nhân;\n\nd) Tiếp nhận thông tin, hồ sơ, đữ liệu về hoạt động bảo vệ dữ liệu cá nhân\nqua không gian mạng;\n\nđ) Cung cấp thông tin về kết quả đánh giá công tác bảo vệ dữ liệu cá nhân\ncủa cơ quan, tô chức, cá nhân có liên quan;\n\ne) Tiếp nhận thông báo vi phạm quy định về bảo vệ dữ liệu cá nhân;",
+      "context_ids": [
+        "28d7169119a579b15749a8234e6630ed8925ebcec028802c713ffa5f562d7845",
+        "a8b807f97102d073dfa5fca841a42ef4c18a3f9a4d08bfe3e82d3c6a7d845d11",
+        "3823a6898af9b488694ae16aa0fa87340b7d784e09a1fdcf15051231b27c827f"
+      ]
+    },
+    {
+      "query_id": "d7-test-u01",
+      "config": "focused",
+      "query_original": "Dựa vào hai tài liệu trong corpus, tổng số khiếu nại về bảo vệ dữ liệu cá nhân mà Cổng thông tin quốc gia đã tiếp nhận trong năm 2025 là bao nhiêu?",
+      "filter": null,
+      "results": [
+        {
+          "id": "28d7169119a579b15749a8234e6630ed8925ebcec028802c713ffa5f562d7845",
+          "text": "ø) Sự đồng ý của chủ thể dữ liệu theo quy định tại Điều 11 Nghị định\nnày trên cơ sở biết rõ cơ chế phản hồi, khiếu nại khi có sự cố hoặc yêu cầu\nphát sinh;\n\nh) Có văn bản thể hiện sự ràng buộc, trách nhiệm giữa các tổ chức, cá nhân\nchuyển và nhận đữ liệu cá nhân của Công dân Việt Nam về việc xử ly dữ liệu\ncá nhân.",
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "source": "data/raw/13-2023-nd-cp.pdf",
+          "page": 20,
+          "metadata": {
+            "year": 2023,
+            "chunking": "paragraph",
+            "doc_type": "Nghị định",
+            "end_char": 2146,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+            "start_char": 1831,
+            "document_number": "13/2023/NĐ-CP",
+            "extraction_method": "tesseract-vie-200dpi-psm3",
+            "ocr_review_status": "sample_checked_not_fully_corrected",
+            "included_in_corpus": true
+          },
+          "score": 0.029910714285714284,
+          "branch_ranks": {
+            "dense": 4,
+            "bm25": 10
+          },
+          "branch_scores": {
+            "dense": 0.5517806142037207,
+            "bm25": 15.407146160524881
+          },
+          "rank": 1,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        },
+        {
+          "id": "a8b807f97102d073dfa5fca841a42ef4c18a3f9a4d08bfe3e82d3c6a7d845d11",
+          "text": "4. Đánh giá kết quả công tác bảo vệ dữ liệu cá nhân của cơ quan, tổ chức,\ncá nhân có liên quan.\n\n5. Tiếp nhận hồ sơ, biểu mẫu, thông tin về bảo vệ dữ liệu cá nhân theo quy\n\nđịnh tại Nghị định này.\n\n6. Thúc đẩy các biện pháp và thực hiện nghiên cứu để đổi mới trong lĩnh\nvực bảo vệ đữ liệu cá nhân, triên khai hợp tác quộc tê về bảo vệ dữ liệu cá nhân.",
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "source": "data/raw/13-2023-nd-cp.pdf",
+          "page": 24,
+          "metadata": {
+            "year": 2023,
+            "chunking": "paragraph",
+            "doc_type": "Nghị định",
+            "end_char": 1662,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+            "start_char": 1311,
+            "document_number": "13/2023/NĐ-CP",
+            "extraction_method": "tesseract-vie-200dpi-psm3",
+            "ocr_review_status": "sample_checked_not_fully_corrected",
+            "included_in_corpus": true
+          },
+          "score": 0.029631255487269532,
+          "branch_ranks": {
+            "dense": 7,
+            "bm25": 8
+          },
+          "branch_scores": {
+            "dense": 0.5402042198315371,
+            "bm25": 16.003405951289405
+          },
+          "rank": 2,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        },
+        {
+          "id": "3823a6898af9b488694ae16aa0fa87340b7d784e09a1fdcf15051231b27c827f",
+          "text": "b) Tuyên truyền, phổ biến chính sách, pháp luật về bảo vệ dữ liệu cá nhân;\nc) Cập nhật thông tin, tình hình bảo vệ dữ liệu cá nhân;\n\nd) Tiếp nhận thông tin, hồ sơ, đữ liệu về hoạt động bảo vệ dữ liệu cá nhân\nqua không gian mạng;\n\nđ) Cung cấp thông tin về kết quả đánh giá công tác bảo vệ dữ liệu cá nhân\ncủa cơ quan, tô chức, cá nhân có liên quan;\n\ne) Tiếp nhận thông báo vi phạm quy định về bảo vệ dữ liệu cá nhân;",
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "source": "data/raw/13-2023-nd-cp.pdf",
+          "page": 23,
+          "metadata": {
+            "year": 2023,
+            "chunking": "paragraph",
+            "doc_type": "Nghị định",
+            "end_char": 915,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+            "start_char": 500,
+            "document_number": "13/2023/NĐ-CP",
+            "extraction_method": "tesseract-vie-200dpi-psm3",
+            "ocr_review_status": "sample_checked_not_fully_corrected",
+            "included_in_corpus": true
+          },
+          "score": 0.028693528693528692,
+          "branch_ranks": {
+            "dense": 18,
+            "bm25": 3
+          },
+          "branch_scores": {
+            "dense": 0.5179236120883051,
+            "bm25": 18.188239542602897
+          },
+          "rank": 3,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        }
+      ],
+      "context": "[28d7169119a579b15749a8234e6630ed8925ebcec028802c713ffa5f562d7845 | data/raw/13-2023-nd-cp.pdf | page 20]\nø) Sự đồng ý của chủ thể dữ liệu theo quy định tại Điều 11 Nghị định\nnày trên cơ sở biết rõ cơ chế phản hồi, khiếu nại khi có sự cố hoặc yêu cầu\nphát sinh;\n\nh) Có văn bản thể hiện sự ràng buộc, trách nhiệm giữa các tổ chức, cá nhân\nchuyển và nhận đữ liệu cá nhân của Công dân Việt Nam về việc xử ly dữ liệu\ncá nhân.\n\n[a8b807f97102d073dfa5fca841a42ef4c18a3f9a4d08bfe3e82d3c6a7d845d11 | data/raw/13-2023-nd-cp.pdf | page 24]\n4. Đánh giá kết quả công tác bảo vệ dữ liệu cá nhân của cơ quan, tổ chức,\ncá nhân có liên quan.\n\n5. Tiếp nhận hồ sơ, biểu mẫu, thông tin về bảo vệ dữ liệu cá nhân theo quy\n\nđịnh tại Nghị định này.\n\n6. Thúc đẩy các biện pháp và thực hiện nghiên cứu để đổi mới trong lĩnh\nvực bảo vệ đữ liệu cá nhân, triên khai hợp tác quộc tê về bảo vệ dữ liệu cá nhân.\n\n[3823a6898af9b488694ae16aa0fa87340b7d784e09a1fdcf15051231b27c827f | data/raw/13-2023-nd-cp.pdf | page 23]\nb) Tuyên truyền, phổ biến chính sách, pháp luật về bảo vệ dữ liệu cá nhân;\nc) Cập nhật thông tin, tình hình bảo vệ dữ liệu cá nhân;\n\nd) Tiếp nhận thông tin, hồ sơ, đữ liệu về hoạt động bảo vệ dữ liệu cá nhân\nqua không gian mạng;\n\nđ) Cung cấp thông tin về kết quả đánh giá công tác bảo vệ dữ liệu cá nhân\ncủa cơ quan, tô chức, cá nhân có liên quan;\n\ne) Tiếp nhận thông báo vi phạm quy định về bảo vệ dữ liệu cá nhân;",
+      "context_ids": [
+        "28d7169119a579b15749a8234e6630ed8925ebcec028802c713ffa5f562d7845",
+        "a8b807f97102d073dfa5fca841a42ef4c18a3f9a4d08bfe3e82d3c6a7d845d11",
+        "3823a6898af9b488694ae16aa0fa87340b7d784e09a1fdcf15051231b27c827f"
+      ]
+    },
+    {
+      "query_id": "d7-test-u02",
+      "config": "baseline",
+      "query_original": "Hãy trích nguyên văn câu lệnh SQL mẫu được hai tài liệu trong corpus đưa ra để xóa dữ liệu cá nhân khi chủ thể rút lại sự đồng ý.",
+      "filter": null,
+      "results": [
+        {
+          "id": "64c4e1f3a7f5f11f4d8bf35e773bbd752af41eceb1ee299c1b39c83ea7a2924e",
+          "text": "4. Quyền rút lại sự đồng ý\n\nChủ thể đữ liệu được quyền rút lại sự đồng ý của mình, trừ trường hợp\nluật có quy định khác.\n\n5. Quyền xóa dữ liệu\n\nChủ thể đữ liệu được xóa hoặc yêu câu xóa dữ liệu cá nhân của mình, trừ\ntrường hợp luật có quy định khác.\n\n6. Quyền hạn chế xử lý dữ liệu\n\na) Chủ thể đữ liệu được yêu cầu hạn chế xử ly dữ liệu cá nhân của mình,\ntrừ trường hợp luật có quy định khác;",
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "source": "data/raw/13-2023-nd-cp.pdf",
+          "page": 7,
+          "metadata": {
+            "year": 2023,
+            "chunking": "paragraph",
+            "doc_type": "Nghị định",
+            "end_char": 954,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+            "start_char": 562,
+            "document_number": "13/2023/NĐ-CP",
+            "extraction_method": "tesseract-vie-200dpi-psm3",
+            "ocr_review_status": "sample_checked_not_fully_corrected",
+            "included_in_corpus": true
+          },
+          "score": 0.03252247488101534,
+          "branch_ranks": {
+            "dense": 2,
+            "bm25": 1
+          },
+          "branch_scores": {
+            "dense": 0.5726489171344127,
+            "bm25": 36.95672623610324
+          },
+          "rank": 1,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        },
+        {
+          "id": "772b7613cf6f3c62a026c95e168dba326323addfe94b35c28ec4a5ae47fbb665",
+          "text": "Điều 16. Lưu trữ, xóa, hủy dữ liệu cá nhân\n\n1. Chủ thể đữ liệu được yêu cầu Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm\nsoát và xử lý đữ liệu cá nhân xóa dữ liệu cá nhân của mình trong các trường\nhợp sau:\n\na) Nhận thấy không còn cần thiết cho mục đích thu thập đã đồng ý và chấp\nnhận các thiệt hại có thê xảy ra khi yêu câu xóa đữ liệu;\n\nb) Rút lại sự đồng ý;",
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "source": "data/raw/13-2023-nd-cp.pdf",
+          "page": 13,
+          "metadata": {
+            "year": 2023,
+            "chunking": "paragraph",
+            "doc_type": "Nghị định",
+            "end_char": 1599,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+            "start_char": 1244,
+            "document_number": "13/2023/NĐ-CP",
+            "extraction_method": "tesseract-vie-200dpi-psm3",
+            "ocr_review_status": "sample_checked_not_fully_corrected",
+            "included_in_corpus": true
+          },
+          "score": 0.03252247488101534,
+          "branch_ranks": {
+            "dense": 1,
+            "bm25": 2
+          },
+          "branch_scores": {
+            "dense": 0.617344629768091,
+            "bm25": 36.23533697278224
+          },
+          "rank": 2,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        },
+        {
+          "id": "68a29276acaa73a794d9665bd3d8240e116f67422879a934457f79d8ee48204f",
+          "text": "Điều 12. Rút lại sự đồng ý\n\n1. Việc rút lại sự đồng ý không ảnh hưởng đến tính hợp pháp của việc xử\nlý dữ liệu đã được đông ý trước khi rút lại sự đông ý.\n\n2. Việc rút lại sự đồng ý phải được thể hiện ở một định dạng có thể được\nin, sao chép băng văn bản, bao gôm cả dưới dạng điện tử hoặc định dạng kiêm\nchứng được.",
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "source": "data/raw/13-2023-nd-cp.pdf",
+          "page": 10,
+          "metadata": {
+            "year": 2023,
+            "chunking": "paragraph",
+            "doc_type": "Nghị định",
+            "end_char": 712,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+            "start_char": 396,
+            "document_number": "13/2023/NĐ-CP",
+            "extraction_method": "tesseract-vie-200dpi-psm3",
+            "ocr_review_status": "sample_checked_not_fully_corrected",
+            "included_in_corpus": true
+          },
+          "score": 0.031746031746031744,
+          "branch_ranks": {
+            "dense": 3,
+            "bm25": 3
+          },
+          "branch_scores": {
+            "dense": 0.5718637387825817,
+            "bm25": 34.089830609735415
+          },
+          "rank": 3,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        }
+      ],
+      "context": "[64c4e1f3a7f5f11f4d8bf35e773bbd752af41eceb1ee299c1b39c83ea7a2924e | data/raw/13-2023-nd-cp.pdf | page 7]\n4. Quyền rút lại sự đồng ý\n\nChủ thể đữ liệu được quyền rút lại sự đồng ý của mình, trừ trường hợp\nluật có quy định khác.\n\n5. Quyền xóa dữ liệu\n\nChủ thể đữ liệu được xóa hoặc yêu câu xóa dữ liệu cá nhân của mình, trừ\ntrường hợp luật có quy định khác.\n\n6. Quyền hạn chế xử lý dữ liệu\n\na) Chủ thể đữ liệu được yêu cầu hạn chế xử ly dữ liệu cá nhân của mình,\ntrừ trường hợp luật có quy định khác;\n\n[772b7613cf6f3c62a026c95e168dba326323addfe94b35c28ec4a5ae47fbb665 | data/raw/13-2023-nd-cp.pdf | page 13]\nĐiều 16. Lưu trữ, xóa, hủy dữ liệu cá nhân\n\n1. Chủ thể đữ liệu được yêu cầu Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm\nsoát và xử lý đữ liệu cá nhân xóa dữ liệu cá nhân của mình trong các trường\nhợp sau:\n\na) Nhận thấy không còn cần thiết cho mục đích thu thập đã đồng ý và chấp\nnhận các thiệt hại có thê xảy ra khi yêu câu xóa đữ liệu;\n\nb) Rút lại sự đồng ý;\n\n[68a29276acaa73a794d9665bd3d8240e116f67422879a934457f79d8ee48204f | data/raw/13-2023-nd-cp.pdf | page 10]\nĐiều 12. Rút lại sự đồng ý\n\n1. Việc rút lại sự đồng ý không ảnh hưởng đến tính hợp pháp của việc xử\nlý dữ liệu đã được đông ý trước khi rút lại sự đông ý.\n\n2. Việc rút lại sự đồng ý phải được thể hiện ở một định dạng có thể được\nin, sao chép băng văn bản, bao gôm cả dưới dạng điện tử hoặc định dạng kiêm\nchứng được.",
+      "context_ids": [
+        "64c4e1f3a7f5f11f4d8bf35e773bbd752af41eceb1ee299c1b39c83ea7a2924e",
+        "772b7613cf6f3c62a026c95e168dba326323addfe94b35c28ec4a5ae47fbb665",
+        "68a29276acaa73a794d9665bd3d8240e116f67422879a934457f79d8ee48204f"
+      ]
+    },
+    {
+      "query_id": "d7-test-u02",
+      "config": "focused",
+      "query_original": "Hãy trích nguyên văn câu lệnh SQL mẫu được hai tài liệu trong corpus đưa ra để xóa dữ liệu cá nhân khi chủ thể rút lại sự đồng ý.",
+      "filter": null,
+      "results": [
+        {
+          "id": "64c4e1f3a7f5f11f4d8bf35e773bbd752af41eceb1ee299c1b39c83ea7a2924e",
+          "text": "4. Quyền rút lại sự đồng ý\n\nChủ thể đữ liệu được quyền rút lại sự đồng ý của mình, trừ trường hợp\nluật có quy định khác.\n\n5. Quyền xóa dữ liệu\n\nChủ thể đữ liệu được xóa hoặc yêu câu xóa dữ liệu cá nhân của mình, trừ\ntrường hợp luật có quy định khác.\n\n6. Quyền hạn chế xử lý dữ liệu\n\na) Chủ thể đữ liệu được yêu cầu hạn chế xử ly dữ liệu cá nhân của mình,\ntrừ trường hợp luật có quy định khác;",
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "source": "data/raw/13-2023-nd-cp.pdf",
+          "page": 7,
+          "metadata": {
+            "year": 2023,
+            "chunking": "paragraph",
+            "doc_type": "Nghị định",
+            "end_char": 954,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+            "start_char": 562,
+            "document_number": "13/2023/NĐ-CP",
+            "extraction_method": "tesseract-vie-200dpi-psm3",
+            "ocr_review_status": "sample_checked_not_fully_corrected",
+            "included_in_corpus": true
+          },
+          "score": 0.03252247488101534,
+          "branch_ranks": {
+            "dense": 2,
+            "bm25": 1
+          },
+          "branch_scores": {
+            "dense": 0.5726489171344127,
+            "bm25": 36.95672623610324
+          },
+          "rank": 1,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        },
+        {
+          "id": "772b7613cf6f3c62a026c95e168dba326323addfe94b35c28ec4a5ae47fbb665",
+          "text": "Điều 16. Lưu trữ, xóa, hủy dữ liệu cá nhân\n\n1. Chủ thể đữ liệu được yêu cầu Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm\nsoát và xử lý đữ liệu cá nhân xóa dữ liệu cá nhân của mình trong các trường\nhợp sau:\n\na) Nhận thấy không còn cần thiết cho mục đích thu thập đã đồng ý và chấp\nnhận các thiệt hại có thê xảy ra khi yêu câu xóa đữ liệu;\n\nb) Rút lại sự đồng ý;",
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "source": "data/raw/13-2023-nd-cp.pdf",
+          "page": 13,
+          "metadata": {
+            "year": 2023,
+            "chunking": "paragraph",
+            "doc_type": "Nghị định",
+            "end_char": 1599,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+            "start_char": 1244,
+            "document_number": "13/2023/NĐ-CP",
+            "extraction_method": "tesseract-vie-200dpi-psm3",
+            "ocr_review_status": "sample_checked_not_fully_corrected",
+            "included_in_corpus": true
+          },
+          "score": 0.03252247488101534,
+          "branch_ranks": {
+            "dense": 1,
+            "bm25": 2
+          },
+          "branch_scores": {
+            "dense": 0.617344629768091,
+            "bm25": 36.23533697278224
+          },
+          "rank": 2,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        },
+        {
+          "id": "68a29276acaa73a794d9665bd3d8240e116f67422879a934457f79d8ee48204f",
+          "text": "Điều 12. Rút lại sự đồng ý\n\n1. Việc rút lại sự đồng ý không ảnh hưởng đến tính hợp pháp của việc xử\nlý dữ liệu đã được đông ý trước khi rút lại sự đông ý.\n\n2. Việc rút lại sự đồng ý phải được thể hiện ở một định dạng có thể được\nin, sao chép băng văn bản, bao gôm cả dưới dạng điện tử hoặc định dạng kiêm\nchứng được.",
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "source": "data/raw/13-2023-nd-cp.pdf",
+          "page": 10,
+          "metadata": {
+            "year": 2023,
+            "chunking": "paragraph",
+            "doc_type": "Nghị định",
+            "end_char": 712,
+            "language": "vi",
+            "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+            "start_char": 396,
+            "document_number": "13/2023/NĐ-CP",
+            "extraction_method": "tesseract-vie-200dpi-psm3",
+            "ocr_review_status": "sample_checked_not_fully_corrected",
+            "included_in_corpus": true
+          },
+          "score": 0.031746031746031744,
+          "branch_ranks": {
+            "dense": 3,
+            "bm25": 3
+          },
+          "branch_scores": {
+            "dense": 0.5718637387825817,
+            "bm25": 34.089830609735415
+          },
+          "rank": 3,
+          "method": "hybrid_rrf",
+          "score_type": "sum_reciprocal_ranks"
+        }
+      ],
+      "context": "[64c4e1f3a7f5f11f4d8bf35e773bbd752af41eceb1ee299c1b39c83ea7a2924e | data/raw/13-2023-nd-cp.pdf | page 7]\n4. Quyền rút lại sự đồng ý\n\nChủ thể đữ liệu được quyền rút lại sự đồng ý của mình, trừ trường hợp\nluật có quy định khác.\n\n5. Quyền xóa dữ liệu\n\nChủ thể đữ liệu được xóa hoặc yêu câu xóa dữ liệu cá nhân của mình, trừ\ntrường hợp luật có quy định khác.\n\n6. Quyền hạn chế xử lý dữ liệu\n\na) Chủ thể đữ liệu được yêu cầu hạn chế xử ly dữ liệu cá nhân của mình,\ntrừ trường hợp luật có quy định khác;\n\n[772b7613cf6f3c62a026c95e168dba326323addfe94b35c28ec4a5ae47fbb665 | data/raw/13-2023-nd-cp.pdf | page 13]\nĐiều 16. Lưu trữ, xóa, hủy dữ liệu cá nhân\n\n1. Chủ thể đữ liệu được yêu cầu Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm\nsoát và xử lý đữ liệu cá nhân xóa dữ liệu cá nhân của mình trong các trường\nhợp sau:\n\na) Nhận thấy không còn cần thiết cho mục đích thu thập đã đồng ý và chấp\nnhận các thiệt hại có thê xảy ra khi yêu câu xóa đữ liệu;\n\nb) Rút lại sự đồng ý;\n\n[68a29276acaa73a794d9665bd3d8240e116f67422879a934457f79d8ee48204f | data/raw/13-2023-nd-cp.pdf | page 10]\nĐiều 12. Rút lại sự đồng ý\n\n1. Việc rút lại sự đồng ý không ảnh hưởng đến tính hợp pháp của việc xử\nlý dữ liệu đã được đông ý trước khi rút lại sự đông ý.\n\n2. Việc rút lại sự đồng ý phải được thể hiện ở một định dạng có thể được\nin, sao chép băng văn bản, bao gôm cả dưới dạng điện tử hoặc định dạng kiêm\nchứng được.",
+      "context_ids": [
+        "64c4e1f3a7f5f11f4d8bf35e773bbd752af41eceb1ee299c1b39c83ea7a2924e",
+        "772b7613cf6f3c62a026c95e168dba326323addfe94b35c28ec4a5ae47fbb665",
+        "68a29276acaa73a794d9665bd3d8240e116f67422879a934457f79d8ee48204f"
+      ]
+    }
+  ]
+}

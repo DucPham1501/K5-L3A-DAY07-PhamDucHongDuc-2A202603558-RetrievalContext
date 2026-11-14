@@ -1,0 +1,98 @@
+{
+  "status": "locked",
+  "locked_at": "2026-11-14T09:47:22.062262+00:00",
+  "selected": "focused",
+  "selected_config": "configs/agent-focused.json",
+  "baseline_config": "configs/agent.json",
+  "criteria": "Existing benchmark manifest order: grounded mean, citation validity (0/0 is not perfect), correct abstention, context evidence, first-retrieval Evidence Hit@3 then Hit@1, latency, estimated cost, simplicity. Report original-query reference separately from model-transformed queries.",
+  "dev_comparisons": [
+    {
+      "id": "baseline",
+      "config": "configs/agent.json",
+      "dev_run": "results/agent/dev-v2",
+      "note": "Reuse measured initial agent; default system prompt and behavior retained when adding policy dispatch. Cache/latency differences will be disclosed.",
+      "selection_key": [
+        1.8,
+        0.9411764705882353,
+        1.0,
+        0.9333333333333333,
+        0.9333333333333333,
+        0.6,
+        -2768.4321000006094,
+        -0.01977138,
+        0
+      ],
+      "evaluation_sha256": "72524ee0a7a6b4049c0baf3d1e3871f99830258446355189bf5fe5e3a16ec015",
+      "reviews_sha256": "7253c637ef2f987c2f04489de6022764a02c298a14534b1d86da4ec212022892",
+      "run_sha256": "eb48ea89466dede633d2f693d04deb21ee580ea88552fd92f01f516d5ff93cae",
+      "config_sha256": "db430ceb421700011b64c214a4beedf76d4f102bf6e7e9e9478895252397b4b3"
+    },
+    {
+      "id": "wide",
+      "config": "configs/agent-wide.json",
+      "dev_run": "results/experiments/wide-dev",
+      "hypothesis": "Dev hypothesis E1: deeper candidates and larger context may include evidence lost below top-3, at the cost of tokens, latency and distraction. Other agent policy unchanged.",
+      "selection_key": [
+        1.8,
+        0.9090909090909091,
+        1.0,
+        1.0,
+        0.9333333333333333,
+        0.6666666666666666,
+        -2973.9324000001943,
+        -0.04443180000000001,
+        -1
+      ],
+      "evaluation_sha256": "1a5c09e0bfce1182c4afd94196a94811104f4384b9c6b4055bfc2ed21a5f67b3",
+      "reviews_sha256": "d2e10b8b742fa2813c504836aecb564687a924b29f25a6654a1eb336e0c16289",
+      "run_sha256": "d432048f87d0f395622bbeda75ed627302f2862b7eff756579f88bd605ec4efe",
+      "config_sha256": "eb2bcfb3d26c11716f1e44a231cfbdfc9aad8c47244294dc4d8f13e6ee85384c"
+    },
+    {
+      "id": "focused",
+      "config": "configs/agent-focused.json",
+      "dev_run": "results/experiments/focused-dev",
+      "hypothesis": "Dev hypothesis E2: generic intent/evidence-scope check may correct definition-vs-measures confusion and unsupported generalization, without changing retrieval/context parameters.",
+      "selection_key": [
+        1.8,
+        0.9411764705882353,
+        1.0,
+        0.9333333333333333,
+        0.9333333333333333,
+        0.6666666666666666,
+        -2681.668900000659,
+        -0.023730440000000005,
+        -2
+      ],
+      "evaluation_sha256": "daf28ae038de073b9e212edc619a89d7ba523314f735db71da904ce370517fbb",
+      "reviews_sha256": "eacc34af052fe51fadfd22749b8a9b9cf219b2b5db35aa17cc5649f6aafbd700",
+      "run_sha256": "9c2ba7b1c469c1b1164655740246d314be0bea4b256800346fef27c6eb2f4dad",
+      "config_sha256": "914230c777d33472a556d1544f186a0fe4bd52c9b34d7a7d667f709b9fedb3fa"
+    }
+  ],
+  "allowed_test_config_sha256": [
+    "914230c777d33472a556d1544f186a0fe4bd52c9b34d7a7d667f709b9fedb3fa",
+    "db430ceb421700011b64c214a4beedf76d4f102bf6e7e9e9478895252397b4b3"
+  ],
+  "benchmark_sha256": {
+    "benchmark/dev.json": "af2fe20cbec784bfa7ce25065cdd76d03d2a2543d72444a8373a60310c9825cf",
+    "benchmark/test.json": "abba617cd6c3614e35db17b2fd6e7786c1eb747c99b8e5f0494e7b479e3c7478",
+    "benchmark/inputs/dev.json": "4fd8384bfe9a45c6e355f03672351d4441f4c93211badcff2cdec9240daf62d8",
+    "benchmark/inputs/test.json": "d51dc0355faf0f0ce436411014f49941e5693c3fdfc9af75996743f7a6716b02",
+    "data/processed/corpus.pages.jsonl": "23c285e55542ffe99fca7bbd484deb155a6bd031d941b09dad6ed1a0dc740add",
+    "data/chunks.json": "a9c8dd4a2bbac0b22f8eb0aa390d12e8bea48cdab4c7c7d657bc88e5d5cef346"
+  },
+  "code_sha256": {
+    "src/agent.py": "5b9c1273118958cb321b105f7e35fc533e32c42ba8c4bc622563722eccc4f496",
+    "src/agent_controller.py": "895e0dc923890152d4f4b3fbb1e99a0ccb6a88eff7a4a56d6e3b59a3afdb2b3a",
+    "src/agent_benchmark.py": "2cff53862914eb16b0f0de0fa63c28c2a56a3d89f8736ab75705a4a24bf62e29",
+    "src/agent_review.py": "0047730a6b8096a2e766efb72288939235a3d75754a03493eaa94073560a0a32",
+    "src/retrieval.py": "d804ca18093ab6be0253d2de8296d52d802301577d3d99766dc049a0656f2217",
+    "src/day6/retrieval.py": "772ec75a4c2445070f916ecc6bd1b274ed97db1269ae13322b3050a3886148f4",
+    "src/day6/embeddings.py": "5888eb8ca673ace120558f163ae00ee69f094e36d6dd53e7fe3ac11851e05b4a",
+    "src/day6/store.py": "5551db584b086a52bfd2e82d56e35d1bb045567c7c4026e919de689345e61617",
+    "src/benchmark.py": "4937a6e4bedb2a28c82fb600009b675c997fb4c602819c9ee22ef548258b53df",
+    "scripts/select_agent.py": "83d1ed8faff6c6a04308ff87ce191ea7657188adf8596abe4ff1b064f7c622a2"
+  },
+  "test_results_used": false
+}
