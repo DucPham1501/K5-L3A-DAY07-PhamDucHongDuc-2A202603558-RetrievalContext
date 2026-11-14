@@ -2,6 +2,14 @@
 
 **Bài cá nhân · Python 3.11+ · tiếp nối Day 6**
 
+> **Dữ liệu Day 6 đã chuyển vào LAB07:** xem [hướng dẫn kế thừa và kiểm tra](docs/DAY6_HANDOFF.md). Chạy `python scripts/day6_setup.py verify` để kiểm tra offline; code mới không phụ thuộc thư mục `LAB06/`.
+
+> **Benchmark LAB07 đã chuẩn bị:** [24 câu dev/test và quy tắc sử dụng](benchmark/README.md). Chạy `python scripts/validate_benchmark.py` để kiểm tra dữ liệu, evidence và tách gold; chưa phải kết quả đánh giá agent.
+
+> **Phần 2 đã chạy dev:** [Dense, BM25 và Hybrid RRF](docs/RETRIEVAL.md), có trace và bảng so sánh tại `results/retrieval/dev-v1/`.
+
+> **Phần 3 đã chạy agent thật trên dev:** [Thiết kế, cách chạy và kết quả agent/context](docs/AGENT.md), trace và review tại `results/agent/dev-v2/`. [Phần 4 đã hoàn thành](docs/EXPERIMENTS.md): hai cấu hình dev, chốt Focused trước test, so sánh baseline/Focused.
+
 Dùng embedding và vector store từ Day 6 để xây một agent biết tìm bằng chứng, trả lời có nguồn và nhận biết khi không đủ thông tin. Bạn tự chọn kiến trúc, số tool và cách tổ chức retrieval.
 
 > **Tùy chọn:** [Gợi ý dùng AI để lập trình](AGENT_SETUP.md) giúp bạn làm lab; phần này không bắt buộc và không tính điểm.
