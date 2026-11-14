@@ -10,6 +10,10 @@
 
 > **Phần 3 đã chạy agent thật trên dev:** [Thiết kế, cách chạy và kết quả agent/context](docs/AGENT.md), trace và review tại `results/agent/dev-v2/`. [Phần 4 đã hoàn thành](docs/EXPERIMENTS.md): hai cấu hình dev, chốt Focused trước test, so sánh baseline/Focused.
 
+> **Cấu trúc file đã được sắp xếp:** cấu hình kế thừa ở `configs/inherited.json`, câu hỏi lịch sử ở `data/questions.jsonl`, bằng chứng ingest ở `artifacts/ingestion.json`, dữ liệu mẫu ở `data/example/`. Xem [đường dẫn mới và cách đối chiếu kết quả lịch sử](docs/DAY6_HANDOFF.md#đường-dẫn-mới-và-kết-quả-lịch-sử); selection đã chốt được giữ nguyên.
+
+> **Đã triển khai và đánh giá phần nâng cao:** [pipeline 100 trang, benchmark và kết quả](docs/ADVANCED_IMPLEMENTATION.md). Test đạt **23/30 (76,67%)** theo đối chiếu của AI, chưa đạt ngưỡng 90% để nhận bonus. Giữ đầy đủ các câu sai và kết quả gốc.
+
 Dùng embedding và vector store từ Day 6 để xây một agent biết tìm bằng chứng, trả lời có nguồn và nhận biết khi không đủ thông tin. Bạn tự chọn kiến trúc, số tool và cách tổ chức retrieval.
 
 > **Tùy chọn:** [Gợi ý dùng AI để lập trình](AGENT_SETUP.md) giúp bạn làm lab; phần này không bắt buộc và không tính điểm.
@@ -38,4 +42,4 @@ Index một tài liệu thực tế từ **100 trang** có bảng, ảnh và bi�
 
 ![Các bước thử nghiệm trên dev và đánh giá trên test](assets/experiment-loop.svg)
 
-Nộp code, cách chạy, cấu hình, benchmark, trace và [báo cáo](report/individual/MSSV_HoTen.md). Thời gian ở [checkpoints](CHECKPOINTS.md) là gợi ý, có thể điều chỉnh theo lớp và phạm vi thử nghiệm.
+Nộp code, cách chạy, cấu hình, benchmark, trace và [báo cáo cá nhân](report/individual/2A202603558_PhamDucHongDuc.md). [MSSV_HoTen.md](report/individual/MSSV_HoTen.md) và [REPORT_TEMPLATE.md](REPORT_TEMPLATE.md) là mẫu. Thời gian ở [checkpoints](CHECKPOINTS.md) là gợi ý, có thể điều chỉnh theo lớp và phạm vi thử nghiệm.

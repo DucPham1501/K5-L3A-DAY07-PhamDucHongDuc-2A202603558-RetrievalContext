@@ -121,3 +121,52 @@ Các lệnh đã dùng :
 ```
 
 Review tổng hợp nhãn đã đọc nguồn và lưu riêng, không tự tạo nhãn đúng/sai. Selection chỉ chốt một lần trước test và không được ghi đè. Runner từ chối output đã tồn tại; khi tái lập dùng thư mục mới. Xem thêm [hướng dẫn kết nối](../../docs/DAY6_HANDOFF.md) và [hướng dẫn agent](../../docs/AGENT.md).
+
+Sau các lượt đo, cấu trúc thư mục đã được sắp xếp: cấu hình kế thừa ở `configs/inherited.json`, cấu hình A/B/C ở `configs/strategies.json`, câu hỏi Day 6 ở `data/questions.jsonl`, bằng chứng ingest ở `artifacts/ingestion.json`, dữ liệu mẫu ở `data/example/`. Code và hướng dẫn đã cập nhật đường dẫn. Kết quả và selection lịch sử được giữ nguyên; guard sẽ chặn chạy test mới với code khác checksum đã chốt. Các lệnh test ở trên mô tả lượt đã thực hiện; tái lập đúng phiên bản đó cần dùng Git trước lần sắp xếp này cùng đường dẫn cũ, theo hướng dẫn kế thừa.
+
+## Thử thách nâng cao
+
+- **Tài liệu, nguồn, quyền sử dụng, số trang và phiên bản:** GPT-4 Technical Report, arXiv `2303.08774v6`, ngày 04/03/2024, đúng 100 trang vật lý, gồm Technical Report, phụ lục và System Card. PDF do học viên cung cấp tại `data/advance/2303.08774v6.pdf`, SHA-256 `c33a66dadca2388d7b172d6293b00dc32b71110c6f38fafe0d41112e61be7774`; [nguồn đúng phiên bản](https://arxiv.org/abs/2303.08774v6). [Manifest](../../data/advance/manifest.json) ghi nguồn, checksum và coverage. arXiv ghi non-exclusive distribution license; không suy ra quyền tái phát hành toàn bộ PDF/ảnh bên thứ ba. PDF và bản sao toàn văn/ảnh/caption/vector giữ local, đã gitignore; có nguồn tải và code tái tạo, giao cache/trace cho người chấm qua kênh được phép.
+- **Xử lý text, bảng, ảnh, biểu đồ; phạm vi index:** render đủ 100 trang bằng Poppler, JPEG 110 DPI. Pypdf lấy text layout; model vision đọc từng trang, tạo mô tả vùng, bảng/hàng/cột/đơn vị, trục/chú giải/xu hướng và nội dung ảnh/sơ đồ. Index đủ 100/100 trang, kể cả trang ít text/ảnh-only, tài liệu tham khảo và bìa phụ lục; không chọn trang từ gold. Bbox vision là ước lượng, chưa phải segmentation xác nhận. Ảnh gốc được dùng khi trả lời và khi review; không coi mô tả model/text extraction là bằng chứng tự động đúng. Có cảnh báo font/rotated text và nguy cơ nhầm cột/số, được ghi trong giới hạn.
+- **Schema evidence, benchmark và model:** [benchmark nâng cao](../../benchmark/advanced/README.md) riêng, 18 dev (15 có đáp án + 3 thiếu evidence), 30 test (24 + 6), đúng nhóm tối thiểu. Mỗi câu chỉ một nhóm chính; multi-hop cần evidence từ ít nhất hai trang. Gold gồm nguồn, trang vật lý, tên vùng/bảng/hình, bbox chuẩn hóa 0..1, mô tả evidence và checksum ảnh đã đối chiếu. Mọi phần gold đều cần đủ; không gửi gold vào runtime. Input chỉ ID/câu hỏi; các câu thiếu evidence được kiểm tra trên toàn bộ text/index và vùng nguồn liên quan. Nhãn nguồn/semantic do AI đọc PDF gốc, không phải kiểm tra độc lập của con người.
+- **Index và cấu hình đã chốt:** embedding thật `text-embedding-3-small`, 1536 chiều, exact cosine trên vector store JSON local riêng. Cả query/document chuyển delimiter ChatML in trong báo cáo sang text thường rồi NFC + gộp whitespace; source text giữ nguyên. BM25 + Dense bằng RRF 60 trên text và mô tả vision; không gọi text embedding này là native image embedding. Agent snapshot `gpt-4.1-mini-2025-04-14`, temperature 0, tự gọi `search`, `open_pages`, `submit_answer`, `abstain`; xem ảnh gốc, cite trang/vùng hoặc nêu không đủ evidence. Base: 15 candidate/nhánh, top-4, tối đa 4 ảnh, 3 lượt tìm; budget 24000 ký tự cho block text nguồn, metadata/ảnh/schema tính riêng và usage đo bằng token API.
+
+| Cấu hình dev | Thay đổi | Đạt / tổng | Tỷ lệ | Trung vị ms/câu | Tổng API USD ước tính |
+|---|---|---|---|---:|---:|
+| Base | Cấu hình nêu trên | 15/18 | 83,33% | 4198,84 | 0,09966782 |
+| Wide | 25 candidate, top-6, 6 ảnh, 48000 ký tự, 4 lượt tìm | 15/18 | 83,33% | 4700,69 | 0,15631726 |
+| Verify | Như Base, thêm kiểm tra từng phần/điều kiện trong prompt | 14/18 | 77,78% | 4431,86 | 0,11978600 |
+
+Lỗi dev `adv-dev-13`: Base/Verify lấy bảng contamination thay bảng base/RLHF; Wide có đúng bảng nhưng tự mâu thuẫn ở phần tóm tắt. `adv-dev-11` tìm nội dung mitigations thay khuyến nghị thiết kế đánh giá rủi ro mới nổi. `adv-dev-14` không ghép đúng hai phần Technical Report và System Card; Verify làm `adv-dev-09` trượt thêm do nhầm Abstract. Giữ nguyên các kết quả không cải thiện. Tiêu chí chọn ghi trước: strict pass rate → ít lỗi → chi phí API → thời gian. [Selection](../../results/advanced/selection.json) chọn Base lúc `2026-11-14T16:06:06.900347+00:00`, trước chạy test, vì hòa Wide về điểm nhưng rẻ hơn. Prompt mặc định của Base/Wide giữ nguyên khi thêm policy opt-in; run/checksum lịch sử được bảo toàn và khác biệt code được công khai trong selection.
+
+| Nhóm test | Đạt / tổng | Tỷ lệ | Lỗi / nhận xét |
+|---|---|---|---|
+| Bảng | 5/6 | 83,33% | `adv-test-02`: lấy Table 11 thay Table 2, thiếu 10-shot |
+| Ảnh, sơ đồ | 4/5 | 80% | `08`: thêm nhiệt độ thermostat T0, hình ghi Tb |
+| Biểu đồ | 4/5 | 80% | `12`: thiếu dấu trừ của trục -Mean Log Pass Rate |
+| Multi-hop | 2/4 | 50% | `18`: nhầm nguyên nhân nonholdout; `19`: không nêu BIG-bench bị loại |
+| Text | 3/4 | 75% | `22`: không trả mốc 09/2021 và ngoại lệ dữ liệu mới hơn |
+| Thiếu bằng chứng | 5/6 | 83,33% | `u05`: gán 71,8% của Thai cho Vietnamese không có trong hình |
+| **Toàn bộ** | **23/30** | **76,67%** | **Chưa đạt ngưỡng 27/30 (90%) để nhận 15 điểm bonus** |
+
+- **Trace, nhãn và evidence từng câu:** [lượt test](../../results/advanced/selected-test/) có đủ 30 câu, [nhãn có lý do/citation](../../results/advanced/selected-test/reviews.json), [evaluation](../../results/advanced/selected-test/evaluation.json), run/config/hash, usage và trace local `traces.jsonl`. AI đã đọc cả 24 câu có đáp án và 6 câu thiếu evidence, đối chiếu PDF gốc. Raw status 26 answered / 4 abstain / 0 error, không đồng nghĩa 26 câu đúng. `u04` dùng submit_answer nhưng nói rõ không công bố danh sách, không bịa tên; được tính là từ chối về nội dung. [Sửa evaluator](../../results/advanced/evaluation-correction.json) chỉ bỏ ràng buộc tên tool abstain cho trường hợp nêu rõ thiếu evidence, đúng định nghĩa đề; giữ nguyên action/status, raw trace, gold, model và selection. Không chỉnh pipeline theo test hoặc bỏ câu lỗi khỏi mẫu số.
+- **Thời gian, chi phí và lỗi hệ thống:** test 62 model request, input 406550 / output 6877 token, cached input 0; embedding 421 token/31 request. Trung vị 4576,17 ms/câu; model 0,17362320 USD + embedding 0,00000842 USD = **0,17363162 USD**. Chuẩn bị 100 caption vision 0,16331040 USD, document embedding 0,00158794 USD. Lượt tích hợp lỗi metadata ảnh tại `results/advanced/base-dev/` được giữ, 18 KeyError, model + embedding 0,00345110 USD; sau sửa chạy đầy đủ thành `base-dev-v2`. Tổng chi phí ghi nhận chuẩn bị + tích hợp + ba dev + test **0,71775214 USD**, theo đơn giá cấu hình, không phải hóa đơn đầy đủ: chưa gồm hạ tầng/thuế/retry hoặc request bị ngắt không có usage. Không có lỗi hạ tầng trong lượt test cuối.
+- **Giới hạn và tái lập:** corpus một báo cáo lịch sử tiếng Anh, câu hỏi tiếng Việt, có ví dụ và caption tự động có thể sai; giữ ảnh gốc làm căn cứ. Dev/test khác đích thông tin nhưng dùng chung tài liệu/trang nên không độc lập hoàn toàn về chủ đề. Citation trang/vùng hợp lệ hình thức không bảo đảm đúng điều kiện; multi-hop còn yếu. Budget ký tự không phải tổng token ảnh/prompt; một số metadata mô tả bị lặp tạo overhead. Review do AI có nguy cơ thiên lệch. Code, chuẩn bị dữ liệu, benchmark, lệnh chạy/chấm và các hash ở [hướng dẫn nâng cao](../../docs/ADVANCED_IMPLEMENTATION.md). Sau sửa evaluator, guard vẫn giữ hash lịch sử và không cho ghi lại selection để chạy test bằng code đã thay đổi. Không dùng test đã xem để chọn cấu hình hoặc gọi lượt chạy lại là holdout độc lập.
+
+Các lệnh đã chạy cho phần nâng cao:
+
+```powershell
+.venv/Scripts/python.exe -X utf8 -m src.advanced.prepare
+.venv/Scripts/python.exe -X utf8 -m src.advanced.retrieval
+.venv/Scripts/python.exe -X utf8 scripts/prepare_advanced_benchmark.py
+.venv/Scripts/python.exe -X utf8 -m src.advanced.benchmark
+.venv/Scripts/python.exe -X utf8 -m src.advanced.runner dev --config configs/advanced/base.json --output results/advanced/base-dev-v2
+.venv/Scripts/python.exe -X utf8 -m src.advanced.runner dev --config configs/advanced/wide.json --output results/advanced/wide-dev
+.venv/Scripts/python.exe -X utf8 -m src.advanced.runner dev --config configs/advanced/verify.json --output results/advanced/verify-dev
+.venv/Scripts/python.exe -X utf8 -m src.advanced.review results/advanced/base-dev-v2
+.venv/Scripts/python.exe -X utf8 -m src.advanced.review results/advanced/wide-dev
+.venv/Scripts/python.exe -X utf8 -m src.advanced.review results/advanced/verify-dev
+.venv/Scripts/python.exe -X utf8 -m src.advanced.select
+.venv/Scripts/python.exe -X utf8 -m src.advanced.runner test --config configs/advanced/base.json --output results/advanced/selected-test
+.venv/Scripts/python.exe -X utf8 -m src.advanced.review results/advanced/selected-test
+```
