@@ -1,0 +1,159 @@
+{
+  "status": "complete",
+  "started_at": "2026-11-14T09:17:59.332987+00:00",
+  "split": "dev",
+  "config": {
+    "version": "agent-v1.1",
+    "model": "gpt-4.1-mini-2025-04-14",
+    "temperature": 0,
+    "max_completion_tokens": 1000,
+    "max_searches": 3,
+    "max_model_calls": 6,
+    "top_k": 3,
+    "candidate_k": 20,
+    "context_budget_chars": 2000,
+    "context_policy": "recent_first",
+    "allowed_search_tools": [
+      "search_dense",
+      "search_bm25",
+      "search_hybrid"
+    ],
+    "bm25": {
+      "k1": 1.5,
+      "b": 0.75
+    },
+    "rrf": {
+      "rank_constant": 60
+    },
+    "pricing_usd_per_million": {
+      "input": 0.4,
+      "cached_input": 0.1,
+      "output": 1.6
+    },
+    "pricing_source": "https://developers.openai.com/api/docs/models/gpt-4.1-mini",
+    "pricing_verified_at": "2026-11-14",
+    "design_reason": "Three searches permit query reformulation/tool changes. Extra model calls permit citation-format correction. Latest evidence gets budget priority. Limits are implementation choices, not assignment requirements."
+  },
+  "config_sha256": "db430ceb421700011b64c214a4beedf76d4f102bf6e7e9e9478895252397b4b3",
+  "asset_sha256": {
+    "data/chunks.json": "a9c8dd4a2bbac0b22f8eb0aa390d12e8bea48cdab4c7c7d657bc88e5d5cef346",
+    "data/processed/corpus.pages.jsonl": "23c285e55542ffe99fca7bbd484deb155a6bd031d941b09dad6ed1a0dc740add",
+    "benchmark/inputs/dev.json": "4fd8384bfe9a45c6e355f03672351d4441f4c93211badcff2cdec9240daf62d8",
+    "benchmark/dev.json": "af2fe20cbec784bfa7ce25065cdd76d03d2a2543d72444a8373a60310c9825cf"
+  },
+  "code_sha256": {
+    "src/agent.py": "1459a85c98702046a71f25b855e1a8a032b63d68f262a0009ad7464128aa6860",
+    "src/agent_controller.py": "8747fa693682d7bc7ec3e2b16fe07b3999c61c97bdc9394cf333c4cbbbcec4ca",
+    "src/agent_benchmark.py": "68fcad91cf6d91c277cac4a24196d78857e55ade5fff7546a0c510a43ca51071",
+    "src/retrieval.py": "d804ca18093ab6be0253d2de8296d52d802301577d3d99766dc049a0656f2217",
+    "src/day6/retrieval.py": "772ec75a4c2445070f916ecc6bd1b274ed97db1269ae13322b3050a3886148f4",
+    "src/day6/embeddings.py": "5888eb8ca673ace120558f163ae00ee69f094e36d6dd53e7fe3ac11851e05b4a",
+    "src/day6/store.py": "5551db584b086a52bfd2e82d56e35d1bb045567c7c4026e919de689345e61617"
+  },
+  "versions": {
+    "openai": "2.54.0",
+    "psycopg": "3.3.9",
+    "tiktoken": "0.14.0"
+  },
+  "query_count": 17,
+  "chunk_count": 336,
+  "test_run": false,
+  "quality_review_completed": false,
+  "model_preflight_id": "gpt-4.1-mini-2025-04-14",
+  "store": {
+    "postgresql": "16.16 (Debian 16.16-1.pgdg12+1)",
+    "pgvector": "0.8.7",
+    "metric": "cosine",
+    "search": "exact",
+    "table": "day6_chunks"
+  },
+  "embedding_model": "text-embedding-3-small",
+  "embedding_dimensions": 1536,
+  "finished_at": "2026-11-14T09:19:15.046207+00:00",
+  "completed_queries": 17,
+  "model_usage": {
+    "input_tokens": 39106,
+    "cached_input_tokens": 0,
+    "output_tokens": 2574,
+    "estimated_usd": 0.019760800000000002,
+    "requests_with_usage": 37,
+    "requests_without_usage": 0
+  },
+  "embedding_usage": {
+    "tokens": 529,
+    "cache_hits": 4,
+    "requests": [
+      {
+        "request_id": "req_fa6a6e456f464c94980c8eb6bc8d08d3",
+        "model": "text-embedding-3-small",
+        "tokens": 42
+      },
+      {
+        "request_id": "req_a484b4a72ea845b89e76fd88e2b91dab",
+        "model": "text-embedding-3-small",
+        "tokens": 40
+      },
+      {
+        "request_id": "req_b7a9319a119d4b74a29e7cc4621b263c",
+        "model": "text-embedding-3-small",
+        "tokens": 32
+      },
+      {
+        "request_id": "req_870d2d8cd64d4b2a9c55051ba36cd530",
+        "model": "text-embedding-3-small",
+        "tokens": 33
+      },
+      {
+        "request_id": "req_78d4ec41cd4448b3bfc295acac0d41d7",
+        "model": "text-embedding-3-small",
+        "tokens": 51
+      },
+      {
+        "request_id": "req_d470370bd2a4440db6c2da19a2a4180a",
+        "model": "text-embedding-3-small",
+        "tokens": 23
+      },
+      {
+        "request_id": "req_848f19132acd4392b7da9965b862d1dc",
+        "model": "text-embedding-3-small",
+        "tokens": 41
+      },
+      {
+        "request_id": "req_10bfb709309a457a8b4787946b987df5",
+        "model": "text-embedding-3-small",
+        "tokens": 50
+      },
+      {
+        "request_id": "req_eebe600cd2164b8b923e8d89f295cab9",
+        "model": "text-embedding-3-small",
+        "tokens": 31
+      },
+      {
+        "request_id": "req_93b32aa676414fe2bd313242e74df9d4",
+        "model": "text-embedding-3-small",
+        "tokens": 35
+      },
+      {
+        "request_id": "req_dbf0556494fa4eb999eb47b614fad1a7",
+        "model": "text-embedding-3-small",
+        "tokens": 52
+      },
+      {
+        "request_id": "req_028e515f2a1c4a3891ff5e6fe9ef9f67",
+        "model": "text-embedding-3-small",
+        "tokens": 34
+      },
+      {
+        "request_id": "req_0fe530ee8cca4dc6b184bf405be6a4c3",
+        "model": "text-embedding-3-small",
+        "tokens": 30
+      },
+      {
+        "request_id": "req_c6193681eca04baf95f20d88095e48db",
+        "model": "text-embedding-3-small",
+        "tokens": 35
+      }
+    ]
+  },
+  "embedding_estimated_usd": 1.058e-05
+}

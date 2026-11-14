@@ -1,0 +1,74 @@
+{
+  "status": "interrupted",
+  "started_at": "2026-11-14T09:14:22.239224+00:00",
+  "split": "dev",
+  "config": {
+    "version": "agent-v1",
+    "model": "gpt-4.1-mini-2025-04-14",
+    "temperature": 0,
+    "max_completion_tokens": 1000,
+    "max_searches": 3,
+    "max_model_calls": 6,
+    "top_k": 3,
+    "candidate_k": 20,
+    "context_budget_chars": 2000,
+    "context_policy": "recent_first",
+    "allowed_search_tools": [
+      "search_dense",
+      "search_bm25",
+      "search_hybrid"
+    ],
+    "bm25": {
+      "k1": 1.5,
+      "b": 0.75
+    },
+    "rrf": {
+      "rank_constant": 60
+    },
+    "pricing_usd_per_million": {
+      "input": 0.4,
+      "cached_input": 0.1,
+      "output": 1.6
+    },
+    "pricing_source": "https://developers.openai.com/api/docs/models/gpt-4.1-mini",
+    "pricing_verified_at": "2026-11-14",
+    "design_reason": "Three searches permit query reformulation/tool changes. Extra model calls permit citation-format correction. Latest evidence gets budget priority. Limits are implementation choices, not assignment requirements."
+  },
+  "config_sha256": "4c2f17fb8d177a006c9a8866ec5a56cadea5727d45917849c984c1e1eb195026",
+  "asset_sha256": {
+    "data/chunks.json": "a9c8dd4a2bbac0b22f8eb0aa390d12e8bea48cdab4c7c7d657bc88e5d5cef346",
+    "data/processed/corpus.pages.jsonl": "23c285e55542ffe99fca7bbd484deb155a6bd031d941b09dad6ed1a0dc740add",
+    "benchmark/inputs/dev.json": "4fd8384bfe9a45c6e355f03672351d4441f4c93211badcff2cdec9240daf62d8",
+    "benchmark/dev.json": "af2fe20cbec784bfa7ce25065cdd76d03d2a2543d72444a8373a60310c9825cf"
+  },
+  "code_sha256": {
+    "src/agent.py": "34a12169ba1906ba51d66dd93a9ad13cf34203456445957ead7c83fd10a4dc23",
+    "src/agent_controller.py": "5c0471bb92d4b531ea114ec66902e4f34c7661859d0a883b00e215c6fa9fdcb4",
+    "src/agent_benchmark.py": "f9e13da31c45f59ea15e2d517bde58ab2ff408f8875a79d479e056d32da912f1",
+    "src/retrieval.py": "d804ca18093ab6be0253d2de8296d52d802301577d3d99766dc049a0656f2217",
+    "src/day6/retrieval.py": "772ec75a4c2445070f916ecc6bd1b274ed97db1269ae13322b3050a3886148f4",
+    "src/day6/embeddings.py": "5888eb8ca673ace120558f163ae00ee69f094e36d6dd53e7fe3ac11851e05b4a",
+    "src/day6/store.py": "5551db584b086a52bfd2e82d56e35d1bb045567c7c4026e919de689345e61617"
+  },
+  "versions": {
+    "openai": "2.54.0",
+    "psycopg": "3.3.9",
+    "tiktoken": "0.14.0"
+  },
+  "query_count": 17,
+  "chunk_count": 336,
+  "test_run": false,
+  "quality_review_completed": false,
+  "stop_reason": "Stopped after citation presentation integration failures; preserved as pilot, not a complete benchmark.",
+  "completed_queries": 5,
+  "known_model_usage_from_completed_traces": {
+    "input_tokens": 39975,
+    "cached_input_tokens": 16256,
+    "output_tokens": 4556,
+    "estimated_usd": 0.018402800000000004,
+    "requests_with_usage": 30,
+    "requests_without_usage": 0
+  },
+  "usage_incomplete": true,
+  "usage_note": "Process stopped during an in-flight case; only completed trace usage is recoverable. Additional pending/provider-billed usage is unknown, not zero."
+}

@@ -1,0 +1,115 @@
+{
+  "split": "dev",
+  "cases": 17,
+  "statuses": {
+    "answered": 15,
+    "abstain": 2
+  },
+  "tool_use": {
+    "n": 17,
+    "N": 17
+  },
+  "search_count_distribution": {
+    "1": 15,
+    "3": 1,
+    "2": 1
+  },
+  "tools_used": {
+    "search_hybrid": 18,
+    "search_bm25": 2
+  },
+  "stop_reasons": {
+    "model_answer": 15,
+    "model_insufficient_evidence": 1,
+    "repeated_search": 1
+  },
+  "median_elapsed_ms": 2768.4321000006094,
+  "model_usage": {
+    "input_tokens": 39106,
+    "cached_input_tokens": 0,
+    "output_tokens": 2574,
+    "estimated_usd": 0.019760800000000002,
+    "requests_with_usage": 37,
+    "requests_without_usage": 0
+  },
+  "embedding_usage": {
+    "tokens": 529,
+    "cache_hits": 4,
+    "requests": [
+      {
+        "request_id": "req_fa6a6e456f464c94980c8eb6bc8d08d3",
+        "model": "text-embedding-3-small",
+        "tokens": 42
+      },
+      {
+        "request_id": "req_a484b4a72ea845b89e76fd88e2b91dab",
+        "model": "text-embedding-3-small",
+        "tokens": 40
+      },
+      {
+        "request_id": "req_b7a9319a119d4b74a29e7cc4621b263c",
+        "model": "text-embedding-3-small",
+        "tokens": 32
+      },
+      {
+        "request_id": "req_870d2d8cd64d4b2a9c55051ba36cd530",
+        "model": "text-embedding-3-small",
+        "tokens": 33
+      },
+      {
+        "request_id": "req_78d4ec41cd4448b3bfc295acac0d41d7",
+        "model": "text-embedding-3-small",
+        "tokens": 51
+      },
+      {
+        "request_id": "req_d470370bd2a4440db6c2da19a2a4180a",
+        "model": "text-embedding-3-small",
+        "tokens": 23
+      },
+      {
+        "request_id": "req_848f19132acd4392b7da9965b862d1dc",
+        "model": "text-embedding-3-small",
+        "tokens": 41
+      },
+      {
+        "request_id": "req_10bfb709309a457a8b4787946b987df5",
+        "model": "text-embedding-3-small",
+        "tokens": 50
+      },
+      {
+        "request_id": "req_eebe600cd2164b8b923e8d89f295cab9",
+        "model": "text-embedding-3-small",
+        "tokens": 31
+      },
+      {
+        "request_id": "req_93b32aa676414fe2bd313242e74df9d4",
+        "model": "text-embedding-3-small",
+        "tokens": 35
+      },
+      {
+        "request_id": "req_dbf0556494fa4eb999eb47b614fad1a7",
+        "model": "text-embedding-3-small",
+        "tokens": 52
+      },
+      {
+        "request_id": "req_028e515f2a1c4a3891ff5e6fe9ef9f67",
+        "model": "text-embedding-3-small",
+        "tokens": 34
+      },
+      {
+        "request_id": "req_0fe530ee8cca4dc6b184bf405be6a4c3",
+        "model": "text-embedding-3-small",
+        "tokens": 30
+      },
+      {
+        "request_id": "req_c6193681eca04baf95f20d88095e48db",
+        "model": "text-embedding-3-small",
+        "tokens": 35
+      }
+    ]
+  },
+  "embedding_estimated_usd": 1.058e-05,
+  "quality_review_completed": false,
+  "test_run": false,
+  "note": "Counts and citation structure do not establish answer correctness/semantic grounding. Read sources and label separately."
+}
