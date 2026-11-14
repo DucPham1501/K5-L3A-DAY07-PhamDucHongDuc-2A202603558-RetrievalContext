@@ -13,7 +13,7 @@ class DenseRetriever:
         from .embeddings import MyEmbedder
         from .store import PgVectorStore
         load_dotenv(ROOT / '.env', encoding='utf-8-sig')
-        config = json.loads((ROOT / 'configs/day6/inherited.json').read_text(encoding='utf-8'))
+        config = json.loads((ROOT / 'configs/inherited.json').read_text(encoding='utf-8'))
         model = os.getenv('EMBEDDING_MODEL', config['model'])
         dimensions = int(os.getenv('EMBEDDING_DIMENSIONS', str(config['dimensions'])))
         if (model, dimensions) != (config['model'], config['dimensions']):

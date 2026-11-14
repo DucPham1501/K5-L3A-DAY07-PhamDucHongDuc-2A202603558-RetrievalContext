@@ -1,6 +1,6 @@
 # Phần 4 — Đánh giá và cải thiện
 
-Đã hoàn thành hai thử nghiệm dev, lựa chọn trước test và đánh giá baseline/cấu hình chọn trên cùng 7 câu test. Bảng đầy đủ, phân tích lỗi trước/sau, token, chi phí và lệnh chạy nằm trong [báo cáo cá nhân](../report/individual/MSSV_HoTen.md).
+Đã hoàn thành hai thử nghiệm dev, lựa chọn trước test và đánh giá baseline/cấu hình chọn trên cùng 7 câu test. Bảng đầy đủ, phân tích lỗi trước/sau, token, chi phí và lệnh chạy nằm trong [báo cáo cá nhân](../report/individual/2A202603558_PhamDucHongDuc.md).
 
 | Cấu hình dev | Thay đổi so với baseline | Grounded trung bình | Citation hợp lệ | Context evidence |
 |---|---|---|---|---|
@@ -19,3 +19,5 @@ Trên test, cả hai đạt grounded mức 2 ở 5/5 câu, citation 5/5, context
 Artifacts: [Wide dev](../results/experiments/wide-dev/), [Focused dev](../results/experiments/focused-dev/), [baseline test](../results/experiments/baseline-test/), [Focused test](../results/experiments/focused-test/). Mỗi lượt có trace, nhãn có lý do, evaluation, config/checksum và usage. `summary.json` chỉ đếm cơ học; nhãn nội dung ở `reviews.json` và kết quả chấm ở `evaluation.json`.
 
 Đối chứng query gốc, với gold chỉ được đọc sau khi tạo toàn bộ ranking/context: [dev](../results/experiments/original-query-reference.json), [test](../results/experiments/original-query-test-reference.json). Giữ cutoff Hit@3 ngay cả khi Wide xuất top-15; CER xét context đã đóng gói. Embedding thật được chia sẻ giữa các cấu hình, không tạo lại document embedding. Agent traces giữ query gốc và từng query thực tế sau model viết lại.
+
+Việc chuyển file cấu hình/dữ liệu sau thí nghiệm đã được cập nhật ở [hướng dẫn kế thừa](DAY6_HANDOFF.md#đường-dẫn-mới-và-kết-quả-lịch-sử). Selection và artifacts không thay đổi; guard checksum vẫn chặn code khác bản chốt khi chạy test mới.

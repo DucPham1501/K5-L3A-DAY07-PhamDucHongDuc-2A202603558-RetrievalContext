@@ -21,7 +21,7 @@ def load(path):
 
 def main():
     load_dotenv(ROOT / '.env', encoding='utf-8-sig')
-    inherited = load('configs/day6/inherited.json')
+    inherited = load('configs/inherited.json')
     config_paths = {'baseline': 'configs/agent.json', 'wide': 'configs/agent-wide.json', 'focused': 'configs/agent-focused.json'}
     configs = {name: load(path) for name, path in config_paths.items()}
     chunks = load('data/chunks.json')

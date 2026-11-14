@@ -105,4 +105,6 @@ Lượt tích hợp đầu `dev-v1` bị dừng sau 5 trace vì model không tu�
 
 Trace thật đã được kiểm tra: filter đúng, không có trường gold/nhãn trong input model, context và số lượt trong giới hạn, checksum dữ liệu/code khớp. `summary.json` là thống kê cơ học chưa chấm nội dung; `evaluation.json` là kết quả từ file nhãn AI review riêng. Không trộn hai loại bằng chứng.
 
-Phần 4 hoàn thành: [thử nghiệm, lựa chọn và test](EXPERIMENTS.md).
+Phần 4 hoàn thành: [thử nghiệm, lựa chọn và test](EXPERIMENTS.md). Báo cáo đã điền ở [2A202603558_PhamDucHongDuc.md](../report/individual/2A202603558_PhamDucHongDuc.md).
+
+Sau khi sắp xếp thư mục, dense adapter đọc `configs/inherited.json`. Trace và selection lịch sử được giữ nguyên. Đổi đường dẫn làm checksum code khác bản chốt nên guard chặn lượt test mới; không ghi lại selection hoặc sửa điểm số. Xem [cách đối chiếu phiên bản lịch sử](DAY6_HANDOFF.md#đường-dẫn-mới-và-kết-quả-lịch-sử).

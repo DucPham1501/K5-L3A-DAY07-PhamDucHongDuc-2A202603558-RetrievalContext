@@ -1,6 +1,6 @@
 # Phần 2 - Dense, BM25 và Hybrid RRF
 
-Đã triển khai và chạy ba phương pháp trên toàn bộ 17 câu dev, cùng 336 chunk strategy C kế thừa Day 6. Lượt chạy thật ngày 14/11/2026 ở `results/retrieval/dev-v1/`. Không chạy test, không đổi corpus/gold và chưa chọn cấu hình agent cuối cùng.
+Đã triển khai và chạy ba phương pháp trên toàn bộ 17 câu dev, cùng 336 chunk strategy C kế thừa Day 6. Lượt retrieval riêng ngày 14/11/2026 ở `results/retrieval/dev-v1/` chỉ dùng dev, không đổi corpus/gold. Việc chọn cấu hình agent và đánh giá test được thực hiện riêng ở [phần 4](EXPERIMENTS.md).
 
 ## Cấu hình và thuật toán
 
@@ -95,7 +95,7 @@ Lượt chạy dùng chung một embedding query thật cho Dense và Hybrid. BM
 
 BM25 trượt Hit@3 ở `d7-dev-01`, `d7-dev-10`, `d7-dev-11`; Dense trượt `01`, `11`; Hybrid trượt `01`. Đây là kết quả exact-evidence; không tự sửa gold hoặc metric sau khi xem ranking. Hướng tách từ tiếng Việt, độ dài candidate, tham số BM25, rerank hoặc query transformation có thể thử sau trên dev với giả thuyết và cấu hình riêng. Chưa tuyên bố hoàn thành hai thử nghiệm cải thiện có đo lại của phần 4.
 
-## Artifacts và phần còn lại
+## Artifacts
 
 Trong `results/retrieval/dev-v1/`:
 
@@ -107,4 +107,4 @@ Trong `results/retrieval/dev-v1/`:
 
 Đã chạy 27 unit tests, gồm tính BM25 theo ví dụ số, chuẩn hóa Unicode, filter, RRF theo rank, chống trùng/sai ID, budget có nguồn, truyền lỗi và chống đưa gold vào input. Kiểm tra thực tế database/API được chứng minh bằng artifacts riêng, không suy ra từ mock tests.
 
-Phần 2 đã có đủ ba phương pháp và benchmark dev. Model thật điều phối tool/context đã được nối ở [phần 3](AGENT.md), có nhãn grounded answer/citation/abstention dev riêng. Phần 4 còn phải thử ít nhất hai cải thiện và chọn cấu hình theo tiêu chí đã ghi trước. Test chỉ chạy sau khi chốt; hiện chưa có số liệu test.
+Phần 2 đã có đủ ba phương pháp và benchmark dev. Model thật điều phối tool/context đã được nối ở [phần 3](AGENT.md), có nhãn grounded answer/citation/abstention dev riêng. [Phần 4](EXPERIMENTS.md) đã thử Wide/Focused, chọn trên dev và chạy baseline/cấu hình chọn trên test sau khi chốt.

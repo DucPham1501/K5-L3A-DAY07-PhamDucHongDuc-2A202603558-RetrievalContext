@@ -36,7 +36,7 @@ def validate():
     source_docs = {d['source_id']: d for d in load('data/manifest.json')['documents']}
     for doc in source_docs.values():
         require(hashlib.sha256((ROOT / doc['local_path']).read_bytes()).hexdigest() == doc['sha256'], 'Source PDF changed')
-    old = [json.loads(line) for line in (ROOT / 'data/day6/questions.jsonl').read_text(encoding='utf-8').splitlines()]
+    old = [json.loads(line) for line in (ROOT / 'data/questions.jsonl').read_text(encoding='utf-8').splitlines()]
     old_test_pairs = {(q['gold_source_id'], q['gold_article']) for q in old if q['split'] == 'test'}
     ids, questions, article_pairs, audit, counts = set(), set(), {}, [], {}
     for split, minimum in (('dev', (15, 2)), ('test', (5, 2))):

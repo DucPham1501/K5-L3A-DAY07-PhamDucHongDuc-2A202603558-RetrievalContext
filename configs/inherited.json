@@ -27,8 +27,8 @@
     "data/chunks/B.jsonl": "ec3ff3475fb1db580b8238a90de11a49e72dfdf722aac594cd1d230b72ad8e90",
     "data/chunks/C.jsonl": "ec3ff3475fb1db580b8238a90de11a49e72dfdf722aac594cd1d230b72ad8e90",
     "data/chunks.json": "a9c8dd4a2bbac0b22f8eb0aa390d12e8bea48cdab4c7c7d657bc88e5d5cef346",
-    "data/day6/questions.jsonl": "6576730194fbdf4da2846c3dbcd671fa96d6fccad5eb83fdd164eb1e80a064ce",
-    "configs/day6/strategies.json": "3123f7bdd0d864051cd7111c36c28d90c421c972fc0115a69e8607240a68b9c5"
+    "data/questions.jsonl": "6576730194fbdf4da2846c3dbcd671fa96d6fccad5eb83fdd164eb1e80a064ce",
+    "configs/strategies.json": "3123f7bdd0d864051cd7111c36c28d90c421c972fc0115a69e8607240a68b9c5"
   },
   "cache_sha256": {
     "009664b3c5212bb4478d821a83977858a212b6de7e4c08729978cb283a3f2f7c": "6aec875010d9598628337476cd07ac26103ea1432887c99d4cb669930c0354f8",

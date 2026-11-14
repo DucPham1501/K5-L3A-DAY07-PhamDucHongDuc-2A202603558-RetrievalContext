@@ -27,7 +27,7 @@ def digest(path):
 
 
 def verify():
-    provenance = load(ROOT / 'configs/day6/inherited.json')
+    provenance = load(ROOT / 'configs/inherited.json')
     for relative, expected in provenance['sha256'].items():
         if digest(ROOT / relative) != expected:
             raise ValueError(f'Inherited file checksum mismatch: {relative}')
@@ -36,7 +36,7 @@ def verify():
         if digest(ROOT / doc['local_path']) != doc['sha256']:
             raise ValueError('Source PDF checksum mismatch')
     pages = load_corpus(ROOT / 'data/processed/corpus.pages.jsonl', ROOT / 'data/manifest.json')
-    config = load(ROOT / 'configs/day6/strategies.json')
+    config = load(ROOT / 'configs/strategies.json')
     strategies = {}
     for name, cfg in config.items():
         chunks = [json.loads(line) for line in (ROOT / f'data/chunks/{name}.jsonl').read_text(encoding='utf-8').splitlines()]

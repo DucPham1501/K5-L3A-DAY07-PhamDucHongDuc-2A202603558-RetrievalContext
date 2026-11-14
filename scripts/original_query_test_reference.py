@@ -21,7 +21,7 @@ def load(path):
 
 def main():
     load_dotenv(ROOT / '.env', encoding='utf-8-sig')
-    inherited = load('configs/day6/inherited.json')
+    inherited = load('configs/inherited.json')
     lock = load('results/experiments/selection.json')
     assert lock['status'] == 'locked'
     for name, digest in {**lock['code_sha256'], **lock['benchmark_sha256']}.items():

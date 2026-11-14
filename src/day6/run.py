@@ -33,7 +33,7 @@ def prepare():
     for doc in json.loads(manifest.read_text(encoding='utf-8-sig'))['documents']:
         if digest(ROOT/doc['local_path']) != doc['sha256']: raise ValueError('Source PDF checksum mismatch')
     pages = load_corpus(corpus, manifest)
-    configs = json.loads((ROOT/'configs/day6/strategies.json').read_text(encoding='utf-8-sig'))
+    configs = json.loads((ROOT/'configs/strategies.json').read_text(encoding='utf-8-sig'))
     if {**configs['B'], 'filter': True} != configs['C']: raise ValueError('B/C may differ only by filter')
     model = os.getenv('EMBEDDING_MODEL','text-embedding-3-small')
     enc = tiktoken.encoding_for_model(model)
@@ -56,7 +56,7 @@ def prepare():
         target.write_text(''.join(json.dumps(asdict(c),ensure_ascii=False)+'\n' for c in items),encoding='utf-8')
     if chunks['B'] != chunks['C']: raise ValueError('B/C chunk mismatch')
     report={'status':'prepared_only_no_embeddings','timestamp':datetime.now(timezone.utc).isoformat(),'content_pages':len(pages),
-        'corpus_sha256':digest(corpus),'benchmark_sha256':digest(ROOT/'data/day6/questions.jsonl'),
+        'corpus_sha256':digest(corpus),'benchmark_sha256':digest(ROOT/'data/questions.jsonl'),
         'model':model,'dimensions':int(os.getenv('EMBEDDING_DIMENSIONS','1536')),
         'input_processing':'NFC + collapse whitespace; no prefixes; identical document/query processing',
         'strategies':stats,'versions':{p:importlib.metadata.version(p) for p in ['openai','psycopg','tiktoken','pypdf','python-dotenv']}}
