@@ -1,0 +1,94 @@
+{
+  "status": "complete",
+  "started_at": "2026-11-14T08:35:53.425488+00:00",
+  "split": "dev",
+  "config": {
+    "version": "retrieval-v1",
+    "split": "dev",
+    "chunk_file": "data/chunks.json",
+    "dense_strategy": "C",
+    "methods": [
+      "dense",
+      "bm25",
+      "hybrid_rrf"
+    ],
+    "top_k": 3,
+    "candidate_k": 20,
+    "context_budget_chars": 2000,
+    "bm25": {
+      "k1": 1.5,
+      "b": 0.75
+    },
+    "rrf": {
+      "rank_constant": 60
+    },
+    "tokenization": "NFC + casefold + Unicode alphanumeric syllables/numbers; keep accents; no stopwords; unique query terms",
+    "filter_policy": "Apply the same explicit user doc_type/year filter to all retrievers; fixed global BM25 statistics",
+    "hypotheses": {
+      "dense": "Semantic matching baseline using the inherited real vector index.",
+      "bm25": "Exact legal terms, article numbers and deadlines may benefit from lexical retrieval.",
+      "hybrid_rrf": "Equal-weight rank fusion may recover evidence missed by either single retriever."
+    }
+  },
+  "asset_sha256": {
+    "data/processed/corpus.pages.jsonl": "23c285e55542ffe99fca7bbd484deb155a6bd031d941b09dad6ed1a0dc740add",
+    "data/chunks.json": "a9c8dd4a2bbac0b22f8eb0aa390d12e8bea48cdab4c7c7d657bc88e5d5cef346",
+    "benchmark/dev.json": "af2fe20cbec784bfa7ce25065cdd76d03d2a2543d72444a8373a60310c9825cf",
+    "benchmark/inputs/dev.json": "4fd8384bfe9a45c6e355f03672351d4441f4c93211badcff2cdec9240daf62d8"
+  },
+  "code_sha256": {
+    "src/retrieval.py": "d804ca18093ab6be0253d2de8296d52d802301577d3d99766dc049a0656f2217",
+    "src/retrieval_benchmark.py": "f715122111a581bda7bc532c75ded58f52637c5c60e65a040a76a88fa18da670",
+    "src/day6/retrieval.py": "772ec75a4c2445070f916ecc6bd1b274ed97db1269ae13322b3050a3886148f4",
+    "src/day6/embeddings.py": "5888eb8ca673ace120558f163ae00ee69f094e36d6dd53e7fe3ac11851e05b4a",
+    "src/day6/store.py": "5551db584b086a52bfd2e82d56e35d1bb045567c7c4026e919de689345e61617",
+    "configs/retrieval.json": "7cf2a7227bfa935c7df6f5f6986d89bb4266b2fb4dccdc3cc1e6ec7097611735"
+  },
+  "query_count": 17,
+  "chunk_count": 336,
+  "test_run": false,
+  "versions": {
+    "openai": "2.54.0",
+    "psycopg": "3.3.9",
+    "tiktoken": "0.14.0"
+  },
+  "timing_policy": "One shared measured embedding/dense/BM25 stage per query. Composed latency is a sum of reused measured stages, not independently timed standalone calls.",
+  "cost_policy": "Actual embedding API usage counted once per run. Per-method logical tokens show standalone demand; do not add shared billed cost twice. USD uses configured estimate, not invoice/current verified pricing.",
+  "dense_setup_seconds": 3.500294199999189,
+  "store": {
+    "postgresql": "16.16 (Debian 16.16-1.pgdg12+1)",
+    "pgvector": "0.8.7",
+    "metric": "cosine",
+    "search": "exact",
+    "table": "day6_chunks"
+  },
+  "model": "text-embedding-3-small",
+  "dimensions": 1536,
+  "namespace": "day6-v1:text-embedding-3-small:1536:nfc-ws-v1",
+  "bm25_build_seconds": 0.02424299999984214,
+  "configured_usd_per_million_tokens": 0.02,
+  "query_errors": 0,
+  "finished_at": "2026-11-14T08:36:02.539451+00:00",
+  "actual_api_usage": {
+    "tokens": 215,
+    "cache_hits": 14,
+    "requests": [
+      {
+        "request_id": "req_55dbd2b62c3e4b43b438690ccb31052a",
+        "model": "text-embedding-3-small",
+        "tokens": 92
+      },
+      {
+        "request_id": "req_4872b06f54c84e42977ff6f2e89cad08",
+        "model": "text-embedding-3-small",
+        "tokens": 64
+      },
+      {
+        "request_id": "req_ebae68fb2acb47fbbc8b2b9e76cd5d71",
+        "model": "text-embedding-3-small",
+        "tokens": 59
+      }
+    ]
+  },
+  "actual_estimated_embedding_cost_usd": 4.2999999999999995e-06
+}

@@ -1,0 +1,100 @@
+{
+  "split": "dev",
+  "metrics_policy": "Exact verbatim evidence, source and page. 15 answerable cases in denominator; errors count as misses and are also reported. Manual semantic review and agent metrics are separate.",
+  "methods": {
+    "dense": {
+      "hit1": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "hit3": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "context_evidence": {
+        "n": 13,
+        "N": 15,
+        "rate": 0.8666666666666667
+      },
+      "queries": 17,
+      "errors": 0,
+      "median_composed_latency_ms": 31.1083000005965,
+      "mean_context_chars": 1458.235294117647,
+      "logical_embedding_tokens": 958,
+      "logical_estimated_embedding_cost_usd": 1.916e-05
+    },
+    "bm25": {
+      "hit1": {
+        "n": 8,
+        "N": 15,
+        "rate": 0.5333333333333333
+      },
+      "hit3": {
+        "n": 12,
+        "N": 15,
+        "rate": 0.8
+      },
+      "context_evidence": {
+        "n": 12,
+        "N": 15,
+        "rate": 0.8
+      },
+      "queries": 17,
+      "errors": 0,
+      "median_composed_latency_ms": 4.949800000758842,
+      "mean_context_chars": 1503.235294117647,
+      "logical_embedding_tokens": 0,
+      "logical_estimated_embedding_cost_usd": 0
+    },
+    "hybrid_rrf": {
+      "hit1": {
+        "n": 11,
+        "N": 15,
+        "rate": 0.7333333333333333
+      },
+      "hit3": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "context_evidence": {
+        "n": 14,
+        "N": 15,
+        "rate": 0.9333333333333333
+      },
+      "queries": 17,
+      "errors": 0,
+      "median_composed_latency_ms": 35.78019999895332,
+      "mean_context_chars": 1505.5882352941176,
+      "logical_embedding_tokens": 958,
+      "logical_estimated_embedding_cost_usd": 1.916e-05
+    }
+  },
+  "actual_api_usage_shared_once": {
+    "tokens": 215,
+    "cache_hits": 14,
+    "requests": [
+      {
+        "request_id": "req_55dbd2b62c3e4b43b438690ccb31052a",
+        "model": "text-embedding-3-small",
+        "tokens": 92
+      },
+      {
+        "request_id": "req_4872b06f54c84e42977ff6f2e89cad08",
+        "model": "text-embedding-3-small",
+        "tokens": 64
+      },
+      {
+        "request_id": "req_ebae68fb2acb47fbbc8b2b9e76cd5d71",
+        "model": "text-embedding-3-small",
+        "tokens": 59
+      }
+    ]
+  },
+  "actual_estimated_embedding_cost_usd_shared_once": 4.2999999999999995e-06,
+  "test_run": false,
+  "agent_evaluated": false,
+  "final_config_selected": false
+}

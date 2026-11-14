@@ -1,0 +1,98 @@
+[
+  {
+    "query_id": "d7-dev-01",
+    "method": "dense",
+    "context_grade": 0,
+    "reason": "Top three are about measures/implementation/fighting cyber threats rather than the four activities in the definition at law page 1.",
+    "context_ids": [
+      "89ae46f21b977b4ac0423a520eaa9205556f8f2043278ac325a27c2b25e7798e",
+      "958f5bcf0fc4e6254f51efaf7738dc24c9e5fabd03bcdf848f5f3472225cb354",
+      "cabe5add61e7f4ea9bf95fe8646795f9fe826fbd1d35f289d9bca2bc4786ed6a"
+    ],
+    "gold_chunk_ids": [
+      "3c8ae09b4cbb116e38a0665eee9cfbb4a0e4ea8cbc2eedb77e64b95a5034db8b"
+    ],
+    "reviewer": "Codex AI assistant; not independent human review",
+    "scope": "Two dev error cases only; not agent answer/citation grading."
+  },
+  {
+    "query_id": "d7-dev-01",
+    "method": "bm25",
+    "context_grade": 0,
+    "reason": "Top three are about measures/implementation/fighting cyber threats rather than the four activities in the definition at law page 1.",
+    "context_ids": [
+      "cabe5add61e7f4ea9bf95fe8646795f9fe826fbd1d35f289d9bca2bc4786ed6a",
+      "958f5bcf0fc4e6254f51efaf7738dc24c9e5fabd03bcdf848f5f3472225cb354",
+      "a28cb5bda69a74692c7a4af6ac5cfc3ecf5fc36f75bc0cf352ae3a66f8abf85a"
+    ],
+    "gold_chunk_ids": [
+      "3c8ae09b4cbb116e38a0665eee9cfbb4a0e4ea8cbc2eedb77e64b95a5034db8b"
+    ],
+    "reviewer": "Codex AI assistant; not independent human review",
+    "scope": "Two dev error cases only; not agent answer/citation grading."
+  },
+  {
+    "query_id": "d7-dev-01",
+    "method": "hybrid_rrf",
+    "context_grade": 0,
+    "reason": "Top three are about measures/implementation/fighting cyber threats rather than the four activities in the definition at law page 1.",
+    "context_ids": [
+      "cabe5add61e7f4ea9bf95fe8646795f9fe826fbd1d35f289d9bca2bc4786ed6a",
+      "958f5bcf0fc4e6254f51efaf7738dc24c9e5fabd03bcdf848f5f3472225cb354",
+      "89ae46f21b977b4ac0423a520eaa9205556f8f2043278ac325a27c2b25e7798e"
+    ],
+    "gold_chunk_ids": [
+      "3c8ae09b4cbb116e38a0665eee9cfbb4a0e4ea8cbc2eedb77e64b95a5034db8b"
+    ],
+    "reviewer": "Codex AI assistant; not independent human review",
+    "scope": "Two dev error cases only; not agent answer/citation grading."
+  },
+  {
+    "query_id": "d7-dev-11",
+    "method": "dense",
+    "context_grade": 0,
+    "reason": "Context addresses withdrawal, deletion, restricted processing or consent for missing/deceased persons; it does not establish the silence/non-response rule asked here.",
+    "context_ids": [
+      "338f4951a2d2b586150b2c3ccdd42aa0696e4d231e7184e84ae5b21a185ebe89",
+      "772b7613cf6f3c62a026c95e168dba326323addfe94b35c28ec4a5ae47fbb665",
+      "93f1a19cad06fcb4483a39a959d38ad01b298b8d33c9182a3beb3a026c9a0a54"
+    ],
+    "gold_chunk_ids": [
+      "e1b1b447d43318277861c65e6d571bf6b26ce86bd0c6497b55bc2abbedc4e385"
+    ],
+    "reviewer": "Codex AI assistant; not independent human review",
+    "scope": "Two dev error cases only; not agent answer/citation grading."
+  },
+  {
+    "query_id": "d7-dev-11",
+    "method": "bm25",
+    "context_grade": 0,
+    "reason": "Context addresses withdrawal, deletion, restricted processing or consent for missing/deceased persons; it does not establish the silence/non-response rule asked here.",
+    "context_ids": [
+      "715c0e3f6ed6ce5bbadfe2a6964a7e2829cc522755c09dd157c2e340dad1863b",
+      "a2c63c5aa61af4e41fe8846672b0acd051a14a0cb9c55f0db253ee8150576915",
+      "e5438fe9100325f777d8a9c57fabc619a023a7b23093b47aaaee348baa16aab7"
+    ],
+    "gold_chunk_ids": [
+      "e1b1b447d43318277861c65e6d571bf6b26ce86bd0c6497b55bc2abbedc4e385"
+    ],
+    "reviewer": "Codex AI assistant; not independent human review",
+    "scope": "Two dev error cases only; not agent answer/citation grading."
+  },
+  {
+    "query_id": "d7-dev-11",
+    "method": "hybrid_rrf",
+    "context_grade": 2,
+    "reason": "Context contains the complete paragraph on silence/non-response not being consent, at decree physical page 9.",
+    "context_ids": [
+      "772b7613cf6f3c62a026c95e168dba326323addfe94b35c28ec4a5ae47fbb665",
+      "338f4951a2d2b586150b2c3ccdd42aa0696e4d231e7184e84ae5b21a185ebe89",
+      "e1b1b447d43318277861c65e6d571bf6b26ce86bd0c6497b55bc2abbedc4e385"
+    ],
+    "gold_chunk_ids": [
+      "e1b1b447d43318277861c65e6d571bf6b26ce86bd0c6497b55bc2abbedc4e385"
+    ],
+    "reviewer": "Codex AI assistant; not independent human review",
+    "scope": "Two dev error cases only; not agent answer/citation grading."
+  }
+]

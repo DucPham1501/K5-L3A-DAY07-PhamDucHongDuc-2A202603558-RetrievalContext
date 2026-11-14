@@ -1,0 +1,827 @@
+[
+  {
+    "query_id": "d7-dev-01",
+    "method": "dense",
+    "answerable": true,
+    "status": "ok",
+    "hit1": false,
+    "hit3": false,
+    "context_evidence": false,
+    "expected_answer": "Phòng ngừa, phát hiện, ngăn chặn và xử lý hành vi xâm phạm an ninh mạng.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 1,
+        "evidence": "2. Bảo vệ an ninh mạng là phòng ngừa, phát hiện, ngăn chặn, xử lý hành vi\nxâm phạm an ninh mạng."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-02",
+    "method": "dense",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Tội phạm mạng.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 2,
+        "evidence": "7. Tội phạm mạng là hành vi sử dụng không gian mạng, công nghệ thông tin\nhoặc phương tiện điện tử để thực hiện tội phạm được quy định tại Bộ luật Hình sự."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-03",
+    "method": "dense",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Tôn trọng độc lập, chủ quyền và toàn vẹn lãnh thổ; không can thiệp công việc nội bộ; bình đẳng và cùng có lợi.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 5,
+        "evidence": "1. Hợp tác quốc tế về an ninh mạng được thực hiện trên cơ sở tôn trọng độc\nlập, chủ quyền và toàn vẹn lãnh thổ, không can thiệp vào công việc nội bộ của\nnhau, bình đẳng và cùng có lợi."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-04",
+    "method": "dense",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Có thể gây thiệt hại cho hoạt động kinh tế - xã hội, gây khó khăn cho hoạt động của cơ quan nhà nước hoặc người thi hành công vụ.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 6,
+        "evidence": "d) Thông tin sai sự thật gây hoang mang trong Nhân dân, gây thiệt hại cho hoạt\nđộng kinh tế - xã hội, gây khó khăn cho hoạt động của cơ quan nhà nước hoặc\nngười thi hành công vụ, xâm phạm quyền và lợi ích hợp pháp của cơ quan, tổ\nchức, cá nhân khác;"
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-05",
+    "method": "dense",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Tùy tính chất, mức độ: kỷ luật, xử lý vi phạm hành chính hoặc truy cứu trách nhiệm hình sự; nếu gây thiệt hại phải bồi thường theo pháp luật.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 7,
+        "evidence": "Người nào có hành vi vi phạm quy định của Luật này thì tùy theo tính chất,\nmức độ vi phạm mà bị xử lý kỷ luật, xử lý vi phạm hành chính hoặc bị truy cứu\ntrách nhiệm hình sự, nếu gây thiệt hại thì phải bồi thường theo quy định của pháp\nluật."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-06",
+    "method": "dense",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Được bảo vệ, tiếp cận thông tin, tham gia hoạt động xã hội, vui chơi, giải trí, giữ bí mật cá nhân, đời sống riêng tư và các quyền khác.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 26,
+        "evidence": "1. Trẻ em có quyền được bảo vệ, tiếp cận thông tin, tham gia hoạt động xã hội,\nvui chơi, giải trí, giữ bí mật cá nhân, đời sống riêng tư và các quyền khác khi tham\ngia trên không gian mạng."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-07",
+    "method": "dense",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Bộ Công an và Bộ Quốc phòng.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 27,
+        "evidence": "1. Lực lượng chuyên trách bảo vệ an ninh mạng được bố trí tại Bộ Công an,\nBộ Quốc phòng."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-08",
+    "method": "dense",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Ngân sách nhà nước bảo đảm, bố trí trong dự toán ngân sách nhà nước hằng năm.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 29,
+        "evidence": "1. Kinh phí bảo vệ an ninh mạng của cơ quan nhà nước, tổ chức chính trị do\nngân sách nhà nước bảo đảm, được bố trí trong dự toán ngân sách nhà nước hàng\nnăm."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-09",
+    "method": "dense",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Thông tin về nhóm máu được loại trừ tại điểm b khoản 4 Điều 2.",
+    "gold": [
+      {
+        "source_id": "nghi-dinh-13-2023-nd-cp",
+        "page": 2,
+        "evidence": "4. Dữ liệu cá nhân nhạy cảm là dữ liệu cá nhân gắn liền với quyền riêng\ntư của cá nhân mà khi bị xâm phạm sẽ gây ảnh hưởng trực tiệp tới quyên và lợi\ních hợp pháp của cá nhân gôm:\n\na) Quan điểm chính trị, quan điểm tôn giáo;\n\nb) Tình trạng sức khỏe và đời tư được ghi trong hồ sơ bệnh án, không bao\ngôm thông tin về nhóm máu;"
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-10",
+    "method": "dense",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Không được mua, bán dữ liệu cá nhân dưới mọi hình thức, trừ trường hợp luật có quy định khác.",
+    "gold": [
+      {
+        "source_id": "nghi-dinh-13-2023-nd-cp",
+        "page": 4,
+        "evidence": "4. Dữ liệu cá nhân thu thập phải phù hợp và giới hạn trong phạm vi, mục\n\nđích cần xử lý. Dữ liệu cá nhân không được mua, bán dưới mọi hình thức, trừ\ntrường hợp luật có quy định khác."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-11",
+    "method": "dense",
+    "answerable": true,
+    "status": "ok",
+    "hit1": false,
+    "hit3": false,
+    "context_evidence": false,
+    "expected_answer": "Không. Sự im lặng hoặc không phản hồi không được coi là sự đồng ý.",
+    "gold": [
+      {
+        "source_id": "nghi-dinh-13-2023-nd-cp",
+        "page": 9,
+        "evidence": "_6. Sự im lặng hoặc không phản hồi của chủ thể dữ liệu không được coi là\nsự đồng ý."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-12",
+    "method": "dense",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Không ảnh hưởng đến tính hợp pháp của việc xử lý dữ liệu đã được đồng ý trước khi rút lại sự đồng ý.",
+    "gold": [
+      {
+        "source_id": "nghi-dinh-13-2023-nd-cp",
+        "page": 10,
+        "evidence": "1. Việc rút lại sự đồng ý không ảnh hưởng đến tính hợp pháp của việc xử\nlý dữ liệu đã được đông ý trước khi rút lại sự đông ý."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-13",
+    "method": "dense",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Theo khoản 2 Điều 15, thông báo sau 72 giờ kể từ khi nhận yêu cầu chỉnh sửa dữ liệu cá nhân.",
+    "gold": [
+      {
+        "source_id": "nghi-dinh-13-2023-nd-cp",
+        "page": 13,
+        "evidence": "2. Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử ly dữ liệu cá nhân\nchỉnh sửa dữ liệu cá nhân của chủ thể đữ liệu sau khi được chủ thể dữ liệu cá\nnhân đồng ý ngay khi có thể hoặc theo quy định của pháp luật chuyên ngành.\nTrường hợp không thể thực hiện thì thông báo tới chủ thể dữ liệu sau 72 giờ kế\nkhi nhận được yêu cầu chỉnh sửa đữ liệu cá nhân của chủ thê dữ liệu."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-14",
+    "method": "dense",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Thông báo Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao), chậm nhất 72 giờ sau khi xảy ra hành vi vi phạm, theo Mẫu số 03; thông báo sau 72 giờ phải kèm lý do chậm, muộn.",
+    "gold": [
+      {
+        "source_id": "nghi-dinh-13-2023-nd-cp",
+        "page": 17,
+        "evidence": "1. Trường hợp phát hiện xảy ra vi phạm quy định bảo vệ đữ liệu cá nhân,\nBên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân thông\nbáo cho Bộ Công an (Cục An nỉnh mạng và phòng, chống tội phạm sử dụng\ncông nghệ cao) chậm nhất 72 giờ sau khi xảy ra hành vi vi phạm theo Mẫu số\n03 tại Phụ lục của Nghị định này. Trường hợp thông báo sau 72 giờ thì phải\nkèm theo lý do thông báo chậm, muộn."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-15",
+    "method": "dense",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Ngay từ khi bắt đầu và trong suốt quá trình xử lý dữ liệu cá nhân.",
+    "gold": [
+      {
+        "source_id": "nghi-dinh-13-2023-nd-cp",
+        "page": 21,
+        "evidence": "1. Biện pháp bảo vệ dữ liệu cá nhân được áp dụng ngay từ khi bắt đầu và\ntrong suôt quá trình xử lý đữ liệu cá nhân."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-u01",
+    "method": "dense",
+    "answerable": false,
+    "status": "ok",
+    "hit1": null,
+    "hit3": null,
+    "context_evidence": null,
+    "note": "Excluded from retrieval denominators. Retrieval scores cannot determine abstention."
+  },
+  {
+    "query_id": "d7-dev-u02",
+    "method": "dense",
+    "answerable": false,
+    "status": "ok",
+    "hit1": null,
+    "hit3": null,
+    "context_evidence": null,
+    "note": "Excluded from retrieval denominators. Retrieval scores cannot determine abstention."
+  },
+  {
+    "query_id": "d7-dev-01",
+    "method": "bm25",
+    "answerable": true,
+    "status": "ok",
+    "hit1": false,
+    "hit3": false,
+    "context_evidence": false,
+    "expected_answer": "Phòng ngừa, phát hiện, ngăn chặn và xử lý hành vi xâm phạm an ninh mạng.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 1,
+        "evidence": "2. Bảo vệ an ninh mạng là phòng ngừa, phát hiện, ngăn chặn, xử lý hành vi\nxâm phạm an ninh mạng."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-02",
+    "method": "bm25",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Tội phạm mạng.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 2,
+        "evidence": "7. Tội phạm mạng là hành vi sử dụng không gian mạng, công nghệ thông tin\nhoặc phương tiện điện tử để thực hiện tội phạm được quy định tại Bộ luật Hình sự."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-03",
+    "method": "bm25",
+    "answerable": true,
+    "status": "ok",
+    "hit1": false,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Tôn trọng độc lập, chủ quyền và toàn vẹn lãnh thổ; không can thiệp công việc nội bộ; bình đẳng và cùng có lợi.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 5,
+        "evidence": "1. Hợp tác quốc tế về an ninh mạng được thực hiện trên cơ sở tôn trọng độc\nlập, chủ quyền và toàn vẹn lãnh thổ, không can thiệp vào công việc nội bộ của\nnhau, bình đẳng và cùng có lợi."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-04",
+    "method": "bm25",
+    "answerable": true,
+    "status": "ok",
+    "hit1": false,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Có thể gây thiệt hại cho hoạt động kinh tế - xã hội, gây khó khăn cho hoạt động của cơ quan nhà nước hoặc người thi hành công vụ.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 6,
+        "evidence": "d) Thông tin sai sự thật gây hoang mang trong Nhân dân, gây thiệt hại cho hoạt\nđộng kinh tế - xã hội, gây khó khăn cho hoạt động của cơ quan nhà nước hoặc\nngười thi hành công vụ, xâm phạm quyền và lợi ích hợp pháp của cơ quan, tổ\nchức, cá nhân khác;"
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-05",
+    "method": "bm25",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Tùy tính chất, mức độ: kỷ luật, xử lý vi phạm hành chính hoặc truy cứu trách nhiệm hình sự; nếu gây thiệt hại phải bồi thường theo pháp luật.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 7,
+        "evidence": "Người nào có hành vi vi phạm quy định của Luật này thì tùy theo tính chất,\nmức độ vi phạm mà bị xử lý kỷ luật, xử lý vi phạm hành chính hoặc bị truy cứu\ntrách nhiệm hình sự, nếu gây thiệt hại thì phải bồi thường theo quy định của pháp\nluật."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-06",
+    "method": "bm25",
+    "answerable": true,
+    "status": "ok",
+    "hit1": false,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Được bảo vệ, tiếp cận thông tin, tham gia hoạt động xã hội, vui chơi, giải trí, giữ bí mật cá nhân, đời sống riêng tư và các quyền khác.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 26,
+        "evidence": "1. Trẻ em có quyền được bảo vệ, tiếp cận thông tin, tham gia hoạt động xã hội,\nvui chơi, giải trí, giữ bí mật cá nhân, đời sống riêng tư và các quyền khác khi tham\ngia trên không gian mạng."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-07",
+    "method": "bm25",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Bộ Công an và Bộ Quốc phòng.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 27,
+        "evidence": "1. Lực lượng chuyên trách bảo vệ an ninh mạng được bố trí tại Bộ Công an,\nBộ Quốc phòng."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-08",
+    "method": "bm25",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Ngân sách nhà nước bảo đảm, bố trí trong dự toán ngân sách nhà nước hằng năm.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 29,
+        "evidence": "1. Kinh phí bảo vệ an ninh mạng của cơ quan nhà nước, tổ chức chính trị do\nngân sách nhà nước bảo đảm, được bố trí trong dự toán ngân sách nhà nước hàng\nnăm."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-09",
+    "method": "bm25",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Thông tin về nhóm máu được loại trừ tại điểm b khoản 4 Điều 2.",
+    "gold": [
+      {
+        "source_id": "nghi-dinh-13-2023-nd-cp",
+        "page": 2,
+        "evidence": "4. Dữ liệu cá nhân nhạy cảm là dữ liệu cá nhân gắn liền với quyền riêng\ntư của cá nhân mà khi bị xâm phạm sẽ gây ảnh hưởng trực tiệp tới quyên và lợi\ních hợp pháp của cá nhân gôm:\n\na) Quan điểm chính trị, quan điểm tôn giáo;\n\nb) Tình trạng sức khỏe và đời tư được ghi trong hồ sơ bệnh án, không bao\ngôm thông tin về nhóm máu;"
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-10",
+    "method": "bm25",
+    "answerable": true,
+    "status": "ok",
+    "hit1": false,
+    "hit3": false,
+    "context_evidence": false,
+    "expected_answer": "Không được mua, bán dữ liệu cá nhân dưới mọi hình thức, trừ trường hợp luật có quy định khác.",
+    "gold": [
+      {
+        "source_id": "nghi-dinh-13-2023-nd-cp",
+        "page": 4,
+        "evidence": "4. Dữ liệu cá nhân thu thập phải phù hợp và giới hạn trong phạm vi, mục\n\nđích cần xử lý. Dữ liệu cá nhân không được mua, bán dưới mọi hình thức, trừ\ntrường hợp luật có quy định khác."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-11",
+    "method": "bm25",
+    "answerable": true,
+    "status": "ok",
+    "hit1": false,
+    "hit3": false,
+    "context_evidence": false,
+    "expected_answer": "Không. Sự im lặng hoặc không phản hồi không được coi là sự đồng ý.",
+    "gold": [
+      {
+        "source_id": "nghi-dinh-13-2023-nd-cp",
+        "page": 9,
+        "evidence": "_6. Sự im lặng hoặc không phản hồi của chủ thể dữ liệu không được coi là\nsự đồng ý."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-12",
+    "method": "bm25",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Không ảnh hưởng đến tính hợp pháp của việc xử lý dữ liệu đã được đồng ý trước khi rút lại sự đồng ý.",
+    "gold": [
+      {
+        "source_id": "nghi-dinh-13-2023-nd-cp",
+        "page": 10,
+        "evidence": "1. Việc rút lại sự đồng ý không ảnh hưởng đến tính hợp pháp của việc xử\nlý dữ liệu đã được đông ý trước khi rút lại sự đông ý."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-13",
+    "method": "bm25",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Theo khoản 2 Điều 15, thông báo sau 72 giờ kể từ khi nhận yêu cầu chỉnh sửa dữ liệu cá nhân.",
+    "gold": [
+      {
+        "source_id": "nghi-dinh-13-2023-nd-cp",
+        "page": 13,
+        "evidence": "2. Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử ly dữ liệu cá nhân\nchỉnh sửa dữ liệu cá nhân của chủ thể đữ liệu sau khi được chủ thể dữ liệu cá\nnhân đồng ý ngay khi có thể hoặc theo quy định của pháp luật chuyên ngành.\nTrường hợp không thể thực hiện thì thông báo tới chủ thể dữ liệu sau 72 giờ kế\nkhi nhận được yêu cầu chỉnh sửa đữ liệu cá nhân của chủ thê dữ liệu."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-14",
+    "method": "bm25",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Thông báo Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao), chậm nhất 72 giờ sau khi xảy ra hành vi vi phạm, theo Mẫu số 03; thông báo sau 72 giờ phải kèm lý do chậm, muộn.",
+    "gold": [
+      {
+        "source_id": "nghi-dinh-13-2023-nd-cp",
+        "page": 17,
+        "evidence": "1. Trường hợp phát hiện xảy ra vi phạm quy định bảo vệ đữ liệu cá nhân,\nBên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân thông\nbáo cho Bộ Công an (Cục An nỉnh mạng và phòng, chống tội phạm sử dụng\ncông nghệ cao) chậm nhất 72 giờ sau khi xảy ra hành vi vi phạm theo Mẫu số\n03 tại Phụ lục của Nghị định này. Trường hợp thông báo sau 72 giờ thì phải\nkèm theo lý do thông báo chậm, muộn."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-15",
+    "method": "bm25",
+    "answerable": true,
+    "status": "ok",
+    "hit1": false,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Ngay từ khi bắt đầu và trong suốt quá trình xử lý dữ liệu cá nhân.",
+    "gold": [
+      {
+        "source_id": "nghi-dinh-13-2023-nd-cp",
+        "page": 21,
+        "evidence": "1. Biện pháp bảo vệ dữ liệu cá nhân được áp dụng ngay từ khi bắt đầu và\ntrong suôt quá trình xử lý đữ liệu cá nhân."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-u01",
+    "method": "bm25",
+    "answerable": false,
+    "status": "ok",
+    "hit1": null,
+    "hit3": null,
+    "context_evidence": null,
+    "note": "Excluded from retrieval denominators. Retrieval scores cannot determine abstention."
+  },
+  {
+    "query_id": "d7-dev-u02",
+    "method": "bm25",
+    "answerable": false,
+    "status": "ok",
+    "hit1": null,
+    "hit3": null,
+    "context_evidence": null,
+    "note": "Excluded from retrieval denominators. Retrieval scores cannot determine abstention."
+  },
+  {
+    "query_id": "d7-dev-01",
+    "method": "hybrid_rrf",
+    "answerable": true,
+    "status": "ok",
+    "hit1": false,
+    "hit3": false,
+    "context_evidence": false,
+    "expected_answer": "Phòng ngừa, phát hiện, ngăn chặn và xử lý hành vi xâm phạm an ninh mạng.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 1,
+        "evidence": "2. Bảo vệ an ninh mạng là phòng ngừa, phát hiện, ngăn chặn, xử lý hành vi\nxâm phạm an ninh mạng."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-02",
+    "method": "hybrid_rrf",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Tội phạm mạng.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 2,
+        "evidence": "7. Tội phạm mạng là hành vi sử dụng không gian mạng, công nghệ thông tin\nhoặc phương tiện điện tử để thực hiện tội phạm được quy định tại Bộ luật Hình sự."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-03",
+    "method": "hybrid_rrf",
+    "answerable": true,
+    "status": "ok",
+    "hit1": false,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Tôn trọng độc lập, chủ quyền và toàn vẹn lãnh thổ; không can thiệp công việc nội bộ; bình đẳng và cùng có lợi.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 5,
+        "evidence": "1. Hợp tác quốc tế về an ninh mạng được thực hiện trên cơ sở tôn trọng độc\nlập, chủ quyền và toàn vẹn lãnh thổ, không can thiệp vào công việc nội bộ của\nnhau, bình đẳng và cùng có lợi."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-04",
+    "method": "hybrid_rrf",
+    "answerable": true,
+    "status": "ok",
+    "hit1": false,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Có thể gây thiệt hại cho hoạt động kinh tế - xã hội, gây khó khăn cho hoạt động của cơ quan nhà nước hoặc người thi hành công vụ.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 6,
+        "evidence": "d) Thông tin sai sự thật gây hoang mang trong Nhân dân, gây thiệt hại cho hoạt\nđộng kinh tế - xã hội, gây khó khăn cho hoạt động của cơ quan nhà nước hoặc\nngười thi hành công vụ, xâm phạm quyền và lợi ích hợp pháp của cơ quan, tổ\nchức, cá nhân khác;"
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-05",
+    "method": "hybrid_rrf",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Tùy tính chất, mức độ: kỷ luật, xử lý vi phạm hành chính hoặc truy cứu trách nhiệm hình sự; nếu gây thiệt hại phải bồi thường theo pháp luật.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 7,
+        "evidence": "Người nào có hành vi vi phạm quy định của Luật này thì tùy theo tính chất,\nmức độ vi phạm mà bị xử lý kỷ luật, xử lý vi phạm hành chính hoặc bị truy cứu\ntrách nhiệm hình sự, nếu gây thiệt hại thì phải bồi thường theo quy định của pháp\nluật."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-06",
+    "method": "hybrid_rrf",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Được bảo vệ, tiếp cận thông tin, tham gia hoạt động xã hội, vui chơi, giải trí, giữ bí mật cá nhân, đời sống riêng tư và các quyền khác.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 26,
+        "evidence": "1. Trẻ em có quyền được bảo vệ, tiếp cận thông tin, tham gia hoạt động xã hội,\nvui chơi, giải trí, giữ bí mật cá nhân, đời sống riêng tư và các quyền khác khi tham\ngia trên không gian mạng."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-07",
+    "method": "hybrid_rrf",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Bộ Công an và Bộ Quốc phòng.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 27,
+        "evidence": "1. Lực lượng chuyên trách bảo vệ an ninh mạng được bố trí tại Bộ Công an,\nBộ Quốc phòng."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-08",
+    "method": "hybrid_rrf",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Ngân sách nhà nước bảo đảm, bố trí trong dự toán ngân sách nhà nước hằng năm.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 29,
+        "evidence": "1. Kinh phí bảo vệ an ninh mạng của cơ quan nhà nước, tổ chức chính trị do\nngân sách nhà nước bảo đảm, được bố trí trong dự toán ngân sách nhà nước hàng\nnăm."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-09",
+    "method": "hybrid_rrf",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Thông tin về nhóm máu được loại trừ tại điểm b khoản 4 Điều 2.",
+    "gold": [
+      {
+        "source_id": "nghi-dinh-13-2023-nd-cp",
+        "page": 2,
+        "evidence": "4. Dữ liệu cá nhân nhạy cảm là dữ liệu cá nhân gắn liền với quyền riêng\ntư của cá nhân mà khi bị xâm phạm sẽ gây ảnh hưởng trực tiệp tới quyên và lợi\ních hợp pháp của cá nhân gôm:\n\na) Quan điểm chính trị, quan điểm tôn giáo;\n\nb) Tình trạng sức khỏe và đời tư được ghi trong hồ sơ bệnh án, không bao\ngôm thông tin về nhóm máu;"
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-10",
+    "method": "hybrid_rrf",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Không được mua, bán dữ liệu cá nhân dưới mọi hình thức, trừ trường hợp luật có quy định khác.",
+    "gold": [
+      {
+        "source_id": "nghi-dinh-13-2023-nd-cp",
+        "page": 4,
+        "evidence": "4. Dữ liệu cá nhân thu thập phải phù hợp và giới hạn trong phạm vi, mục\n\nđích cần xử lý. Dữ liệu cá nhân không được mua, bán dưới mọi hình thức, trừ\ntrường hợp luật có quy định khác."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-11",
+    "method": "hybrid_rrf",
+    "answerable": true,
+    "status": "ok",
+    "hit1": false,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Không. Sự im lặng hoặc không phản hồi không được coi là sự đồng ý.",
+    "gold": [
+      {
+        "source_id": "nghi-dinh-13-2023-nd-cp",
+        "page": 9,
+        "evidence": "_6. Sự im lặng hoặc không phản hồi của chủ thể dữ liệu không được coi là\nsự đồng ý."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-12",
+    "method": "hybrid_rrf",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Không ảnh hưởng đến tính hợp pháp của việc xử lý dữ liệu đã được đồng ý trước khi rút lại sự đồng ý.",
+    "gold": [
+      {
+        "source_id": "nghi-dinh-13-2023-nd-cp",
+        "page": 10,
+        "evidence": "1. Việc rút lại sự đồng ý không ảnh hưởng đến tính hợp pháp của việc xử\nlý dữ liệu đã được đông ý trước khi rút lại sự đông ý."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-13",
+    "method": "hybrid_rrf",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Theo khoản 2 Điều 15, thông báo sau 72 giờ kể từ khi nhận yêu cầu chỉnh sửa dữ liệu cá nhân.",
+    "gold": [
+      {
+        "source_id": "nghi-dinh-13-2023-nd-cp",
+        "page": 13,
+        "evidence": "2. Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử ly dữ liệu cá nhân\nchỉnh sửa dữ liệu cá nhân của chủ thể đữ liệu sau khi được chủ thể dữ liệu cá\nnhân đồng ý ngay khi có thể hoặc theo quy định của pháp luật chuyên ngành.\nTrường hợp không thể thực hiện thì thông báo tới chủ thể dữ liệu sau 72 giờ kế\nkhi nhận được yêu cầu chỉnh sửa đữ liệu cá nhân của chủ thê dữ liệu."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-14",
+    "method": "hybrid_rrf",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Thông báo Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao), chậm nhất 72 giờ sau khi xảy ra hành vi vi phạm, theo Mẫu số 03; thông báo sau 72 giờ phải kèm lý do chậm, muộn.",
+    "gold": [
+      {
+        "source_id": "nghi-dinh-13-2023-nd-cp",
+        "page": 17,
+        "evidence": "1. Trường hợp phát hiện xảy ra vi phạm quy định bảo vệ đữ liệu cá nhân,\nBên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân thông\nbáo cho Bộ Công an (Cục An nỉnh mạng và phòng, chống tội phạm sử dụng\ncông nghệ cao) chậm nhất 72 giờ sau khi xảy ra hành vi vi phạm theo Mẫu số\n03 tại Phụ lục của Nghị định này. Trường hợp thông báo sau 72 giờ thì phải\nkèm theo lý do thông báo chậm, muộn."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-15",
+    "method": "hybrid_rrf",
+    "answerable": true,
+    "status": "ok",
+    "hit1": true,
+    "hit3": true,
+    "context_evidence": true,
+    "expected_answer": "Ngay từ khi bắt đầu và trong suốt quá trình xử lý dữ liệu cá nhân.",
+    "gold": [
+      {
+        "source_id": "nghi-dinh-13-2023-nd-cp",
+        "page": 21,
+        "evidence": "1. Biện pháp bảo vệ dữ liệu cá nhân được áp dụng ngay từ khi bắt đầu và\ntrong suôt quá trình xử lý đữ liệu cá nhân."
+      }
+    ]
+  },
+  {
+    "query_id": "d7-dev-u01",
+    "method": "hybrid_rrf",
+    "answerable": false,
+    "status": "ok",
+    "hit1": null,
+    "hit3": null,
+    "context_evidence": null,
+    "note": "Excluded from retrieval denominators. Retrieval scores cannot determine abstention."
+  },
+  {
+    "query_id": "d7-dev-u02",
+    "method": "hybrid_rrf",
+    "answerable": false,
+    "status": "ok",
+    "hit1": null,
+    "hit3": null,
+    "context_evidence": null,
+    "note": "Excluded from retrieval denominators. Retrieval scores cannot determine abstention."
+  }
+]

@@ -1,0 +1,4 @@
+method,Hit@1,Evidence Hit@3,Context Evidence Rate,median_composed_ms,errors
+dense,13/15,13/15,13/15,31.1083000005965,0
+bm25,8/15,12/15,12/15,4.949800000758842,0
+hybrid_rrf,11/15,14/15,14/15,35.78019999895332,0

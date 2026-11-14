@@ -1,0 +1,19 @@
+{
+  "version": "retrieval-v1",
+  "split": "dev",
+  "chunk_file": "data/chunks.json",
+  "dense_strategy": "C",
+  "methods": ["dense", "bm25", "hybrid_rrf"],
+  "top_k": 3,
+  "candidate_k": 20,
+  "context_budget_chars": 2000,
+  "bm25": {"k1": 1.5, "b": 0.75},
+  "rrf": {"rank_constant": 60},
+  "tokenization": "NFC + casefold + Unicode alphanumeric syllables/numbers; keep accents; no stopwords; unique query terms",
+  "filter_policy": "Apply the same explicit user doc_type/year filter to all retrievers; fixed global BM25 statistics",
+  "hypotheses": {
+    "dense": "Semantic matching baseline using the inherited real vector index.",
+    "bm25": "Exact legal terms, article numbers and deadlines may benefit from lexical retrieval.",
+    "hybrid_rrf": "Equal-weight rank fusion may recover evidence missed by either single retriever."
+  }
+}
