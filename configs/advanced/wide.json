@@ -1,0 +1,20 @@
+{
+  "model": "gpt-4.1-mini-2025-04-14",
+  "embedding_model": "text-embedding-3-small",
+  "dimensions": 1536,
+  "temperature": 0,
+  "max_searches": 4,
+  "candidate_k": 25,
+  "top_k": 6,
+  "max_images": 6,
+  "context_chars": 48000,
+  "rank_constant": 60,
+  "pricing_usd_per_million": {
+    "input": 0.4,
+    "cached_input": 0.1,
+    "output": 1.6,
+    "embedding": 0.02
+  },
+  "pricing_source": "https://developers.openai.com/api/docs/models/gpt-4.1-mini",
+  "pricing_checked_at": "2026-11-14"
+}

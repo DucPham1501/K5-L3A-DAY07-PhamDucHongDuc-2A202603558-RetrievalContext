@@ -13,3 +13,11 @@ starter/results/
 # Local embedding cache can be recreated with the real provider; never commit secrets.
 results/embedding_cache/
 tmp/
+
+# Advanced report: source and full-document derivatives remain local.
+data/advance/*.pdf
+data/advance/pages/
+data/advance/captions/
+data/advance/index.json
+data/advance/vectors.json
+results/advanced/**/traces.jsonl

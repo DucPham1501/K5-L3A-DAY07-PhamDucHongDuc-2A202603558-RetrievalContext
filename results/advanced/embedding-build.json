@@ -1,0 +1,32 @@
+{
+  "index_sha256": "b23a94d9d1bdf3dc01e7640407b69f58793a210b652c809cacefece0e6feaa79",
+  "vectors_sha256": "74723c41414142c4d3d9fd284a778e6c1a00d2ac8571adf2801ecfb35ce86d31",
+  "pages": 100,
+  "model": "text-embedding-3-small",
+  "dimensions": 1536,
+  "api_tokens": 79397,
+  "cache_hits": 0,
+  "requests": [
+    {
+      "request_id": "req_5d9c1f3763384ec8a856a517e50aa921",
+      "model": "text-embedding-3-small",
+      "tokens": 45012
+    },
+    {
+      "request_id": "req_64d958af3a944cc3bc99410011c2ec2c",
+      "model": "text-embedding-3-small",
+      "tokens": 19947
+    },
+    {
+      "request_id": "req_7af118497f484cfe8851f39b8e0ddfff",
+      "model": "text-embedding-3-small",
+      "tokens": 13091
+    },
+    {
+      "request_id": "req_8ca0aa96cab34166a5f893677a7c7c88",
+      "model": "text-embedding-3-small",
+      "tokens": 1347
+    }
+  ],
+  "estimated_usd": 0.0015879400000000001
+}
