@@ -1,0 +1,553 @@
+[
+  {
+    "id": "d7-dev-01",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Bảo vệ an ninh mạng bao gồm những hoạt động nào?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Phòng ngừa, phát hiện, ngăn chặn và xử lý hành vi xâm phạm an ninh mạng.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 1,
+        "evidence": "2. Bảo vệ an ninh mạng là phòng ngừa, phát hiện, ngăn chặn, xử lý hành vi\nxâm phạm an ninh mạng."
+      }
+    ],
+    "source": "data/raw/24-2018-qh14.pdf",
+    "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=206114",
+    "article": 2,
+    "origin": {
+      "day6_id": "q01",
+      "revision": "Inherited dev question; source visually rechecked for Day 7."
+    },
+    "gold_chunk_ids": [
+      "3c8ae09b4cbb116e38a0665eee9cfbb4a0e4ea8cbc2eedb77e64b95a5034db8b"
+    ],
+    "verification": {
+      "method": "Original PDF page rendered and visually checked against answer and verbatim corpus evidence.",
+      "reviewer": "Codex AI assistant; not independent human review",
+      "date": "2026-11-14",
+      "ocr_policy": "Preserve inherited OCR in evidence; expected answer uses corrected Vietnamese. No corpus/chunk edits."
+    }
+  },
+  {
+    "id": "d7-dev-02",
+    "split": "dev",
+    "type": "dien_dat_lai",
+    "question": "Một hành vi sử dụng công nghệ thông tin để thực hiện tội phạm theo Bộ luật Hình sự được gọi là gì?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Tội phạm mạng.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 2,
+        "evidence": "7. Tội phạm mạng là hành vi sử dụng không gian mạng, công nghệ thông tin\nhoặc phương tiện điện tử để thực hiện tội phạm được quy định tại Bộ luật Hình sự."
+      }
+    ],
+    "source": "data/raw/24-2018-qh14.pdf",
+    "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=206114",
+    "article": 2,
+    "origin": {
+      "day6_id": "q02",
+      "revision": "Inherited dev question; source visually rechecked for Day 7."
+    },
+    "gold_chunk_ids": [
+      "aa0c323893c3c7565619fa52ce2fed5e81d9a6003ac0686fb02383511778428e"
+    ],
+    "verification": {
+      "method": "Original PDF page rendered and visually checked against answer and verbatim corpus evidence.",
+      "reviewer": "Codex AI assistant; not independent human review",
+      "date": "2026-11-14",
+      "ocr_policy": "Preserve inherited OCR in evidence; expected answer uses corrected Vietnamese. No corpus/chunk edits."
+    }
+  },
+  {
+    "id": "d7-dev-03",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Hợp tác quốc tế về an ninh mạng được thực hiện trên những nguyên tắc nào?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Tôn trọng độc lập, chủ quyền và toàn vẹn lãnh thổ; không can thiệp công việc nội bộ; bình đẳng và cùng có lợi.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 5,
+        "evidence": "1. Hợp tác quốc tế về an ninh mạng được thực hiện trên cơ sở tôn trọng độc\nlập, chủ quyền và toàn vẹn lãnh thổ, không can thiệp vào công việc nội bộ của\nnhau, bình đẳng và cùng có lợi."
+      }
+    ],
+    "source": "data/raw/24-2018-qh14.pdf",
+    "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=206114",
+    "article": 7,
+    "origin": {
+      "day6_id": "q03",
+      "revision": "Inherited dev question; source visually rechecked for Day 7."
+    },
+    "gold_chunk_ids": [
+      "c1eb83a841268f59dfcf84f24a11ec217ec8143f11bd366a06a3740968287011"
+    ],
+    "verification": {
+      "method": "Original PDF page rendered and visually checked against answer and verbatim corpus evidence.",
+      "reviewer": "Codex AI assistant; not independent human review",
+      "date": "2026-11-14",
+      "ocr_policy": "Preserve inherited OCR in evidence; expected answer uses corrected Vietnamese. No corpus/chunk edits."
+    }
+  },
+  {
+    "id": "d7-dev-04",
+    "split": "dev",
+    "type": "dien_dat_lai",
+    "question": "Chỉ xét Luật ban hành năm 2018: thông tin sai sự thật gây hoang mang trong Nhân dân có thể gây thiệt hại cho hoạt động nào và gây khó khăn cho hoạt động của những ai, theo điểm d khoản 1 Điều 8?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Có thể gây thiệt hại cho hoạt động kinh tế - xã hội, gây khó khăn cho hoạt động của cơ quan nhà nước hoặc người thi hành công vụ.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 6,
+        "evidence": "d) Thông tin sai sự thật gây hoang mang trong Nhân dân, gây thiệt hại cho hoạt\nđộng kinh tế - xã hội, gây khó khăn cho hoạt động của cơ quan nhà nước hoặc\nngười thi hành công vụ, xâm phạm quyền và lợi ích hợp pháp của cơ quan, tổ\nchức, cá nhân khác;"
+      }
+    ],
+    "source": "data/raw/24-2018-qh14.pdf",
+    "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=206114",
+    "article": 8,
+    "filter": {
+      "doc_type": "Luật",
+      "year": 2018
+    },
+    "origin": {
+      "day6_id": "q04",
+      "revision": "Question/evidence narrowed to point d before Day 7 retrieval; old snapshot unchanged."
+    },
+    "gold_chunk_ids": [
+      "5e99d36560ca6d4c3b072e2e4975fe2a660ff40cc4d82b7efc7ab529caa88c6f"
+    ],
+    "verification": {
+      "method": "Original PDF page rendered and visually checked against answer and verbatim corpus evidence.",
+      "reviewer": "Codex AI assistant; not independent human review",
+      "date": "2026-11-14",
+      "ocr_policy": "Preserve inherited OCR in evidence; expected answer uses corrected Vietnamese. No corpus/chunk edits."
+    }
+  },
+  {
+    "id": "d7-dev-05",
+    "split": "dev",
+    "type": "dieu_kien_ngoai_le",
+    "question": "Người vi phạm pháp luật về an ninh mạng có thể bị xử lý thế nào; nếu gây thiệt hại thì còn có nghĩa vụ gì?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Tùy tính chất, mức độ: kỷ luật, xử lý vi phạm hành chính hoặc truy cứu trách nhiệm hình sự; nếu gây thiệt hại phải bồi thường theo pháp luật.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 7,
+        "evidence": "Người nào có hành vi vi phạm quy định của Luật này thì tùy theo tính chất,\nmức độ vi phạm mà bị xử lý kỷ luật, xử lý vi phạm hành chính hoặc bị truy cứu\ntrách nhiệm hình sự, nếu gây thiệt hại thì phải bồi thường theo quy định của pháp\nluật."
+      }
+    ],
+    "source": "data/raw/24-2018-qh14.pdf",
+    "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=206114",
+    "article": 9,
+    "origin": {
+      "day6_id": "q05",
+      "revision": "Inherited dev question; source visually rechecked for Day 7."
+    },
+    "gold_chunk_ids": [
+      "5cb7e8fd3090024f4e55f028325fcbb2d54d2e860ac100fff5ffa14f6dc5186f"
+    ],
+    "verification": {
+      "method": "Original PDF page rendered and visually checked against answer and verbatim corpus evidence.",
+      "reviewer": "Codex AI assistant; not independent human review",
+      "date": "2026-11-14",
+      "ocr_policy": "Preserve inherited OCR in evidence; expected answer uses corrected Vietnamese. No corpus/chunk edits."
+    }
+  },
+  {
+    "id": "d7-dev-06",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Trẻ em có những quyền nào khi tham gia trên không gian mạng?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Được bảo vệ, tiếp cận thông tin, tham gia hoạt động xã hội, vui chơi, giải trí, giữ bí mật cá nhân, đời sống riêng tư và các quyền khác.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 26,
+        "evidence": "1. Trẻ em có quyền được bảo vệ, tiếp cận thông tin, tham gia hoạt động xã hội,\nvui chơi, giải trí, giữ bí mật cá nhân, đời sống riêng tư và các quyền khác khi tham\ngia trên không gian mạng."
+      }
+    ],
+    "source": "data/raw/24-2018-qh14.pdf",
+    "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=206114",
+    "article": 29,
+    "origin": {
+      "day6_id": "q06",
+      "revision": "Inherited dev question; source visually rechecked for Day 7."
+    },
+    "gold_chunk_ids": [
+      "31672b0ee5bc2ac09d32f00416f5f371a7cab3b0e6f9bd542dcae120391d9963"
+    ],
+    "verification": {
+      "method": "Original PDF page rendered and visually checked against answer and verbatim corpus evidence.",
+      "reviewer": "Codex AI assistant; not independent human review",
+      "date": "2026-11-14",
+      "ocr_policy": "Preserve inherited OCR in evidence; expected answer uses corrected Vietnamese. No corpus/chunk edits."
+    }
+  },
+  {
+    "id": "d7-dev-07",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Lực lượng chuyên trách bảo vệ an ninh mạng được bố trí tại những bộ nào?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Bộ Công an và Bộ Quốc phòng.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 27,
+        "evidence": "1. Lực lượng chuyên trách bảo vệ an ninh mạng được bố trí tại Bộ Công an,\nBộ Quốc phòng."
+      }
+    ],
+    "source": "data/raw/24-2018-qh14.pdf",
+    "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=206114",
+    "article": 30,
+    "origin": {
+      "day6_id": "q07",
+      "revision": "Inherited dev question; source visually rechecked for Day 7."
+    },
+    "gold_chunk_ids": [
+      "c9094d5be4b506c2d8a7359a178f0369713fd4b89a3097c772e7746747d91a60"
+    ],
+    "verification": {
+      "method": "Original PDF page rendered and visually checked against answer and verbatim corpus evidence.",
+      "reviewer": "Codex AI assistant; not independent human review",
+      "date": "2026-11-14",
+      "ocr_policy": "Preserve inherited OCR in evidence; expected answer uses corrected Vietnamese. No corpus/chunk edits."
+    }
+  },
+  {
+    "id": "d7-dev-08",
+    "split": "dev",
+    "type": "dien_dat_lai",
+    "question": "Cơ quan nhà nước và tổ chức chính trị lấy kinh phí bảo vệ an ninh mạng từ đâu?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Ngân sách nhà nước bảo đảm, bố trí trong dự toán ngân sách nhà nước hằng năm.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 29,
+        "evidence": "1. Kinh phí bảo vệ an ninh mạng của cơ quan nhà nước, tổ chức chính trị do\nngân sách nhà nước bảo đảm, được bố trí trong dự toán ngân sách nhà nước hàng\nnăm."
+      }
+    ],
+    "source": "data/raw/24-2018-qh14.pdf",
+    "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=206114",
+    "article": 35,
+    "origin": {
+      "day6_id": "q08",
+      "revision": "Inherited dev question; source visually rechecked for Day 7."
+    },
+    "gold_chunk_ids": [
+      "329c887ace231ffca6e356d094ec255ca5583e75073bf0bc734dde93669ea816"
+    ],
+    "verification": {
+      "method": "Original PDF page rendered and visually checked against answer and verbatim corpus evidence.",
+      "reviewer": "Codex AI assistant; not independent human review",
+      "date": "2026-11-14",
+      "ocr_policy": "Preserve inherited OCR in evidence; expected answer uses corrected Vietnamese. No corpus/chunk edits."
+    }
+  },
+  {
+    "id": "d7-dev-09",
+    "split": "dev",
+    "type": "dieu_kien_ngoai_le",
+    "question": "Thông tin sức khỏe và đời tư trong hồ sơ bệnh án được xếp vào dữ liệu cá nhân nhạy cảm, nhưng loại thông tin nào được loại trừ khỏi điểm quy định này?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Thông tin về nhóm máu được loại trừ tại điểm b khoản 4 Điều 2.",
+    "gold": [
+      {
+        "source_id": "nghi-dinh-13-2023-nd-cp",
+        "page": 2,
+        "evidence": "4. Dữ liệu cá nhân nhạy cảm là dữ liệu cá nhân gắn liền với quyền riêng\ntư của cá nhân mà khi bị xâm phạm sẽ gây ảnh hưởng trực tiệp tới quyên và lợi\ních hợp pháp của cá nhân gôm:\n\na) Quan điểm chính trị, quan điểm tôn giáo;\n\nb) Tình trạng sức khỏe và đời tư được ghi trong hồ sơ bệnh án, không bao\ngôm thông tin về nhóm máu;"
+      }
+    ],
+    "source": "data/raw/13-2023-nd-cp.pdf",
+    "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+    "article": 2,
+    "origin": {
+      "day6_id": "q09",
+      "revision": "Inherited dev question; source visually rechecked for Day 7."
+    },
+    "gold_chunk_ids": [
+      "2bbbeb93b6cffb2e360566e4050ecec0952f42b49695331c9330c8d0ebfc6bfe"
+    ],
+    "verification": {
+      "method": "Original PDF page rendered and visually checked against answer and verbatim corpus evidence.",
+      "reviewer": "Codex AI assistant; not independent human review",
+      "date": "2026-11-14",
+      "ocr_policy": "Preserve inherited OCR in evidence; expected answer uses corrected Vietnamese. No corpus/chunk edits."
+    }
+  },
+  {
+    "id": "d7-dev-10",
+    "split": "dev",
+    "type": "dieu_kien_ngoai_le",
+    "question": "Chỉ xét Nghị định ban hành năm 2023: nguyên tắc về mua, bán dữ liệu cá nhân quy định thế nào và có ngoại lệ gì?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Không được mua, bán dữ liệu cá nhân dưới mọi hình thức, trừ trường hợp luật có quy định khác.",
+    "gold": [
+      {
+        "source_id": "nghi-dinh-13-2023-nd-cp",
+        "page": 4,
+        "evidence": "4. Dữ liệu cá nhân thu thập phải phù hợp và giới hạn trong phạm vi, mục\n\nđích cần xử lý. Dữ liệu cá nhân không được mua, bán dưới mọi hình thức, trừ\ntrường hợp luật có quy định khác."
+      }
+    ],
+    "source": "data/raw/13-2023-nd-cp.pdf",
+    "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+    "article": 3,
+    "filter": {
+      "doc_type": "Nghị định",
+      "year": 2023
+    },
+    "origin": {
+      "day6_id": "q10",
+      "revision": "Inherited dev question; source visually rechecked for Day 7."
+    },
+    "gold_chunk_ids": [
+      "86b5a73b240639f5e4ff8ae362c95c10b001e3103a91cf61d619a38052536eb6"
+    ],
+    "verification": {
+      "method": "Original PDF page rendered and visually checked against answer and verbatim corpus evidence.",
+      "reviewer": "Codex AI assistant; not independent human review",
+      "date": "2026-11-14",
+      "ocr_policy": "Preserve inherited OCR in evidence; expected answer uses corrected Vietnamese. No corpus/chunk edits."
+    }
+  },
+  {
+    "id": "d7-dev-11",
+    "split": "dev",
+    "type": "dien_dat_lai",
+    "question": "Nếu người dùng không trả lời yêu cầu cho phép xử lý dữ liệu cá nhân thì có được coi là đã đồng ý không?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Không. Sự im lặng hoặc không phản hồi không được coi là sự đồng ý.",
+    "gold": [
+      {
+        "source_id": "nghi-dinh-13-2023-nd-cp",
+        "page": 9,
+        "evidence": "_6. Sự im lặng hoặc không phản hồi của chủ thể dữ liệu không được coi là\nsự đồng ý."
+      }
+    ],
+    "source": "data/raw/13-2023-nd-cp.pdf",
+    "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+    "article": 11,
+    "origin": {
+      "day6_id": "q11",
+      "revision": "Inherited dev question; source visually rechecked for Day 7."
+    },
+    "gold_chunk_ids": [
+      "e1b1b447d43318277861c65e6d571bf6b26ce86bd0c6497b55bc2abbedc4e385"
+    ],
+    "verification": {
+      "method": "Original PDF page rendered and visually checked against answer and verbatim corpus evidence.",
+      "reviewer": "Codex AI assistant; not independent human review",
+      "date": "2026-11-14",
+      "ocr_policy": "Preserve inherited OCR in evidence; expected answer uses corrected Vietnamese. No corpus/chunk edits."
+    }
+  },
+  {
+    "id": "d7-dev-12",
+    "split": "dev",
+    "type": "dien_dat_lai",
+    "question": "Rút lại sự đồng ý có làm thay đổi tính hợp pháp của việc xử lý dữ liệu đã được đồng ý trước đó không?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Không ảnh hưởng đến tính hợp pháp của việc xử lý dữ liệu đã được đồng ý trước khi rút lại sự đồng ý.",
+    "gold": [
+      {
+        "source_id": "nghi-dinh-13-2023-nd-cp",
+        "page": 10,
+        "evidence": "1. Việc rút lại sự đồng ý không ảnh hưởng đến tính hợp pháp của việc xử\nlý dữ liệu đã được đông ý trước khi rút lại sự đông ý."
+      }
+    ],
+    "source": "data/raw/13-2023-nd-cp.pdf",
+    "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+    "article": 12,
+    "origin": {
+      "day6_id": "q12",
+      "revision": "Inherited dev question; source visually rechecked for Day 7."
+    },
+    "gold_chunk_ids": [
+      "68a29276acaa73a794d9665bd3d8240e116f67422879a934457f79d8ee48204f"
+    ],
+    "verification": {
+      "method": "Original PDF page rendered and visually checked against answer and verbatim corpus evidence.",
+      "reviewer": "Codex AI assistant; not independent human review",
+      "date": "2026-11-14",
+      "ocr_policy": "Preserve inherited OCR in evidence; expected answer uses corrected Vietnamese. No corpus/chunk edits."
+    }
+  },
+  {
+    "id": "d7-dev-13",
+    "split": "dev",
+    "type": "dieu_kien_ngoai_le",
+    "question": "Nếu Bên Kiểm soát dữ liệu cá nhân hoặc Bên Kiểm soát và xử lý dữ liệu cá nhân không thể thực hiện yêu cầu chỉnh sửa, phải thông báo cho chủ thể dữ liệu sau bao lâu kể từ khi nhận yêu cầu?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Theo khoản 2 Điều 15, thông báo sau 72 giờ kể từ khi nhận yêu cầu chỉnh sửa dữ liệu cá nhân.",
+    "gold": [
+      {
+        "source_id": "nghi-dinh-13-2023-nd-cp",
+        "page": 13,
+        "evidence": "2. Bên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử ly dữ liệu cá nhân\nchỉnh sửa dữ liệu cá nhân của chủ thể đữ liệu sau khi được chủ thể dữ liệu cá\nnhân đồng ý ngay khi có thể hoặc theo quy định của pháp luật chuyên ngành.\nTrường hợp không thể thực hiện thì thông báo tới chủ thể dữ liệu sau 72 giờ kế\nkhi nhận được yêu cầu chỉnh sửa đữ liệu cá nhân của chủ thê dữ liệu."
+      }
+    ],
+    "source": "data/raw/13-2023-nd-cp.pdf",
+    "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+    "article": 15,
+    "origin": {
+      "day6_id": "q13",
+      "revision": "Inherited dev question; source visually rechecked for Day 7."
+    },
+    "gold_chunk_ids": [
+      "4113e8fe86b7955cefe44fd04c8a791e81b03946eb33926e0aecd3a10e164088"
+    ],
+    "verification": {
+      "method": "Original PDF page rendered and visually checked against answer and verbatim corpus evidence.",
+      "reviewer": "Codex AI assistant; not independent human review",
+      "date": "2026-11-14",
+      "ocr_policy": "Preserve inherited OCR in evidence; expected answer uses corrected Vietnamese. No corpus/chunk edits."
+    }
+  },
+  {
+    "id": "d7-dev-14",
+    "split": "dev",
+    "type": "dieu_kien_ngoai_le",
+    "question": "Chỉ xét Nghị định năm 2023: khi phát hiện vi phạm bảo vệ dữ liệu cá nhân, Bên Kiểm soát dữ liệu cá nhân hoặc Bên Kiểm soát và xử lý dữ liệu cá nhân phải thông báo cho ai, chậm nhất khi nào; nếu quá hạn thì cần kèm gì?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Thông báo Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao), chậm nhất 72 giờ sau khi xảy ra hành vi vi phạm, theo Mẫu số 03; thông báo sau 72 giờ phải kèm lý do chậm, muộn.",
+    "gold": [
+      {
+        "source_id": "nghi-dinh-13-2023-nd-cp",
+        "page": 17,
+        "evidence": "1. Trường hợp phát hiện xảy ra vi phạm quy định bảo vệ đữ liệu cá nhân,\nBên Kiểm soát dữ liệu cá nhân, Bên Kiểm soát và xử lý dữ liệu cá nhân thông\nbáo cho Bộ Công an (Cục An nỉnh mạng và phòng, chống tội phạm sử dụng\ncông nghệ cao) chậm nhất 72 giờ sau khi xảy ra hành vi vi phạm theo Mẫu số\n03 tại Phụ lục của Nghị định này. Trường hợp thông báo sau 72 giờ thì phải\nkèm theo lý do thông báo chậm, muộn."
+      }
+    ],
+    "source": "data/raw/13-2023-nd-cp.pdf",
+    "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+    "article": 23,
+    "filter": {
+      "doc_type": "Nghị định",
+      "year": 2023
+    },
+    "origin": {
+      "day6_id": "q14",
+      "revision": "Inherited dev question; source visually rechecked for Day 7."
+    },
+    "gold_chunk_ids": [
+      "5bf377e71ce400bdbbe08d6cdab4eb4883056dad818bb01e8cb7a2a0f8e9d147"
+    ],
+    "verification": {
+      "method": "Original PDF page rendered and visually checked against answer and verbatim corpus evidence.",
+      "reviewer": "Codex AI assistant; not independent human review",
+      "date": "2026-11-14",
+      "ocr_policy": "Preserve inherited OCR in evidence; expected answer uses corrected Vietnamese. No corpus/chunk edits."
+    }
+  },
+  {
+    "id": "d7-dev-15",
+    "split": "dev",
+    "type": "truc_tiep",
+    "question": "Các biện pháp bảo vệ dữ liệu cá nhân phải được áp dụng từ thời điểm nào và trong khoảng thời gian nào của quá trình xử lý?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Ngay từ khi bắt đầu và trong suốt quá trình xử lý dữ liệu cá nhân.",
+    "gold": [
+      {
+        "source_id": "nghi-dinh-13-2023-nd-cp",
+        "page": 21,
+        "evidence": "1. Biện pháp bảo vệ dữ liệu cá nhân được áp dụng ngay từ khi bắt đầu và\ntrong suôt quá trình xử lý đữ liệu cá nhân."
+      }
+    ],
+    "source": "data/raw/13-2023-nd-cp.pdf",
+    "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+    "article": 26,
+    "origin": {
+      "day6_id": "q15",
+      "revision": "Inherited dev question; source visually rechecked for Day 7."
+    },
+    "gold_chunk_ids": [
+      "9a2d22644979186238e3ac80d17fa42a24643034ec6b92f738c600b740329659"
+    ],
+    "verification": {
+      "method": "Original PDF page rendered and visually checked against answer and verbatim corpus evidence.",
+      "reviewer": "Codex AI assistant; not independent human review",
+      "date": "2026-11-14",
+      "ocr_policy": "Preserve inherited OCR in evidence; expected answer uses corrected Vietnamese. No corpus/chunk edits."
+    }
+  },
+  {
+    "id": "d7-dev-u01",
+    "split": "dev",
+    "type": "thieu_su_kien",
+    "question": "Trong hai tài liệu của corpus, sự cố rò rỉ dữ liệu của Công ty Sao Khuê Xanh ngày 15/10/2025 được ghi nhận làm lộ chính xác bao nhiêu hồ sơ?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "expected_answer": "Không đủ bằng chứng trong corpus về sự cố, công ty và số hồ sơ được hỏi. Không được tự xác nhận sự cố có thật hoặc suy đoán số lượng.",
+    "absence_reason": "Corpus là hai văn bản gốc 2018/2023, không chứa báo cáo sự cố công ty nêu trong câu hỏi. Tên công ty là tình huống kiểm thử giả định, không phải khẳng định có sự kiện thật.",
+    "absence_check": {
+      "method": "Full 60-page normalized corpus scan plus contextual review; absence is not inferred from top-k.",
+      "terms_expected_absent": [
+        "Sao Khue Xanh",
+        "2025"
+      ],
+      "related_pages": [
+        {
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "page": 17
+        },
+        {
+          "source_id": "luat-24-2018-qh14",
+          "page": 7
+        }
+      ],
+      "scope": "Only the frozen 60-page corpus; not a claim about information outside it."
+    }
+  },
+  {
+    "id": "d7-dev-u02",
+    "split": "dev",
+    "type": "thieu_thong_so",
+    "question": "Theo Nghị định năm 2023 trong corpus, thuật toán AES bắt buộc dùng để mã hóa dữ liệu cá nhân phải có khóa dài chính xác bao nhiêu bit?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "expected_answer": "Không đủ bằng chứng trong Nghị định để xác định AES bắt buộc hoặc độ dài khóa; không tự đưa khuyến nghị kỹ thuật thay cho quy định được hỏi.",
+    "absence_reason": "Điều 26 nêu nhóm biện pháp bảo vệ, không quy định thuật toán AES hoặc độ dài khóa cụ thể. Quét toàn corpus không thấy thuật ngữ AES.",
+    "absence_check": {
+      "method": "Full 60-page normalized corpus scan plus contextual review; absence is not inferred from top-k.",
+      "terms_expected_absent": [
+        "AES"
+      ],
+      "related_pages": [
+        {
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "page": 21
+        },
+        {
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "page": 22
+        }
+      ],
+      "scope": "Only the frozen 60-page corpus; not a claim about information outside it."
+    },
+    "filter": {
+      "doc_type": "Nghị định",
+      "year": 2023
+    }
+  }
+]

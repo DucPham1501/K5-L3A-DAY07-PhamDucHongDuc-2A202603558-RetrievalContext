@@ -1,0 +1,86 @@
+[
+  {
+    "id": "d7-dev-01",
+    "question": "Bảo vệ an ninh mạng bao gồm những hoạt động nào?"
+  },
+  {
+    "id": "d7-dev-02",
+    "question": "Một hành vi sử dụng công nghệ thông tin để thực hiện tội phạm theo Bộ luật Hình sự được gọi là gì?"
+  },
+  {
+    "id": "d7-dev-03",
+    "question": "Hợp tác quốc tế về an ninh mạng được thực hiện trên những nguyên tắc nào?"
+  },
+  {
+    "id": "d7-dev-04",
+    "question": "Chỉ xét Luật ban hành năm 2018: thông tin sai sự thật gây hoang mang trong Nhân dân có thể gây thiệt hại cho hoạt động nào và gây khó khăn cho hoạt động của những ai, theo điểm d khoản 1 Điều 8?",
+    "filter": {
+      "doc_type": "Luật",
+      "year": 2018
+    }
+  },
+  {
+    "id": "d7-dev-05",
+    "question": "Người vi phạm pháp luật về an ninh mạng có thể bị xử lý thế nào; nếu gây thiệt hại thì còn có nghĩa vụ gì?"
+  },
+  {
+    "id": "d7-dev-06",
+    "question": "Trẻ em có những quyền nào khi tham gia trên không gian mạng?"
+  },
+  {
+    "id": "d7-dev-07",
+    "question": "Lực lượng chuyên trách bảo vệ an ninh mạng được bố trí tại những bộ nào?"
+  },
+  {
+    "id": "d7-dev-08",
+    "question": "Cơ quan nhà nước và tổ chức chính trị lấy kinh phí bảo vệ an ninh mạng từ đâu?"
+  },
+  {
+    "id": "d7-dev-09",
+    "question": "Thông tin sức khỏe và đời tư trong hồ sơ bệnh án được xếp vào dữ liệu cá nhân nhạy cảm, nhưng loại thông tin nào được loại trừ khỏi điểm quy định này?"
+  },
+  {
+    "id": "d7-dev-10",
+    "question": "Chỉ xét Nghị định ban hành năm 2023: nguyên tắc về mua, bán dữ liệu cá nhân quy định thế nào và có ngoại lệ gì?",
+    "filter": {
+      "doc_type": "Nghị định",
+      "year": 2023
+    }
+  },
+  {
+    "id": "d7-dev-11",
+    "question": "Nếu người dùng không trả lời yêu cầu cho phép xử lý dữ liệu cá nhân thì có được coi là đã đồng ý không?"
+  },
+  {
+    "id": "d7-dev-12",
+    "question": "Rút lại sự đồng ý có làm thay đổi tính hợp pháp của việc xử lý dữ liệu đã được đồng ý trước đó không?"
+  },
+  {
+    "id": "d7-dev-13",
+    "question": "Nếu Bên Kiểm soát dữ liệu cá nhân hoặc Bên Kiểm soát và xử lý dữ liệu cá nhân không thể thực hiện yêu cầu chỉnh sửa, phải thông báo cho chủ thể dữ liệu sau bao lâu kể từ khi nhận yêu cầu?"
+  },
+  {
+    "id": "d7-dev-14",
+    "question": "Chỉ xét Nghị định năm 2023: khi phát hiện vi phạm bảo vệ dữ liệu cá nhân, Bên Kiểm soát dữ liệu cá nhân hoặc Bên Kiểm soát và xử lý dữ liệu cá nhân phải thông báo cho ai, chậm nhất khi nào; nếu quá hạn thì cần kèm gì?",
+    "filter": {
+      "doc_type": "Nghị định",
+      "year": 2023
+    }
+  },
+  {
+    "id": "d7-dev-15",
+    "question": "Các biện pháp bảo vệ dữ liệu cá nhân phải được áp dụng từ thời điểm nào và trong khoảng thời gian nào của quá trình xử lý?"
+  },
+  {
+    "id": "d7-dev-u01",
+    "question": "Trong hai tài liệu của corpus, sự cố rò rỉ dữ liệu của Công ty Sao Khuê Xanh ngày 15/10/2025 được ghi nhận làm lộ chính xác bao nhiêu hồ sơ?"
+  },
+  {
+    "id": "d7-dev-u02",
+    "question": "Theo Nghị định năm 2023 trong corpus, thuật toán AES bắt buộc dùng để mã hóa dữ liệu cá nhân phải có khóa dài chính xác bao nhiêu bit?",
+    "filter": {
+      "doc_type": "Nghị định",
+      "year": 2023
+    }
+  }
+]

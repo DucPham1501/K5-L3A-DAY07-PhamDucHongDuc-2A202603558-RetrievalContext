@@ -1,0 +1,221 @@
+[
+  {
+    "id": "d7-test-01",
+    "split": "test",
+    "type": "dieu_kien",
+    "question": "Theo Luật An ninh mạng trong corpus, công dân Việt Nam cần đáp ứng những tiêu chuẩn và nguyện vọng nào để có thể được tuyển chọn vào lực lượng bảo vệ an ninh mạng?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Đủ tiêu chuẩn về phẩm chất đạo đức, sức khỏe, trình độ, kiến thức về an ninh mạng, an toàn thông tin mạng, công nghệ thông tin và có nguyện vọng.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 28,
+        "evidence": "1. Công dân Việt Nam có đủ tiêu chuẩn về phẩm chất đạo đức, sức khỏe, trình\nđộ, kiến thức về an ninh mạng, an toàn thông tin mạng, công nghệ thông tin, có\nnguyện vọng thì có thể được tuyển chọn vào lực lượng bảo vệ an ninh mạng."
+      }
+    ],
+    "source": "data/raw/24-2018-qh14.pdf",
+    "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=206114",
+    "article": 32,
+    "origin": {
+      "revision": "New Day 7 holdout; not a rewording of the five Day 6 test questions."
+    },
+    "gold_chunk_ids": [
+      "694d240638b3d12694d3a08db51ef6203a629e3c987011adaacd65c73bee7a51"
+    ],
+    "verification": {
+      "method": "Original PDF page rendered and visually checked against answer and verbatim corpus evidence.",
+      "reviewer": "Codex AI assistant; not independent human review",
+      "date": "2026-11-14",
+      "ocr_policy": "Preserve inherited OCR in evidence; expected answer uses corrected Vietnamese. No corpus/chunk edits."
+    }
+  },
+  {
+    "id": "d7-test-02",
+    "split": "test",
+    "type": "trach_nhiem",
+    "question": "Theo Luật An ninh mạng trong corpus, cơ quan nào ở địa phương có trách nhiệm xây dựng và triển khai phổ biến kiến thức, nâng cao nhận thức về an ninh mạng cho cơ quan, tổ chức, cá nhân của địa phương?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Ủy ban nhân dân cấp tỉnh.",
+    "gold": [
+      {
+        "source_id": "luat-24-2018-qh14",
+        "page": 28,
+        "evidence": "3. Ủy ban nhân dân cấp tỉnh có trách nhiệm xây dựng và triển khai hoạt động\nphổ biến kiến thức, nâng cao nhận thức về an ninh mạng cho cơ quan, tổ chức, cá\nnhân của địa phương."
+      }
+    ],
+    "source": "data/raw/24-2018-qh14.pdf",
+    "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=206114",
+    "article": 34,
+    "origin": {
+      "revision": "New Day 7 holdout; not a rewording of the five Day 6 test questions."
+    },
+    "gold_chunk_ids": [
+      "5c4323c5e28b2e6fa26247afce6e63d5979d1cb2e47fa8e8535a56ece50996c1"
+    ],
+    "verification": {
+      "method": "Original PDF page rendered and visually checked against answer and verbatim corpus evidence.",
+      "reviewer": "Codex AI assistant; not independent human review",
+      "date": "2026-11-14",
+      "ocr_policy": "Preserve inherited OCR in evidence; expected answer uses corrected Vietnamese. No corpus/chunk edits."
+    }
+  },
+  {
+    "id": "d7-test-03",
+    "split": "test",
+    "type": "dieu_kien_ngoai_le",
+    "question": "Chỉ xét Nghị định năm 2023: yêu cầu hạn chế xử lý dữ liệu cá nhân của chủ thể dữ liệu phải được thực hiện trong bao lâu, áp dụng cho phần dữ liệu nào và có ngoại lệ gì?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Trong 72 giờ sau khi có yêu cầu; áp dụng với toàn bộ dữ liệu cá nhân mà chủ thể dữ liệu yêu cầu hạn chế, trừ trường hợp luật có quy định khác.",
+    "gold": [
+      {
+        "source_id": "nghi-dinh-13-2023-nd-cp",
+        "page": 7,
+        "evidence": "b) Việc hạn chế xử lý dữ liệu được thực hiện trong 72 giờ sau khi có yêu cầu\ncủa chủ thê dữ liệu, với toàn bộ dữ liệu cá nhân mà chủ thê dữ liệu yêu cầu hạn\nchê, trừ trường hợp luật có quy định khác."
+      }
+    ],
+    "source": "data/raw/13-2023-nd-cp.pdf",
+    "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+    "article": 9,
+    "filter": {
+      "doc_type": "Nghị định",
+      "year": 2023
+    },
+    "origin": {
+      "revision": "New Day 7 holdout; not a rewording of the five Day 6 test questions."
+    },
+    "gold_chunk_ids": [
+      "93f1a19cad06fcb4483a39a959d38ad01b298b8d33c9182a3beb3a026c9a0a54"
+    ],
+    "verification": {
+      "method": "Original PDF page rendered and visually checked against answer and verbatim corpus evidence.",
+      "reviewer": "Codex AI assistant; not independent human review",
+      "date": "2026-11-14",
+      "ocr_policy": "Preserve inherited OCR in evidence; expected answer uses corrected Vietnamese. No corpus/chunk edits."
+    }
+  },
+  {
+    "id": "d7-test-04",
+    "split": "test",
+    "type": "thoi_han",
+    "question": "Theo Nghị định bảo vệ dữ liệu cá nhân trong corpus, Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân phải gửi cho đơn vị nào, bao nhiêu bản chính, theo mẫu nào và trong thời gian bao lâu kể từ mốc nào?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Gửi Bộ Công an (Cục An ninh mạng và phòng, chống tội phạm sử dụng công nghệ cao) 01 bản chính theo Mẫu số 04, trong thời gian 60 ngày kể từ ngày tiến hành xử lý dữ liệu cá nhân.",
+    "gold": [
+      {
+        "source_id": "nghi-dinh-13-2023-nd-cp",
+        "page": 19,
+        "evidence": "4. Hồ sơ đánh giá tác động xử lý đữ liệu cá nhân phải luôn có sẵn để phục\nvụ hoạt động kiểm tra, đánh giá của Bộ Công an và gửi Bộ Công an (Cục An\nninh mạng và phòng, chống tội phạm sử dụng công nghệ cao) 01 bản chính theo\nMẫu số 04 tại Phụ lục của Nghị định này trong thời gian 60 ngày kế từ ngày tiến\nhành xử lý đữ liệu cá nhân."
+      }
+    ],
+    "source": "data/raw/13-2023-nd-cp.pdf",
+    "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+    "article": 24,
+    "origin": {
+      "revision": "New Day 7 holdout; not a rewording of the five Day 6 test questions."
+    },
+    "gold_chunk_ids": [
+      "4ac08fda6cf72ac2bcff823cffc9a5c24cd982d0d3e4b4417e2bb55074479fff"
+    ],
+    "verification": {
+      "method": "Original PDF page rendered and visually checked against answer and verbatim corpus evidence.",
+      "reviewer": "Codex AI assistant; not independent human review",
+      "date": "2026-11-14",
+      "ocr_policy": "Preserve inherited OCR in evidence; expected answer uses corrected Vietnamese. No corpus/chunk edits."
+    }
+  },
+  {
+    "id": "d7-test-05",
+    "split": "test",
+    "type": "trach_nhiem",
+    "question": "Theo Nghị định bảo vệ dữ liệu cá nhân trong corpus, kinh phí bảo vệ dữ liệu cá nhân của tổ chức, doanh nghiệp do ai bố trí và thực hiện?",
+    "answerable": true,
+    "expected_behavior": "search_and_answer",
+    "expected_answer": "Do các tổ chức, doanh nghiệp tự bố trí và thực hiện theo quy định.",
+    "gold": [
+      {
+        "source_id": "nghi-dinh-13-2023-nd-cp",
+        "page": 24,
+        "evidence": "3. Kinh phí bảo vệ dữ liệu cá nhân của tô chức, doanh nghiệp do các tổ\nchức, doanh nghiệp tự bố trí và thực hiện theo quy định."
+      }
+    ],
+    "source": "data/raw/13-2023-nd-cp.pdf",
+    "source_url": "https://vanban.chinhphu.vn/?pageid=27160&docid=207759",
+    "article": 31,
+    "origin": {
+      "revision": "New Day 7 holdout; not a rewording of the five Day 6 test questions."
+    },
+    "gold_chunk_ids": [
+      "3b6e77c8eb98df0799c39497f7d0040b971d179299ea16ded6e077e177500a1b"
+    ],
+    "verification": {
+      "method": "Original PDF page rendered and visually checked against answer and verbatim corpus evidence.",
+      "reviewer": "Codex AI assistant; not independent human review",
+      "date": "2026-11-14",
+      "ocr_policy": "Preserve inherited OCR in evidence; expected answer uses corrected Vietnamese. No corpus/chunk edits."
+    }
+  },
+  {
+    "id": "d7-test-u01",
+    "split": "test",
+    "type": "thieu_thong_ke",
+    "question": "Dựa vào hai tài liệu trong corpus, tổng số khiếu nại về bảo vệ dữ liệu cá nhân mà Cổng thông tin quốc gia đã tiếp nhận trong năm 2025 là bao nhiêu?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "expected_answer": "Không đủ bằng chứng để đưa số lượng khiếu nại năm 2025. Không được suy ra số 0 từ việc tài liệu không có số liệu.",
+    "absence_reason": "Các văn bản quy định quyền, trách nhiệm quản lý và Cổng thông tin; không phải báo cáo thống kê năm 2025. Quét đủ 60 trang không có năm 2025.",
+    "absence_check": {
+      "method": "Full 60-page normalized corpus scan plus contextual review; absence is not inferred from top-k.",
+      "terms_expected_absent": [
+        "2025"
+      ],
+      "related_pages": [
+        {
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "page": 8
+        },
+        {
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "page": 24
+        }
+      ],
+      "scope": "Only the frozen 60-page corpus; not a claim about information outside it."
+    }
+  },
+  {
+    "id": "d7-test-u02",
+    "split": "test",
+    "type": "thieu_ma_nguon",
+    "question": "Hãy trích nguyên văn câu lệnh SQL mẫu được hai tài liệu trong corpus đưa ra để xóa dữ liệu cá nhân khi chủ thể rút lại sự đồng ý.",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "expected_answer": "Không đủ bằng chứng để trích câu SQL mẫu; không tự viết mã rồi gán mã đó cho tài liệu.",
+    "absence_reason": "Văn bản có quy định rút lại sự đồng ý, xóa/hủy dữ liệu, nhưng không cung cấp mã SQL, tên bảng hoặc schema triển khai. Quét toàn corpus không có SQL/DELETE FROM/CREATE TABLE.",
+    "absence_check": {
+      "method": "Full 60-page normalized corpus scan plus contextual review; absence is not inferred from top-k.",
+      "terms_expected_absent": [
+        "SQL",
+        "DELETE FROM",
+        "CREATE TABLE"
+      ],
+      "related_pages": [
+        {
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "page": 10
+        },
+        {
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "page": 13
+        },
+        {
+          "source_id": "nghi-dinh-13-2023-nd-cp",
+          "page": 14
+        }
+      ],
+      "scope": "Only the frozen 60-page corpus; not a claim about information outside it."
+    }
+  }
+]

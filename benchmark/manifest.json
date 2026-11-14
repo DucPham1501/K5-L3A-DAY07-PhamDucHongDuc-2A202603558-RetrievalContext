@@ -1,0 +1,33 @@
+{
+  "version": "day7-v1",
+  "created_at": "2026-11-14T08:13:03.280062+00:00",
+  "status": "frozen_before_day7_retrieval",
+  "scope": "Basic LAB07 benchmark; not advanced multimodal challenge",
+  "counts": {
+    "dev": {
+      "answerable": 15,
+      "unanswerable": 2
+    },
+    "test": {
+      "answerable": 5,
+      "unanswerable": 2
+    }
+  },
+  "test_policy": "New test answers from articles disjoint from Day 7 dev and all five old Day 6 test source/article pairs. No Day 7 retrieval/model evaluation run yet; creation and evidence verification are not test-based tuning.",
+  "selection_criteria": [
+    "Dev grounded answer mean (0..2), higher is better",
+    "Dev valid citation rate, higher is better (0/0 is not perfect)",
+    "Dev correct abstention rate, higher is better",
+    "Dev Context Evidence Rate, then Evidence Hit@3, then Hit@1, higher is better",
+    "Median end-to-end latency lower, then measured API cost lower; unknown cost cannot win cost tie",
+    "If still tied, simpler pipeline; document decision before test"
+  ],
+  "sha256": {
+    "benchmark/dev.json": "af2fe20cbec784bfa7ce25065cdd76d03d2a2543d72444a8373a60310c9825cf",
+    "benchmark/test.json": "abba617cd6c3614e35db17b2fd6e7786c1eb747c99b8e5f0494e7b479e3c7478",
+    "benchmark/inputs/dev.json": "4fd8384bfe9a45c6e355f03672351d4441f4c93211badcff2cdec9240daf62d8",
+    "benchmark/inputs/test.json": "d51dc0355faf0f0ce436411014f49941e5693c3fdfc9af75996743f7a6716b02",
+    "data/processed/corpus.pages.jsonl": "23c285e55542ffe99fca7bbd484deb155a6bd031d941b09dad6ed1a0dc740add",
+    "data/chunks.json": "a9c8dd4a2bbac0b22f8eb0aa390d12e8bea48cdab4c7c7d657bc88e5d5cef346"
+  }
+}

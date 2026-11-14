@@ -1,0 +1,34 @@
+[
+  {
+    "id": "d7-test-01",
+    "question": "Theo Luật An ninh mạng trong corpus, công dân Việt Nam cần đáp ứng những tiêu chuẩn và nguyện vọng nào để có thể được tuyển chọn vào lực lượng bảo vệ an ninh mạng?"
+  },
+  {
+    "id": "d7-test-02",
+    "question": "Theo Luật An ninh mạng trong corpus, cơ quan nào ở địa phương có trách nhiệm xây dựng và triển khai phổ biến kiến thức, nâng cao nhận thức về an ninh mạng cho cơ quan, tổ chức, cá nhân của địa phương?"
+  },
+  {
+    "id": "d7-test-03",
+    "question": "Chỉ xét Nghị định năm 2023: yêu cầu hạn chế xử lý dữ liệu cá nhân của chủ thể dữ liệu phải được thực hiện trong bao lâu, áp dụng cho phần dữ liệu nào và có ngoại lệ gì?",
+    "filter": {
+      "doc_type": "Nghị định",
+      "year": 2023
+    }
+  },
+  {
+    "id": "d7-test-04",
+    "question": "Theo Nghị định bảo vệ dữ liệu cá nhân trong corpus, Hồ sơ đánh giá tác động xử lý dữ liệu cá nhân phải gửi cho đơn vị nào, bao nhiêu bản chính, theo mẫu nào và trong thời gian bao lâu kể từ mốc nào?"
+  },
+  {
+    "id": "d7-test-05",
+    "question": "Theo Nghị định bảo vệ dữ liệu cá nhân trong corpus, kinh phí bảo vệ dữ liệu cá nhân của tổ chức, doanh nghiệp do ai bố trí và thực hiện?"
+  },
+  {
+    "id": "d7-test-u01",
+    "question": "Dựa vào hai tài liệu trong corpus, tổng số khiếu nại về bảo vệ dữ liệu cá nhân mà Cổng thông tin quốc gia đã tiếp nhận trong năm 2025 là bao nhiêu?"
+  },
+  {
+    "id": "d7-test-u02",
+    "question": "Hãy trích nguyên văn câu lệnh SQL mẫu được hai tài liệu trong corpus đưa ra để xóa dữ liệu cá nhân khi chủ thể rút lại sự đồng ý."
+  }
+]
